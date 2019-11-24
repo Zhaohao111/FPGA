@@ -1,0 +1,17 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, PSRAM_Memory_Interface_Top, 0h:00m:00s,     96 MB
+work, \~psram_top.PSRAM_Memory_Interface_Top , 0h:00m:00s,     96 MB
+work, CLKDIV, 0h:00m:00s,     96 MB
+work, DHCEN, 0h:00m:00s,     96 MB
+work, DLL, 0h:00m:00s,     96 MB
+work, \~psram_sync.PSRAM_Memory_Interface_Top , 0h:00m:00s,     96 MB
+work, \~psram_init.PSRAM_Memory_Interface_Top , 0h:00m:00s,     98 MB
+work, OBUF, 0h:00m:00s,     98 MB
+work, ELVDS_OBUF, 0h:00m:00s,     98 MB
+work, IODELAY, 0h:00m:00s,     98 MB
+work, IOBUF, 0h:00m:00s,     98 MB
+work, \~psram_lane.PSRAM_Memory_Interface_Top _Z2, 0h:00m:00s,     98 MB
+work, \~psram_lane.PSRAM_Memory_Interface_Top _Z1, 0h:00m:00s,     98 MB
+work, IDES4, 0h:00m:00s,     98 MB
+work, OSER4, 0h:00m:00s,     98 MB
+work, \~psram_wd.PSRAM_Memory_Interface_Top , 0h:00m:01s,     99 MB

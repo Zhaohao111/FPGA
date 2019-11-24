@@ -1,0 +1,169 @@
+# Sun Nov 24 14:48:57 2019
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-1CPVADT
+
+Implementation : rev_1
+Synopsys Generic Technology Pre-mapping, Version mapgw, Build 1429R, Built Aug 27 2019 09:36:45
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@A: MF827 |No constraint file specified.
+@L: E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga_scck.rpt 
+Printing clock  summary report in "E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 149MB)
+
+@N: FX493 |Applying initial value "000000000000000000000" on instance psram_wr_addr[20:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "000000000000000000000" on instance psram_rd_addr[20:0].
+@N: BN362 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\i2c_dri.v":159:0:159:5|Removing sequential instance i2c_data_r[7:0] (in view: work.i2c_dri_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v":54:0:54:5|Removing sequential instance cam_href_d1 (in view: work.cmos_capture_data(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v":54:0:54:5|Removing sequential instance cam_href_d0 (in view: work.cmos_capture_data(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 229MB peak: 229MB)
+
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 231MB peak: 231MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 231MB peak: 231MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 233MB peak: 233MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 233MB peak: 233MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                                                    Requested      Requested     Clock                                                                              Clock                     Clock
+Level     Clock                                                                    Frequency      Period        Type                                                                               Group                     Load 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                                   1955.8 MHz     0.511         system                                                                             system_clkgroup           0    
+                                                                                                                                                                                                                                  
+0 -       _~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock          190.0 MHz      5.263         inferred                                                                           Autoconstr_clkgroup_2     656  
+1 .         _~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[0]     190.0 MHz      5.263         derived (from _~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock)     Autoconstr_clkgroup_2     8    
+1 .         _~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[1]     190.0 MHz      5.263         derived (from _~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock)     Autoconstr_clkgroup_2     8    
+1 .         _~psram_wd_PSRAM_Memory_Interface_Top__|step_derived_clock[0]          190.0 MHz      5.263         derived (from _~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock)     Autoconstr_clkgroup_2     2    
+                                                                                                                                                                                                                                  
+0 -       Gowin_PLL|clkout_inferred_clock                                          97.8 MHz       10.225        inferred                                                                           Autoconstr_clkgroup_1     459  
+1 .         i2c_dri_Z1|dri_clk_derived_clock                                       97.8 MHz       10.225        derived (from Gowin_PLL|clkout_inferred_clock)                                     Autoconstr_clkgroup_1     93   
+                                                                                                                                                                                                                                  
+0 -       ov5640_rgb565_1024x768_vga_top|cam_pclk                                  197.1 MHz      5.075         inferred                                                                           Autoconstr_clkgroup_3     83   
+                                                                                                                                                                                                                                  
+0 -       _~psram_top_PSRAM_Memory_Interface_Top__|clk_x2p_inferred_clock          150.0 MHz      6.667         inferred                                                                           Autoconstr_clkgroup_4     38   
+                                                                                                                                                                                                                                  
+0 -       ov5640_rgb565_1024x768_vga_top|sys_clk                                   225.5 MHz      4.434         inferred                                                                           Autoconstr_clkgroup_0     29   
+==================================================================================================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                                       Clock     Source                                                                                                         Clock Pin                                                                                                                    Non-clock Pin                                                                                                                        Non-clock Pin
+Clock                                                                  Load      Pin                                                                                                            Seq Example                                                                                                                  Seq Example                                                                                                                          Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                 0         -                                                                                                              -                                                                                                                            -                                                                                                                                    -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+_~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock        656       psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.clkdiv.CLKOUT(CLKDIV)                                        psram_fifo.temp_a.C                                                                                                          psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_wd.\\data_lane_gen\[0\]\.u_psram_lane.\\iserdes_gen\[7\]\.u_ides4.PCLK     -            
+_~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[0]     8         psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_init.\\read_calibration\[0\]\.VALUE\[0\].Q(DFFC)     psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_wd.\\dq_iodelay_gen0\[0\]\.genblk1\[0\]\.iodelay.VALUE             -                                                                                                                                    -            
+_~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[1]     8         psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_init.\\read_calibration\[1\]\.VALUE\[1\].Q(DFFC)     psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_wd.\\dq_iodelay_gen0\[1\]\.genblk1\[5\]\.iodelay.VALUE             -                                                                                                                                    -            
+_~psram_wd_PSRAM_Memory_Interface_Top__|step_derived_clock[0]          2         psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_wd.\\step_Z\[0\].Q(DFFCE)                            psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_wd.\\ck_delay\[0\]\.iodelay.VALUE                                  -                                                                                                                                    -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+Gowin_PLL|clkout_inferred_clock                                        459       Gowin_PLL_65M.pll_inst.CLKOUT(PLL)                                                                             u_i2c_dri.dri_clk.C                                                                                                          -                                                                                                                                    -            
+i2c_dri_Z1|dri_clk_derived_clock                                       93        u_i2c_dri.dri_clk.Q[0](dffse)                                                                                  u_i2c_dri.data_wr_t[7:0].C                                                                                                   -                                                                                                                                    -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+ov5640_rgb565_1024x768_vga_top|cam_pclk                                83        cam_pclk(port)                                                                                                 psram_fifo.u_wrfifo.fifo_inst.Full_Z.CLK                                                                                     -                                                                                                                                    -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+_~psram_top_PSRAM_Memory_Interface_Top__|clk_x2p_inferred_clock        38        psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_dqce_clk_x2p.CLKOUT(DHCEN)                                 psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.u_psram_wd.\\data_lane_gen\[0\]\.u_psram_lane.\\genblk1\.u_ck_gen.FCLK     -                                                                                                                                    -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+ov5640_rgb565_1024x768_vga_top|sys_clk                                 29        sys_clk(port)                                                                                                  led2.C                                                                                                                       -                                                                                                                                    -            
+===============================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+@W: MT529 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v":70:0:70:5|Found inferred clock ov5640_rgb565_1024x768_vga_top|cam_pclk which controls 83 sequential elements including u_cmos_capture_data.cmos_ps_cnt[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+2 non-gated/non-generated clock tree(s) driving 112 clock pin(s) of sequential element(s)
+7 gated/generated clock tree(s) driving 1248 clock pin(s) of sequential element(s)
+0 instances converted, 1248 sequential instances remain driven by gated/generated clocks
+
+====================================== Non-Gated/Non-Generated Clocks ======================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                     
+------------------------------------------------------------------------------------------------------------
+@KP:ckid0_4       cam_pclk            port                   83         u_cmos_capture_data.cmos_ps_cnt[3:0]
+@KP:ckid0_5       sys_clk             port                   29         led1                                
+============================================================================================================
+========================================================================== Gated/Generated Clocks ===========================================================================
+Clock Tree ID     Driving Element                   Drive Element Type     Unconverted Fanout     Sample Instance                  Explanation                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       u_i2c_dri.dri_clk.Q[0]            dffse                  93                     u_i2c_dri.scl                    Derived clock on input (not legal for GCC)
+@KP:ckid0_2       Gowin_PLL_65M.pll_inst.CLKOUT     PLL                    459                    u_i2c_dri.clk_cnt[9:0]           Black box on clock path                   
+@KP:ckid0_3       ENCRYPTED                         CLKDIV                 640                    psram_fifo.psram_rd_addr[20]     Black box on clock path                   
+@KP:ckid0_6       ENCRYPTED                         DHCEN                  38                     ENCRYPTED                        Black box on clock path                   
+@KP:ckid0_7       ENCRYPTED                         DFFC                   8                      ENCRYPTED                        Derived clock on input (not legal for GCC)
+@KP:ckid0_9       ENCRYPTED                         DFFC                   8                      ENCRYPTED                        Derived clock on input (not legal for GCC)
+@KP:ckid0_11      ENCRYPTED                         DFFCE                  2                      ENCRYPTED                        Derived clock on input (not legal for GCC)
+=============================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 233MB peak: 233MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 233MB peak: 234MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 234MB peak: 234MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 234MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sun Nov 24 14:49:00 2019
+
+###########################################################]

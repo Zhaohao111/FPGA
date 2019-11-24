@@ -1,0 +1,2 @@
+@W: MT420 |Found inferred clock rdfifo|WrClk with period 4.56ns. Please declare a user-defined clock on port WrClk.
+@W: MT420 |Found inferred clock rdfifo|RdClk with period 4.82ns. Please declare a user-defined clock on port RdClk.

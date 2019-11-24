@@ -1,0 +1,4 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, wrfifo, 0h:00m:00s,    101 MB
+work, \~fifo.wrfifo , 0h:00m:00s,    104 MB
+work, work_C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\temp\FIFO\fifo_define.v_unit, 0h:00m:00s,      0 MB

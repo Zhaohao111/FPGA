@@ -1,0 +1,14 @@
+[General]
+ipc_version=4
+file=divider
+module=Divider_Top
+target_device=gw2ar18-022
+type=divider
+version=3.0
+
+[Config]
+DECIMAL_PRECISION=1
+DISABLEIO=true
+INPUT_DATA_WIDTH=17
+LANG=0
+OUTPUT_DATA_WIDTH=17

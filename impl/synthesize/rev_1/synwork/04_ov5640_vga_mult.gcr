@@ -1,0 +1,429 @@
+i u_i2c_dri.dri_clk_i
+m 0 0
+u 14 93
+n ckid0_0 {t:u_i2c_dri.scl.C} Derived clock on input (not legal for GCC)
+p {t:u_i2c_dri.dri_clk.Q[0]}{t:u_i2c_dri.dri_clk_derived_clock.I[0]}{t:u_i2c_dri.dri_clk_derived_clock.OUT[0]}{t:u_i2c_dri.scl.C}
+e ckid0_0 {t:u_i2c_dri.scl.C} dffse
+d ckid0_1 {t:u_i2c_dri.dri_clk.Q[0]} dffse Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i Gowin_PLL_65M.clkout_i
+m 0 0
+u 249 459
+n ckid0_2 {t:u_i2c_dri.clk_cnt[9:0].C} Black box on clock path
+p {t:Gowin_PLL_65M.pll_inst.CLKOUT}{t:Gowin_PLL_65M.clkout_inferred_clock.I[0]}{t:Gowin_PLL_65M.clkout_inferred_clock.OUT[0]}{p:Gowin_PLL_65M.clkout}{t:Gowin_PLL_65M.clkout}{t:u_i2c_dri.clk}{p:u_i2c_dri.clk}{t:u_i2c_dri.clk_cnt[9:0].C}
+e ckid0_2 {t:u_i2c_dri.clk_cnt[9:0].C} dffr
+d ckid0_2 {t:Gowin_PLL_65M.pll_inst.CLKOUT} PLL Black box on clock path
+i psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.ENCNET0
+m 0 0
+u 627 640
+n ckid0_3 {t:psram_fifo.psram_rd_addr[20].C} Black box on clock path
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.clk_out}{p:psram_fifo.PSRAM_Memory_Interface_Top.clk_out}{t:psram_fifo.PSRAM_Memory_Interface_Top.clk_out}{t:psram_fifo.psram_rd_addr[20].C}
+e ckid0_3 {t:psram_fifo.psram_rd_addr[20].C} dffr
+d ckid0_3 {t:ENCRYPTED} CLKDIV Black box on clock path
+i cam_pclk
+m 0 0
+u 58 83
+p {p:cam_pclk}{t:u_cmos_capture_data.cam_pclk}{p:u_cmos_capture_data.cam_pclk}{t:u_cmos_capture_data.cmos_ps_cnt[3:0].C}
+e ckid0_4 {t:u_cmos_capture_data.cmos_ps_cnt[3:0].C} dffr
+c ckid0_4 {p:cam_pclk} port Unsupported/too complex instance on clock path
+i sys_clk
+m 0 0
+u 29 29
+p {p:sys_clk}{t:led1.C}
+e ckid0_5 {t:led1.C} dff
+c ckid0_5 {p:sys_clk} port Unsupported/too complex instance on clock path
+i psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.ENCNET1
+m 0 0
+u 38 38
+n ckid0_6 {t:ENCRYPTED} Black box on clock path
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_6 {t:ENCRYPTED} <ENCRYPTED>
+d ckid0_6 {t:ENCRYPTED} DHCEN Black box on clock path
+i psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.ENCNET2
+m 0 0
+u 8 8
+n ckid0_7 {t:ENCRYPTED} Derived clock on input (not legal for GCC)
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_7 {t:ENCRYPTED} <ENCRYPTED>
+d ckid0_8 {t:ENCRYPTED} DFFC Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.ENCNET4
+m 0 0
+u 8 8
+n ckid0_9 {t:ENCRYPTED} Derived clock on input (not legal for GCC)
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_9 {t:ENCRYPTED} <ENCRYPTED>
+d ckid0_10 {t:ENCRYPTED} DFFC Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.ENCNET5
+m 0 0
+u 2 2
+n ckid0_11 {t:ENCRYPTED} Derived clock on input (not legal for GCC)
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_11 {t:ENCRYPTED} <ENCRYPTED>
+d ckid0_12 {t:ENCRYPTED} DFFCE Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET6
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET7
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET8
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET9
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET10
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET11
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET12
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET13
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET14
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET15
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET16
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET17
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET18
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET19
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET20
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET21
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_s.u_fra_div.ENCNET22
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[2]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[1]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[0]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[1]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[0]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[2]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[1]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[0]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET23
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET24
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET25
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET26
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET27
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET28
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET29
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET30
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET31
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET32
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET33
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET34
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET35
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET36
+m 0 0
+u 0 0
+i rgb2hsv_top1.Divider_Top_h.u_fra_div.ENCNET37
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[7]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[6]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[5]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[4]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Hue[3]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[7]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[6]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[5]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[4]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[3]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Saturation[2]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[7]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[6]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[5]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[4]
+m 0 0
+u 0 0
+i rgb2hsv_top1.Value[3]
+m 0 0
+u 0 0
+i psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.ENCNET81
+m 0 0
+u 0 0
+i psram_fifo.PSRAM_Memory_Interface_Top.u_psram_top.ENCNET83
+m 0 0
+u 0 0
+i psram_fifo.temp_d
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET84
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET86
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET87
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET88
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET89
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET90
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET91
+m 0 0
+u 0 0
+i psram_fifo.u_rdfifo.fifo_inst.ENCNET92
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET93
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET95
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET96
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET97
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET98
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET99
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET100
+m 0 0
+u 0 0
+i psram_fifo.u_wrfifo.fifo_inst.ENCNET101
+m 0 0
+u 0 0
+i psram_fifo.cmd_delay2
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[20]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[20]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[19]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[19]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[18]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[18]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[17]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[17]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[16]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[16]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[15]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[15]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[14]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[14]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[13]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[13]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[12]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[12]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[11]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[11]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[10]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[10]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[9]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[9]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[8]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[8]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[7]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[7]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[6]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[6]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[5]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[5]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[4]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[4]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[3]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[3]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[2]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[2]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[1]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[1]
+m 0 0
+u 0 0
+i psram_fifo.psram_wr_addr[0]
+m 0 0
+u 0 0
+i psram_fifo.psram_rd_addr[0]
+m 0 0
+u 0 0
+i Gowin_PLL_65M.clkoutd3_o
+m 0 0
+u 0 0
+i Gowin_PLL_65M.clkoutd_o
+m 0 0
+u 0 0
+i Gowin_PLL_65M.clkoutp_o
+m 0 0
+u 0 0
+i Gowin_PLL_65M.lock
+m 0 0
+u 0 0
+l 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

@@ -1,0 +1,11 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: FX493 |Applying initial value "000000000000000000000" on instance psram_wr_addr[20:0].
+@N: FX493 |Applying initial value "000000000000000000000" on instance psram_rd_addr[20:0].
+@N: BN362 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\i2c_dri.v":159:0:159:5|Removing sequential instance i2c_data_r[7:0] (in view: work.i2c_dri_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v":54:0:54:5|Removing sequential instance cam_href_d1 (in view: work.cmos_capture_data(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v":54:0:54:5|Removing sequential instance cam_href_d0 (in view: work.cmos_capture_data(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+@N: BN225 |Writing default property annotation file E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga.sap.

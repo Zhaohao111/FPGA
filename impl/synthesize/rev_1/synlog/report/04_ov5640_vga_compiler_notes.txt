@@ -1,0 +1,42 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\generic\gw2a.v":1843:7:1843:9|Synthesizing module PLL in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\gowin_pll\gowin_pll.v":8:7:8:15|Synthesizing module Gowin_PLL in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\i2c_ov5640_rgb565_cfg.v":3:7:3:27|Synthesizing module i2c_ov5640_rgb565_cfg in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\i2c_dri.v":3:7:3:13|Synthesizing module i2c_dri in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v":2:7:2:23|Synthesizing module cmos_capture_data in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\gowin_pll2\gowin_pll\gowin_pll_160M.v":8:7:8:20|Synthesizing module Gowin_PLL_160M in library work.
+@N: CG364 :"F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\generic\gw2a.v":1908:7:1908:9|Synthesizing module GSR in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v":13742:7:13742:32|Synthesizing module PSRAM_Memory_Interface_Top in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v":2431:7:2431:12|Synthesizing module wrfifo in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v":2792:7:2792:12|Synthesizing module rdfifo in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\psram_fifo.v":2:7:2:16|Synthesizing module psram_fifo in library work.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\psram_fifo.v":202:17:202:17|Removing redundant assignment.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\psram_fifo.v":217:17:217:17|Removing redundant assignment.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\psram_fifo.v":221:17:221:17|Removing redundant assignment.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\vga_driver.v":3:7:3:16|Synthesizing module vga_driver in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\sync_delay\RAM_based_shift_reg_top\RAM_based_shift_reg_top_sync.v":137:7:137:34|Synthesizing module RAM_based_shift_reg_top_sync in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\divider\divider.v":2294:7:2294:17|Synthesizing module Divider_Top in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":1:7:1:17|Synthesizing module rgb2hsv_top in library work.
+@N: CL189 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":48:0:48:5|Register bit G_reg[1] is always 0.
+@N: CL189 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":48:0:48:5|Register bit G_reg[0] is always 0.
+@N: CL189 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":48:0:48:5|Register bit R_reg[2] is always 0.
+@N: CL189 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":48:0:48:5|Register bit R_reg[1] is always 0.
+@N: CL189 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":48:0:48:5|Register bit R_reg[0] is always 0.
+@N: CL189 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":54:0:54:5|Register bit max[1] is always 0.
+@N: CL189 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v":54:0:54:5|Register bit max[0] is always 0.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\B_v.v":1:7:1:9|Synthesizing module B_v in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v":1:7:1:12|Synthesizing module shibie in library work.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v":36:17:36:21|Removing redundant assignment.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v":50:17:50:21|Removing redundant assignment.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v":64:17:64:21|Removing redundant assignment.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v":76:17:76:21|Removing redundant assignment.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v":88:17:88:21|Removing redundant assignment.
+@N: CG179 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v":100:17:100:21|Removing redundant assignment.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\VGA_OUT.v":1:7:1:13|Synthesizing module VGA_OUT in library work.
+@N: CG364 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v":3:7:3:36|Synthesizing module ov5640_rgb565_1024x768_vga_top in library work.
+@N: CL159 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\VGA_OUT.v":4:7:4:11|Input rst_n is unused.
+@N|Running in 64-bit mode
+

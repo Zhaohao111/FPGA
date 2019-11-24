@@ -1,0 +1,60 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, ov5640_rgb565_1024x768_vga_top, 0h:00m:00s,    120 MB
+work, VGA_OUT, 0h:00m:00s,    120 MB
+work, shibie, 0h:00m:00s,    120 MB
+work, B_v, 0h:00m:00s,    120 MB
+work, rgb2hsv_top, 0h:00m:00s,    124 MB
+work, Divider_Top, 0h:00m:00s,    124 MB
+work, \(qdiv)/(Divider_Top)_17s_1s, 0h:00m:00s,    124 MB
+work, DFFR, 0h:00m:00s,    124 MB
+work, DFFE, 0h:00m:00s,    124 MB
+work, DFF, 0h:00m:00s,    124 MB
+work, DFFS, 0h:00m:00s,    124 MB
+work, RAM_based_shift_reg_top_sync, 0h:00m:00s,    124 MB
+work, \~RAM_based_shift_reg.RAM_based_shift_reg_top_sync_ , 0h:00m:00s,    124 MB
+work, SP, 0h:00m:00s,    124 MB
+work, vga_driver, 0h:00m:00s,    124 MB
+work, psram_fifo, 0h:00m:00s,    124 MB
+work, rdfifo, 0h:00m:00s,    124 MB
+work, \~fifo.rdfifo_ , 0h:00m:00s,    124 MB
+work, wrfifo, 0h:00m:00s,    124 MB
+work, \~fifo.wrfifo_ , 0h:00m:00s,    124 MB
+work, SDP, 0h:00m:00s,    124 MB
+work, DFFNP, 0h:00m:00s,    124 MB
+work, PSRAM_Memory_Interface_Top, 0h:00m:00s,    124 MB
+work, \~psram_top.PSRAM_Memory_Interface_Top_ , 0h:00m:00s,    124 MB
+work, \~psram_sync.PSRAM_Memory_Interface_Top_ , 0h:00m:00s,    124 MB
+work, DFFPE, 0h:00m:00s,    124 MB
+work, DFFP, 0h:00m:00s,    124 MB
+work, \~psram_init.PSRAM_Memory_Interface_Top_ , 0h:00m:00s,    124 MB
+work, MUX2_LUT6, 0h:00m:00s,    124 MB
+work, MUX2_LUT5, 0h:00m:00s,    124 MB
+work, \~psram_wd.PSRAM_Memory_Interface_Top_ , 0h:00m:00s,    124 MB
+work, \~psram_lane.PSRAM_Memory_Interface_Top__Z1 , 0h:00m:00s,    124 MB
+work, \~psram_lane.PSRAM_Memory_Interface_Top__Z2 , 0h:00m:00s,    124 MB
+work, VCC, 0h:00m:00s,    124 MB
+work, GND, 0h:00m:00s,    124 MB
+work, IDES4, 0h:00m:00s,    124 MB
+work, OSER4, 0h:00m:00s,    124 MB
+work, SDPX9, 0h:00m:00s,    124 MB
+work, LUT3, 0h:00m:00s,    124 MB
+work, LUT4, 0h:00m:00s,    124 MB
+work, IODELAY, 0h:00m:00s,    124 MB
+work, ELVDS_OBUF, 0h:00m:00s,    124 MB
+work, IOBUF, 0h:00m:00s,    124 MB
+work, OBUF, 0h:00m:00s,    124 MB
+work, ALU, 0h:00m:00s,    124 MB
+work, DFFCE, 0h:00m:00s,    124 MB
+work, DLL, 0h:00m:00s,    124 MB
+work, DHCEN, 0h:00m:00s,    124 MB
+work, CLKDIV, 0h:00m:00s,    124 MB
+work, DFFC, 0h:00m:00s,    124 MB
+work, LUT2, 0h:00m:00s,    124 MB
+work, INV, 0h:00m:00s,    124 MB
+work, GSR, 0h:00m:00s,    124 MB
+work, Gowin_PLL_160M, 0h:00m:00s,    124 MB
+work, cmos_capture_data, 0h:00m:00s,    124 MB
+work, i2c_dri_Z1, 0h:00m:00s,    124 MB
+work, i2c_ov5640_rgb565_cfg_1024_768_248_2240_1272, 0h:00m:00s,    124 MB
+work, Gowin_PLL, 0h:00m:00s,    124 MB
+work, PLL, 0h:00m:00s,    124 MB

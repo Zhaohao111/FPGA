@@ -1,0 +1,22 @@
+---------------------------------------
+Resource Usage Report for Divider_Top 
+
+Mapping to part: gw2ar_18elqfp144-8
+Cell usage:
+ALU             53 uses
+DFF             17 uses
+DFFE            48 uses
+DFFR            5 uses
+DFFS            5 uses
+GSR             1 use
+MUX2_LUT5       14 uses
+LUT2            38 uses
+LUT3            41 uses
+LUT4            42 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   75 of 15552 (0%)
+
+@S |Mapping Summary:
+Total  LUTs: 121 (0%)
+

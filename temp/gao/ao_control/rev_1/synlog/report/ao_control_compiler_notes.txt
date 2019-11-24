@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\temp\gao\ao_control\gw_con_parameter.v":1:0:1:8|Synthesizing module work_C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\temp\gao\ao_control\gw_con_parameter.v_unit in library work.
+@N|Running in 64-bit mode
+

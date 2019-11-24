@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\RAM_based_shift_reg_top\temp\RAM_Based_Shift_Register\rev_1\synlog\RAM_based_shift_reg_top_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>RAM_based_shift_reg_top|clk</data>
+<data>386.5 MHz</data>
+<data>328.5 MHz</data>
+<data>-0.457</data>
+</row>
+</report_table>

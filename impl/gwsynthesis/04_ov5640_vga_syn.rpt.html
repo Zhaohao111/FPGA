@@ -1,0 +1,3643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#setting" style=" font-size: 16px;">Design Settings</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#timing report" style=" font-size: 14px;">Timing Report</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Performance Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+<li><a href="#message" style=" font-size: 16px;">Message</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Summary</a></li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/i2c_ov5640_rgb565_cfg.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/ov5640_rgb565_1024x768_vga_top.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/cmos_capture_data.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/i2c_dri.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/vga_driver.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/gowin_pll/gowin_pll.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/psram_memory_interface/psram_memory_interface.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/psram_fifo.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/gowin_pll2/gowin_pll/gowin_pll_160M.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/wrfifo/fifo_top/wrfifo.v<br>
+C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/src/rdfifo/fifo_top/rdfifo.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Verision</td>
+<td>GowinSynthesis V1.9.2Beta</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sun Oct 27 17:54:29 2019
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2019 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="setting">Design Settings</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module:</td>
+<td>ov5640_rgb565_1024x768_vga_top</td>
+</tr>
+<tr>
+<td class="label">Design Language:</td>
+<td>verilog</td>
+</tr>
+<tr>
+<td class="label">Series:</td>
+<td>GW2AR</td>
+</tr>
+<tr>
+<td class="label">Device:</td>
+<td>GW2AR-18</td>
+</tr>
+<tr>
+<td class="label">Package:</td>
+<td>ELQFP144</td>
+</tr>
+<tr>
+<td class="label">Speed Grade:</td>
+<td>8</td>
+</tr>
+</table><br/>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>IOPORT Usage:</b></td>
+<td>55</td>
+</tr>
+<tr>
+<td class="label"><b>IOBUF Usage:</b></td>
+<td>55</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>23</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>18</td>
+</tr>
+<tr>
+<td class="label"><b>REG Usage:</b></td>
+<td>757</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>503</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>232</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFNP</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label"><b>LUT Usage:</b></td>
+<td>1075</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>385</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>240</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>450</td>
+</tr>
+<tr>
+<td class="label"><b>ALU Usage:</b></td>
+<td>202</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>202</td>
+</tr>
+<tr>
+<td class="label"><b>INV Usage:</b></td>
+<td>29</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>29</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC Usage:</b></td>
+<td>50</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIDES4</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER4</td>
+<td>18</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIODELAY</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM Usage:</b></td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDP</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPX9</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprROM</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK Usage:</b></td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspPLL</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDLL</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>1</td>
+</tr>
+</table><br/>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+Target Device: GW2AR-18-ELQFP144
+<table class="summary_table">
+<tr>
+<td class="label">CFU Logics</td>
+<td>1306(1104 LUTs, 202 ALUs) / 20736</td>
+<td>6%</td>
+</tr>
+<tr>
+<td class="label">Registers</td>
+<td>757 / 15552</td>
+<td>5%</td>
+</tr>
+<tr>
+<td class="label">BSRAMs</td>
+<td>6 / 46</td>
+<td>13%</td>
+</tr>
+<tr>
+<td class="label">DSP Macros</td>
+<td>0 / (12*2)</td>
+<td>0%</td>
+</tr>
+</table><br/><br/>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>Clock</th>
+<th>Type</th>
+<th>Frequency</th>
+<th>Period</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>\Gowin_PLL_65M/pll_inst /CLKIN.default_clk</td>
+<td>Base</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td>\Gowin_PLL_65M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td>\Gowin_PLL_65M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>50.0 MHz</td>
+<td>20.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td>\Gowin_PLL_65M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>33.3 MHz</td>
+<td>30.000</td>
+<td>0.000</td>
+<td>15.000</td>
+<td> </td>
+<td>\Gowin_PLL_65M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKIN.default_clk</td>
+<td>Base</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>50.0 MHz</td>
+<td>20.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>33.3 MHz</td>
+<td>30.000</td>
+<td>0.000</td>
+<td>15.000</td>
+<td> </td>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/clkdiv /CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>50.0 MHz</td>
+<td>20.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKOUT.default_gen_clk</td>
+<td> </td>
+</tr>
+</table><br/>
+<h2><a name="timing report">Timing Report:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Top View:</td>
+<td>ov5640_rgb565_1024x768_vga_top</td>
+</tr>
+<tr>
+<td class="label">Requested Frequency:</td>
+<td>33.3 MHz</td>
+</tr>
+<tr>
+<td class="label">Paths Requested:</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">Constraint File(ignored):</td>
+<td></td>
+</tr>
+</table>
+<b>All time values displayed in nanoseconds(ns).</b><br/><br/>
+<h2><a name="performance">Performance Summary:</a></h2>
+Worst Slack in Design:&nbsp14.024<br/>
+<table class="summary_table">
+<tr>
+<th>Start Clock</th>
+<th>Slack</th>
+<th>Requested Frequency</th>
+<th>Estimated Frequency</th>
+<th>Requested Period</th>
+<th>Estimated Period</th>
+<th>Clock Type</th>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk</td>
+<td>0.305</td>
+<td>100.0 MHz</td>
+<td>103.1 MHz</td>
+<td>10.000</td>
+<td>9.695</td>
+<td>Generated</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>\psram_fifo/Gowin_PLL_160M/pll_inst /CLKOUT.default_gen_clk</td>
+<td>3.048</td>
+<td>100.0 MHz</td>
+<td>143.8 MHz</td>
+<td>10.000</td>
+<td>6.952</td>
+<td>Generated</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>\psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/clkdiv /CLKOUT.default_gen_clk</td>
+<td>14.024</td>
+<td>50.0 MHz</td>
+<td>167.3 MHz</td>
+<td>20.000</td>
+<td>5.976</td>
+<td>Generated</td>
+</tr>
+</table><br/>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<b>Path information for path number&nbsp</b>1&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(critical):</td>
+<td>0.305</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>9.640</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>9.945</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>18</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>Gowin_PLL_65M/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>psram_fifo/u_rdfifo/fifo_inst/Empty_Z</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins12</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+<td>86</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.232</td>
+<td>0.412</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>0.649</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>1.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>1.441</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.517</td>
+<td>1.958</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>17</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>2.195</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>2.566</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.803</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>3.358</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_3</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>19</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>3.595</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>4.150</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.387</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.422</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_17</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.659</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.694</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_16</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.931</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.967</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_15</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.239</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_14</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.476</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.511</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.748</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.783</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_12</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.020</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.055</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_11</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.292</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.328</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_10</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.565</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.600</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.837</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.872</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_s_10_0_ins8619</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>7.109</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_s_10_0_ins8619</td>
+<td>ALU</td>
+<td>SUM</td>
+<td>Out</td>
+<td>0.470</td>
+<td>7.579</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rbin_num_next[10] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>3</td>
+</tr>
+<tr>
+<td>rempty_val_NE_4_1_cZ_ins8446</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>7.816</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rempty_val_NE_4_1_cZ_ins8446</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>8.187</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rempty_val_NE_4_1_1</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rempty_val_NE_i_1_cZ_ins8448</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>8.424</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rempty_val_NE_i_1_cZ_ins8448</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>8.795</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rempty_val_NE_i_1_1</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rempty_val_NE_i_cZ_ins8449</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>9.032</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rempty_val_NE_i_cZ_ins8449</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>9.403</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rempty_val_NE_i_1_8</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Empty_Z_ins8470</td>
+<td>DFFP</td>
+<td>D</td>
+<td>In</td>
+<td>-</td>
+<td>9.640</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>9.640<br/>
+<b>Logic Delay: </b>4.720(49.0%)<br/>
+<b>Route Delay: </b>4.920(51.0%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>2&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>1.337</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>8.608</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>9.945</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>Gowin_PLL_65M/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>psram_fifo/u_rdfifo/fifo_inst/Small.rptr_Z[7]</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins12</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+<td>86</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.232</td>
+<td>0.412</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>0.649</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>1.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>1.441</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.517</td>
+<td>1.958</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>17</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>2.195</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>2.566</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.803</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>3.358</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_3</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>19</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>3.595</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>4.150</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.387</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.422</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_17</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.659</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.694</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_16</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.931</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.967</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_15</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.239</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_14</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.476</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.511</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.748</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.783</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_12</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.020</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.055</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_11</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.292</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.328</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_10</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.565</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.600</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.837</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.872</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_s_10_0_ins8619</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>7.109</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_s_10_0_ins8619</td>
+<td>ALU</td>
+<td>SUM</td>
+<td>Out</td>
+<td>0.470</td>
+<td>7.579</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rbin_num_next[10] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>3</td>
+</tr>
+<tr>
+<td>\rgraynext_i[7]_ins8424 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.816</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rgraynext_i[7]_ins8424 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>8.371</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rgraynext[7]_1 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>\Small.rptr_Z[7]_ins8502 </td>
+<td>DFFC</td>
+<td>D</td>
+<td>In</td>
+<td>-</td>
+<td>8.608</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>8.608<br/>
+<b>Logic Delay: </b>4.162(48.4%)<br/>
+<b>Route Delay: </b>4.446(51.6%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>3&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>1.609</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>8.336</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>9.945</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>15</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>Gowin_PLL_65M/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>psram_fifo/u_rdfifo/fifo_inst/Small.rptr_Z[6]</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins12</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+<td>86</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.232</td>
+<td>0.412</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>0.649</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>1.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>1.441</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.517</td>
+<td>1.958</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>17</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>2.195</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>2.566</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.803</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>3.358</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_3</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>19</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>3.595</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>4.150</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.387</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.422</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_17</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.659</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.694</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_16</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.931</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.967</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_15</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.239</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_14</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.476</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.511</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.748</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.783</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_12</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.020</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.055</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_11</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.292</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.328</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_10</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.565</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.600</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.837</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>SUM</td>
+<td>Out</td>
+<td>0.470</td>
+<td>7.307</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rbin_num_next[9] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>\rgraynext_i[6]_ins8425 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.544</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rgraynext_i[6]_ins8425 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>8.099</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rgraynext[6]_1 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>\Small.rptr_Z[6]_ins8503 </td>
+<td>DFFC</td>
+<td>D</td>
+<td>In</td>
+<td>-</td>
+<td>8.336</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>8.336<br/>
+<b>Logic Delay: </b>4.127(49.5%)<br/>
+<b>Route Delay: </b>4.209(50.5%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>4&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>1.881</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>8.064</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>9.945</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>14</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>Gowin_PLL_65M/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>psram_fifo/u_rdfifo/fifo_inst/Small.rptr_Z[5]</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins12</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+<td>86</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.232</td>
+<td>0.412</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>0.649</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>1.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>1.441</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.517</td>
+<td>1.958</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>17</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>2.195</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>2.566</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.803</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>3.358</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_3</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>19</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>3.595</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>4.150</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.387</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.422</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_17</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.659</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.694</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_16</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.931</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.967</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_15</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.239</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_14</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.476</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.511</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.748</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.783</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_12</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.020</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.055</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_11</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.292</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.328</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_10</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.565</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>SUM</td>
+<td>Out</td>
+<td>0.470</td>
+<td>7.035</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rbin_num_next[8]_1 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>4</td>
+</tr>
+<tr>
+<td>\rgraynext_i[5]_ins8426 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.272</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rgraynext_i[5]_ins8426 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>7.827</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rgraynext[5]_1 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>\Small.rptr_Z[5]_ins8504 </td>
+<td>DFFC</td>
+<td>D</td>
+<td>In</td>
+<td>-</td>
+<td>8.064</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>8.064<br/>
+<b>Logic Delay: </b>4.092(50.7%)<br/>
+<b>Route Delay: </b>3.972(49.3%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>5&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>2.129</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>7.816</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>9.945</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>15</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>Gowin_PLL_65M/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>psram_fifo/u_rdfifo/fifo_inst/rbin_num_Z[10]</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\Gowin_PLL_65M/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins12</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+<td>86</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.180</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4]_ins9405 </td>
+<td>DFFC</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.232</td>
+<td>0.412</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\cnt_h[4] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>5</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>0.649</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_ins10736</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>1.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>vga_hs_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>1.441</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10705</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.517</td>
+<td>1.958</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>17</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>I3</td>
+<td>In</td>
+<td>-</td>
+<td>2.195</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10646</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.371</td>
+<td>2.566</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.803</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_ins10499</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>3.358</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n38_3</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>19</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>3.595</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14_cZ_ins8423 </td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>0.555</td>
+<td>4.150</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\Small.wdata14 </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.387</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_ins8629</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.422</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_0_0_17</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.659</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_ins8628</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.694</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_1_0_16</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>4.931</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_ins8627</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>4.967</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_2_0_15</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.204</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_ins8626</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.239</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_3_0_14</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.476</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_ins8625</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.511</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_4_0_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>5.748</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_ins8624</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>5.783</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_5_0_12</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.020</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_ins8623</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.055</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_6_0_11</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.292</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_ins8622</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.328</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_7_0_10</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.565</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8_0_ins8621</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.600</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_8</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>6.837</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9_0_ins8620</td>
+<td>ALU</td>
+<td>COUT</td>
+<td>Out</td>
+<td>0.035</td>
+<td>6.872</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_cry_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>rbin_num_next_s_10_0_ins8619</td>
+<td>ALU</td>
+<td>CIN</td>
+<td>In</td>
+<td>-</td>
+<td>7.109</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rbin_num_next_s_10_0_ins8619</td>
+<td>ALU</td>
+<td>SUM</td>
+<td>Out</td>
+<td>0.470</td>
+<td>7.579</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\rbin_num_next[10] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.237</td>
+<td>-</td>
+<td>3</td>
+</tr>
+<tr>
+<td>\rbin_num_Z[10]_ins8510 </td>
+<td>DFFC</td>
+<td>D</td>
+<td>In</td>
+<td>-</td>
+<td>7.816</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>7.816<br/>
+<b>Logic Delay: </b>3.607(46.1%)<br/>
+<b>Route Delay: </b>4.209(53.9%)<br/>
+<br/><br/>
+<h1><a name="message">Message</a></h1>
+<big>Info    (EXT0100) : Run analyzation & elaboration</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\i2c_ov5640_rgb565_cfg.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\cmos_capture_data.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\i2c_dri.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\vga_driver.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\gowin_pll\gowin_pll.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\gowin_pll2\gowin_pll\gowin_pll_160M.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v'</big><br/>
+<big>Info    (EXT1018) : Compiling module 'ov5640_rgb565_1024x768_vga_top'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v:22)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'Gowin_PLL'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\gowin_pll\gowin_pll.v:8)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'i2c_ov5640_rgb565_cfg'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\i2c_ov5640_rgb565_cfg.v:22)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'i2c_dri(SLAVE_ADDR=7'b0111100,CLK_FREQ=26'b11110111111101001001000000)'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\i2c_dri.v:22)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'cmos_capture_data'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\cmos_capture_data.v:22)</big><br/>
+<big>Warning (EXT1927) : Port 'clk_out' remains unconnected for this instance(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:343)</big><br/>
+<big>Warning (EXT1927) : Port 'Wnum' remains unconnected for this instance(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:363)</big><br/>
+<big>Warning (EXT1927) : Port 'Rnum' remains unconnected for this instance(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:383)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'psram_fifo'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:1)</big><br/>
+<big>Warning (EXT1213) : Variable 'stage_buwr' is too small to store FSM state 4. FSM not extracted(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:184)</big><br/>
+<big>Warning (EXT1213) : Variable 'stage_burd' is too small to store FSM state 4. FSM not extracted(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:185)</big><br/>
+<big>Warning (EXT1209) : Expression size 3 truncated to fit in target size 2(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:191)</big><br/>
+<big>Warning (EXT1166) : Case condition never applies(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:197)</big><br/>
+<big>Warning (EXT1209) : Expression size 3 truncated to fit in target size 2(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:209)</big><br/>
+<big>Warning (EXT1209) : Expression size 3 truncated to fit in target size 2(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:216)</big><br/>
+<big>Warning (EXT1209) : Expression size 3 truncated to fit in target size 2(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:226)</big><br/>
+<big>Warning (EXT1166) : Case condition never applies(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:231)</big><br/>
+<big>Warning (EXT1209) : Expression size 3 truncated to fit in target size 2(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:244)</big><br/>
+<big>Warning (EXT1209) : Expression size 3 truncated to fit in target size 2(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:249)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'Gowin_PLL_160M'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\gowin_pll2\gowin_pll\gowin_pll_160M.v:8)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'PSRAM_Memory_Interface_Top'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:4887)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~psram_top.PSRAM_Memory_Interface_Top_'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~psram_wd.PSRAM_Memory_Interface_Top_'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~psram_lane.PSRAM_Memory_Interface_Top__Z2'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~psram_lane.PSRAM_Memory_Interface_Top__Z1'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~psram_init.PSRAM_Memory_Interface_Top_'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~psram_sync.PSRAM_Memory_Interface_Top_'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (EXT3002) : Net '**' does not have a driver(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 1 differs from formal bit length 64 for port 'wr_data'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:333)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 1 differs from formal bit length 64 for port 'rd_data'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:334)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'wrfifo'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:886)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~fifo.wrfifo_'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 1 differs from formal bit length 64 for port 'Q'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:356)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 10 differs from formal bit length 9 for port 'Rnum'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:358)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'rdfifo'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:973)</big><br/>
+<big>Info    (EXT1018) : Compiling module '~fifo.rdfifo_'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 1 differs from formal bit length 64 for port 'Data'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:369)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 10 differs from formal bit length 9 for port 'Wnum'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:378)</big><br/>
+<big>Warning (EXT3002) : Net '**' does not have a driver(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v:355)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'vga_driver'(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\vga_driver.v:28)</big><br/>
+<big>Info    (EXT0101) : Current top module is "ov5640_rgb565_1024x768_vga_top"</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[7]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[8]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[10]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[12]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[13]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[15]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[16]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[17]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[18]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[19]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[20]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[22]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[23]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[24]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[26]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[28]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[29]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[30]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[31]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[32]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[34]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[35]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[37]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[38]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[41]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[42]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[43]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[44]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[46]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[47]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[49]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[51]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[52]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[53]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[55]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[56]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[57]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[58]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[59]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[61]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\rd_data_cZ[62]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[8]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[7]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_Z[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\dll_lock_d0_Z"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\dll_lock_d_Z"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_s_0[8]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[7]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\step_cry_0[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_8_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_7_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_6_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_5_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_4_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_3_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_2_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\un1_step_cry_1_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\cs_iobuf_gen[0].cs_obuf"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\cs_iobuf_gen[1].cs_obuf"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\ck_obuf_gen[1].u_clk_gen"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\ck_obuf_gen[0].u_clk_gen"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\ck_delay[0].iodelay"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\ck_delay[1].iodelay"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[1].u_psram_lane\genblk1.u_ck_gen"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[1].u_psram_lane\cs_oser4"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\N_117_i"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\clk_d0_i_a2_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\cs_d1_i"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\un1_cats_r_2_i_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\un1_cats_r_3_i_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\cats_r_RNIHHMI[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\cs_d0_i_a2_1"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\clk_d0_i_a2_0_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\cs_d0_i_a2"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\wr_init_delay_all_Z[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\fixed_128cs.cs_d0_reg"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\fixed_128cs.cs_d1_reg"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\genblk1.u_ck_gen"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_wd\data_lane_gen[0].u_psram_lane\cs_oser4"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[63]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[54]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[50]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[39]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[33]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[21]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[36]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[48]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[60]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[45]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[40]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[27]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[25]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[14]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[11]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[9]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\PSRAM_Memory_Interface_Top\u_psram_top\u_psram_init\rd_data[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_6_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_3_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[7]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[8]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[9]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_m[10]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Big.gry2bin_2.un127_gry2bin_31_i[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_2_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_5_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_9_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_2_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Big.gry2bin_2.un147_gry2bin_0_a2[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_5_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_9_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[8]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[7]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[10]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Wnum_Z[9]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\mem_mem_0_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\mem_0_mem_0_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\mem_1_mem_0_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_s_10_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_9_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_8_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_7_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_6_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_5_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_4_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_3_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_2_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_1_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_1_cry_0_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_s_10_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_9_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_8_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_7_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_6_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_5_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_4_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_3_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_2_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_1_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\wcnt_sub_0_cry_0_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_7_0_RNO"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_v_0_0_a2_RNIFL31[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rbin_num_RNI4L6D[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rbin_num_RNI5M6D[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rbin_num_RNI7O6D[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_6_0_RNO"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[7]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[8]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[9]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_m[10]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_v_0_0_a2[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_v_0_a3[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_axb_9_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_axb_6_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_axb_9_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_2_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_5_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_6_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_9_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_2_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_5_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_9_0_RNO_cZ"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[10]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[9]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[8]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[7]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[6]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[5]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Rnum_Z[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_s_10_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_9_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_8_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_7_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_6_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_5_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_4_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_3_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_2_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_1_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_1_cry_0_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_s_10_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_9_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_8_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_7_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_6_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_5_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_4_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_3_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_2_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_1_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\rcnt_sub_0_cry_0_0"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Info    (CVT0001) : Run conversion</big><br/>
+<big>Info    (DIO0001) : Run device independent optimization</big><br/>
+<big>Info    (DIO0006) : Register and gate optimizing before inferencing</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\wcnt_sub_m[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\wcnt_sub_m[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\wcnt_sub_m[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\wcnt_sub_m[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\wcnt_sub_m[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Wnum_Z[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Wnum_Z[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Wnum_Z[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Wnum_Z[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_rdfifo\fifo_inst\Wnum_Z[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\rcnt_sub_m[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\rcnt_sub_m[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\rcnt_sub_m[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\rcnt_sub_m[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\rcnt_sub_m[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Rnum_Z[2]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Rnum_Z[1]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Rnum_Z[0]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Rnum_Z[4]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Warning (NLT0001) : Sweep user defined dangling instance "psram_fifo\u_wrfifo\fifo_inst\Rnum_Z[3]"(C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v:0)</big><br/>
+<big>Info    (DSP0001) : DSP inferencing</big><br/>
+<big>Info    (RAM0001) : RAM inferencing</big><br/>
+<big>Info    (ATO0001) : Adder tree reduction</big><br/>
+<big>Info    (ATO0002) : Rebuild ALU instances from adder tree nodes</big><br/>
+<big>Info    (DIO0001) : Run device independent optimization</big><br/>
+<big>Info    (DIO0007) : Register and gate optimizing before mapping</big><br/>
+<big>Info    (MAP0001) : Run tech-mapping</big><br/>
+<big>Info    (MAP0003) : Run logic optimization</big><br/>
+<big>Info    (DIO0001) : Run device independent optimization</big><br/>
+<big>Info    (SYN0009) : Write post-map netlist to file: C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\gwsynthesis\04_ov5640_vga.vg</big><br/>
+<br/>
+<h1><a name="summary">Summary</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Total Errors:</b></td> 
+<td>0</td>
+</tr>
+<tr>
+<td class="label"><b>Total Warnings:</b></td> 
+<td>273</td>
+</tr>
+<tr>
+<td class="label"><b>Total Informations:</b></td> 
+<td>45</td>
+</tr>
+</table><br/>
+<b>Synthesis completed successfully!</b><br/>
+Process took 0h:0m:6s realtime, 0h:0m:5s cputime
+<br/>
+Memory peak: 312.2MB
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

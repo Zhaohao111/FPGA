@@ -1,0 +1,22 @@
+---------------------------------------
+Resource Usage Report for RAM_based_shift_reg_top_sync 
+
+Mapping to part: gw2ar_18elqfp144-8
+Cell usage:
+DFFC            4 uses
+GSR             1 use
+SP              1 use
+LUT2            3 uses
+LUT3            1 use
+LUT4            1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   4 of 15552 (0%)
+
+RAM/ROM usage summary
+Block Rams : 1 of 46 (2%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 5 (0%)
+

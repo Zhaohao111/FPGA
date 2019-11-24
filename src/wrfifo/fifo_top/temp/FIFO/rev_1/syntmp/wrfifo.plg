@@ -1,0 +1,22 @@
+@P:  Worst Slack : -0.927
+@P:  wrfifo|RdClk - Estimated Frequency : 161.8 MHz
+@P:  wrfifo|RdClk - Requested Frequency : 190.3 MHz
+@P:  wrfifo|RdClk - Estimated Period : 6.181
+@P:  wrfifo|RdClk - Requested Period : 5.254
+@P:  wrfifo|RdClk - Slack : -0.927
+@P:  wrfifo|WrClk - Estimated Frequency : 176.3 MHz
+@P:  wrfifo|WrClk - Requested Frequency : 207.4 MHz
+@P:  wrfifo|WrClk - Estimated Period : 5.673
+@P:  wrfifo|WrClk - Requested Period : 4.822
+@P:  wrfifo|WrClk - Slack : -0.851
+@P:  System - Estimated Frequency : 162.8 MHz
+@P:  System - Requested Frequency : 150.0 MHz
+@P:  System - Estimated Period : 6.144
+@P:  System - Requested Period : 6.667
+@P:  System - Slack : 0.523
+@P: wrfifo Part : gw2ar_18elqfp144-8
+@P: wrfifo I/O Register bits : 0
+@P: wrfifo Register bits (Non I/O) : 95 (0%)
+@P: wrfifo Block Rams : 4 of 46 (8%)
+@P: wrfifo Total Luts : 114 of 800 (0%)
+@P:  CPU Time : 0h:00m:09s

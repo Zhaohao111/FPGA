@@ -1,0 +1,8 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, ao_match_0_0s_23s_43s_0_1_0_1_2_3_4, 0h:00m:00s,    101 MB
+work, ao_match_0_0s_17s_43s_0_1_0_1_2_3_4, 0h:00m:00s,    101 MB
+work, ao_match_0_0s_2s_43s_0_1_0_1_2_3_4, 0h:00m:00s,    101 MB
+work, ao_top_0, 0h:00m:01s,    111 MB
+work, ao_crc32_0, 0h:00m:00s,    111 MB
+work, ao_mem_ctrl_0_4096s_43s_12s, 0h:00m:00s,    111 MB
+work, work_C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\temp\gao\ao_0\gw_ao_parameter.v_unit, 0h:00m:00s,      0 MB

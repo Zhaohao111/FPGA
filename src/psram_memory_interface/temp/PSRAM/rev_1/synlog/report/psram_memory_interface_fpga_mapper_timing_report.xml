@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\temp\PSRAM\rev_1\synlog\psram_memory_interface_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>PSRAM_Memory_Interface_Top|clk</data>
+<data>302.6 MHz</data>
+<data>257.2 MHz</data>
+<data>-0.583</data>
+</row>
+<row>
+<data>_~psram_init_PSRAM_Memory_Interface_Top_|read_calibration[0]_VALUE_derived_clock[0]</data>
+<data>0.1 MHz</data>
+<data>0.2 MHz</data>
+<data>3.505</data>
+</row>
+<row>
+<data>_~psram_init_PSRAM_Memory_Interface_Top_|read_calibration[1]_VALUE_derived_clock[1]</data>
+<data>0.1 MHz</data>
+<data>0.2 MHz</data>
+<data>3.505</data>
+</row>
+<row>
+<data>_~psram_top_PSRAM_Memory_Interface_Top_|clk_out_inferred_clock</data>
+<data>206.2 MHz</data>
+<data>175.3 MHz</data>
+<data>-0.856</data>
+</row>
+<row>
+<data>_~psram_top_PSRAM_Memory_Interface_Top_|clk_x2p_inferred_clock</data>
+<data>150.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>_~psram_wd_PSRAM_Memory_Interface_Top_|step_derived_clock[0]</data>
+<data>0.1 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>System</data>
+<data>1638.5 MHz</data>
+<data>1392.8 MHz</data>
+<data>-0.108</data>
+</row>
+</report_table>

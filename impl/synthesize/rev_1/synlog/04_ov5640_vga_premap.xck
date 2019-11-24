@@ -1,0 +1,9 @@
+ckid0_0:@|S:u_i2c_dri.dri_clk.Q[0]@|E:u_i2c_dri.scl@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_2:@|S:Gowin_PLL_65M.pll_inst.CLKOUT@|E:u_i2c_dri.clk_cnt[9:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_3:@|S:ENCRYPTED@|E:psram_fifo.psram_rd_addr[20]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_4:@|S:cam_pclk@|E:u_cmos_capture_data.cmos_ps_cnt[3:0]@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4
+ckid0_5:@|S:sys_clk@|E:led1@|F:@syn_dgcc_clockid0_5==1@|M:ClockId_0_5
+ckid0_6:@|S:ENCRYPTED@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_6==1@|M:ClockId_0_6
+ckid0_7:@|S:ENCRYPTED@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_7==1@|M:ClockId_0_7
+ckid0_9:@|S:ENCRYPTED@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_9==1@|M:ClockId_0_9
+ckid0_11:@|S:ENCRYPTED@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_11==1@|M:ClockId_0_11

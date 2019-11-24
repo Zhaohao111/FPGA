@@ -1,0 +1,22 @@
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>Beta</Version>
+    <Device id="GW2AR-18" package="eLQFP144" speed="8"/>
+    <FileList>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\i2c_ov5640_rgb565_cfg.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\cmos_capture_data.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\i2c_dri.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\vga_driver.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\gowin_pll\gowin_pll.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\psram_fifo.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\gowin_pll2\gowin_pll\gowin_pll_160M.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v"/>
+        <File type="verilog"  path="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v"/>
+    </FileList>
+    <OptionList>
+        <Option type="top_module"  value="ov5640_rgb565_1024x768_vga_top"/>
+        <Option type="output_file"  value="C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\gwsynthesis\04_ov5640_vga.vg"/>
+    </OptionList>
+</Project>

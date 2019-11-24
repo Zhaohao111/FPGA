@@ -1,0 +1,69 @@
+# Written by Synplify Pro version mapgw, Build 1429R. Synopsys Run ID: sid1574577940 
+# Top Level Design Parameters 
+
+# Clocks 
+create_clock -period 3.305 -waveform {0.000 1.652} -name {ov5640_rgb565_1024x768_vga_top|sys_clk} [get_ports {sys_clk}] 
+create_clock -period 8.588 -waveform {0.000 4.294} -name {Gowin_PLL|clkout_inferred_clock} [get_pins {Gowin_PLL_65M/pll_inst/CLKOUT}] 
+create_clock -period 5.771 -waveform {0.000 2.885} -name {_~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock} [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/clkdiv/CLKOUT}] 
+create_clock -period 5.780 -waveform {0.000 2.890} -name {ov5640_rgb565_1024x768_vga_top|cam_pclk} [get_ports {cam_pclk}] 
+create_clock -period 6.667 -waveform {0.000 3.333} -name {_~psram_top_PSRAM_Memory_Interface_Top__|clk_x2p_inferred_clock} [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_dqce_clk_x2p/CLKOUT}] 
+
+# Virtual Clocks 
+
+# Generated Clocks 
+create_generated_clock -name {i2c_dri_Z1|dri_clk_derived_clock} -add -divide_by 1 -master_clock [get_clocks {Gowin_PLL|clkout_inferred_clock}] -source [get_pins {u_i2c_dri/dri_clk/CLK}] [get_pins {u_i2c_dri/dri_clk/Q}] 
+create_generated_clock -name {_~psram_wd_PSRAM_Memory_Interface_Top__|step_derived_clock[0]} -add -divide_by 1 -master_clock [get_clocks {_~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock}] -source [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_wd/\step_Z[0]/CLK}] [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_wd/\step_Z[0]/Q}] 
+create_generated_clock -name {_~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[0]} -add -divide_by 1 -master_clock [get_clocks {_~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock}] -source [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_init/\read_calibration[0].VALUE[0]/CLK}] [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_init/\read_calibration[0].VALUE[0]/Q}] 
+create_generated_clock -name {_~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[1]} -add -divide_by 1 -master_clock [get_clocks {_~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock}] -source [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_init/\read_calibration[1].VALUE[1]/CLK}] [get_pins {psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_init/\read_calibration[1].VALUE[1]/Q}] 
+
+# Paths Between Clocks 
+
+# Multicycle Constraints 
+set_multicycle_path 2 -setup -from [get_clocks {i2c_dri_Z1|dri_clk_derived_clock}] -to [get_clocks {i2c_dri_Z1|dri_clk_derived_clock}] 
+set_multicycle_path 1 -hold -from [get_clocks {i2c_dri_Z1|dri_clk_derived_clock}] -to [get_clocks {i2c_dri_Z1|dri_clk_derived_clock}] 
+
+# Point-to-point Delay Constraints 
+
+# False Path Constraints 
+
+# Output Load Constraints 
+
+# Driving Cell Constraints 
+
+# Input Delay Constraints 
+
+# Output Delay Constraints 
+
+# Wire Loads 
+
+# Other Constraints 
+
+# syn_hier Attributes 
+
+# set_case Attributes 
+
+# Clock Delay Constraints 
+set Autoconstr_clkgroup_0 [list ov5640_rgb565_1024x768_vga_top|sys_clk]
+set Autoconstr_clkgroup_1 [list Gowin_PLL|clkout_inferred_clock \
+                                  i2c_dri_Z1|dri_clk_derived_clock]
+set Autoconstr_clkgroup_2 [list _~psram_top_PSRAM_Memory_Interface_Top__|clk_out_inferred_clock \
+                                  _~psram_wd_PSRAM_Memory_Interface_Top__|step_derived_clock[0] \
+  _~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[0] _~psram_init_PSRAM_Memory_Interface_Top__|VALUE_1_derived_clock[1]]
+set Autoconstr_clkgroup_3 [list ov5640_rgb565_1024x768_vga_top|cam_pclk]
+set Autoconstr_clkgroup_4 [list _~psram_top_PSRAM_Memory_Interface_Top__|clk_x2p_inferred_clock]
+set_clock_groups -asynchronous -group $Autoconstr_clkgroup_0 -group $Autoconstr_clkgroup_1 -group $Autoconstr_clkgroup_2 -group $Autoconstr_clkgroup_3 -group $Autoconstr_clkgroup_4
+
+# syn_mode Attributes 
+
+# Cells 
+
+# Port DRC Rules 
+
+# Input Transition Constraints 
+
+# Unused constraints (intentionally commented out) 
+
+# Non-forward-annotatable constraints (intentionally commented out) 
+
+# Block Path constraints 
+

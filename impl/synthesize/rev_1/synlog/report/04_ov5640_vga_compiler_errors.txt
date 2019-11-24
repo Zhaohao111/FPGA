@@ -1,0 +1,2 @@
+@E: CS168 :"E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v":348:11:348:11|Port vga_en does not exist
+

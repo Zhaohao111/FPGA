@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the job information from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<job_run_status name="Mapper">
+<report_link name="Detailed report">
+<data>C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\sync_delay\RAM_based_shift_reg_top\temp\RAM_Based_Shift_Register\rev_1\synlog\RAM_based_shift_reg_top_sync_premap.srr</data>
+<title></title>
+</report_link>
+<job_status>
+<data>Completed</data>
+</job_status>
+<job_info>
+<info name="Notes">
+<data>5</data>
+<report_link name="more">
+<data>C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\sync_delay\RAM_based_shift_reg_top\temp\RAM_Based_Shift_Register\rev_1\synlog\report\RAM_based_shift_reg_top_sync_premap_notes.txt</data>
+</report_link>
+</info>
+<info name="Warnings">
+<data>0</data>
+<report_link name="more">
+<data>C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\sync_delay\RAM_based_shift_reg_top\temp\RAM_Based_Shift_Register\rev_1\synlog\report\RAM_based_shift_reg_top_sync_premap_warnings.txt</data>
+</report_link>
+</info>
+<info name="Errors">
+<data>0</data>
+<report_link name="more">
+<data>C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\sync_delay\RAM_based_shift_reg_top\temp\RAM_Based_Shift_Register\rev_1\synlog\report\RAM_based_shift_reg_top_sync_premap_errors.txt</data>
+</report_link>
+</info>
+<info name="CPU Time">
+<data>0h:00m:04s</data>
+</info>
+<info name="Real Time">
+<data>0h:00m:04s</data>
+</info>
+<info name="Peak Memory">
+<data>221MB</data>
+</info>
+<info name="Date &amp; Time">
+<data type="timestamp">1574435199</data>
+</info>
+</job_info>
+</job_run_status>

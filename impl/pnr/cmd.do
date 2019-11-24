@@ -1,0 +1,10 @@
+-d E:/FPGAbisai/04_ov5640_vga/04_ov5640_vga/impl/synthesize/rev_1/04_ov5640_vga.vm
+-p GW2AR-18-eLQFP144-8
+-pn GW2AR-LV18EQ144PC8/I7
+-cst E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\04_ov5640_vga.cst
+-cfg E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\pnr\device.cfg
+-sdc E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\04_ov5640_vga.sdc
+-bit
+-tr
+-ph
+-timing

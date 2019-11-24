@@ -1,0 +1,121 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-1CPVADT
+
+Implementation : rev_1
+Synopsys HDL compiler and linker, Version comp2019q1p1, Build 231R, Built Aug  2 2019 09:58:27
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+45       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 27
+MID:  lib.cell.view
+0        work.B_v.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+1        work.Divider_Top.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+3        work.Gowin_PLL.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+4        work.Gowin_PLL_160M.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+5        work.PSRAM_Memory_Interface_Top.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+34       work.RAM_based_shift_reg_top_sync.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+8        work.VGA_OUT.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+12       work.\(qdiv)/(Divider_Top)_17s_1s.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+35       work.\~RAM_based_shift_reg.RAM_based_shift_reg_top_sync_.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+14       work.\~fifo.rdfifo_.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+15       work.\~fifo.wrfifo_.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+16       work.\~psram_init.PSRAM_Memory_Interface_Top_.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+17       work.\~psram_lane.PSRAM_Memory_Interface_Top__Z1.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+18       work.\~psram_lane.PSRAM_Memory_Interface_Top__Z2.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+19       work.\~psram_sync.PSRAM_Memory_Interface_Top_.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+20       work.\~psram_top.PSRAM_Memory_Interface_Top_.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+21       work.\~psram_wd.PSRAM_Memory_Interface_Top_.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+22       work.cmos_capture_data.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+24       work.i2c_dri.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+25       work.i2c_ov5640_rgb565_cfg.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+27       work.ov5640_rgb565_1024x768_vga_top.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (module definition)
+28       work.psram_fifo.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+29       work.rdfifo.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+30       work.rgb2hsv_top.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+31       work.shibie.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+32       work.vga_driver.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+33       work.wrfifo.verilog may have changed because the following files changed:
+                        E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ov5640_rgb565_1024x768_vga_top.v (2019-11-24 14:45:24, 2019-11-24 14:48:44) <-- (may instantiate this module)
+
+*******************************************************************
+Unmodified files: 28
+FID:  path (timestamp)
+30       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\B_v.v (2019-11-22 22:30:22)
+31       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\ErosionDilationBin.v (2019-11-22 00:01:43)
+32       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\RAM_based_shift_reg_top\RAM_based_shift_reg_top.v (2019-11-22 15:03:20)
+33       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\RAM_shift_top.v (2019-11-22 15:17:08)
+34       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\VGA_OUT.v (2019-11-24 13:56:58)
+35       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\VIP_Bit_Erosion_Detector.v (2019-11-22 15:21:24)
+36       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\VIP_Matrix_Generate_3X3_1Bit.v (2019-11-22 15:21:44)
+37       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v (2019-11-22 21:20:15)
+38       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\div_rill.v (2019-11-21 21:47:34)
+39       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\divider\divider.v (2019-11-21 22:11:21)
+40       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\gowin_pll2\gowin_pll\gowin_pll_160M.v (2019-11-20 22:38:41)
+41       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\gowin_pll\gowin_pll.v (2019-10-23 21:06:18)
+42       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\i2c_dri.v (2019-11-07 22:58:01)
+43       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\i2c_ov5640_rgb565_cfg.v (2019-11-22 19:58:11)
+44       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\key_filter.v (2019-07-11 20:01:24)
+46       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\psram_fifo.v (2019-11-21 21:31:04)
+47       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\psram_memory_interface\psram_memory_interface.v (2019-11-20 22:51:26)
+48       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rdfifo\fifo_top\rdfifo.v (2019-11-20 20:04:51)
+49       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\rgb2hsv_top.v (2019-11-24 14:12:10)
+50       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\shibie.v (2019-11-24 14:32:06)
+51       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\sync_delay\RAM_based_shift_reg_top\RAM_based_shift_reg_top_sync.v (2019-11-22 23:06:50)
+52       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\vga_driver.v (2019-11-22 22:10:54)
+53       E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\wrfifo\fifo_top\wrfifo.v (2019-11-20 20:04:10)
+54       F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\generic\gw2a.v (2019-08-03 01:46:04)
+55       F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\hypermods.v (2019-08-03 00:54:14)
+56       F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\scemi_objects.v (2019-08-03 00:54:14)
+57       F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\scemi_pipes.svh (2019-08-03 00:54:14)
+58       F:\FPGA\GAOYUN\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\umr_capim.v (2019-08-03 00:54:14)
+
+*******************************************************************
+Unchanged modules: 8
+MID:  lib.cell.view
+2        work.ErosionDilationBin.verilog
+6        work.RAM_based_shift_reg_top.verilog
+7        work.RAM_shift_top.verilog
+10       work.VIP_Bit_Erosion_Detector.verilog
+11       work.VIP_Matrix_Generate_3X3_1Bit.verilog
+13       work.\~RAM_based_shift_reg.RAM_based_shift_reg_top_.verilog
+23       work.div_rill.verilog
+26       work.key_filter.verilog

@@ -1,0 +1,19 @@
+Info    (PA0001) : "E:/FPGAbisai/04_ov5640_vga/04_ov5640_vga/impl/synthesize/rev_1/04_ov5640_vga.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file 'E:/FPGAbisai/04_ov5640_vga/04_ov5640_vga/impl/synthesize/rev_1/04_ov5640_vga.vm' completed.
+Info    (PA0006) : Processing netlist completed.
+Info    (CT0002) : Physical Constraint parsed completed.
+Info    (PR0001) : Placement in progress......
+Info    (PR0005) : Routing in progress......
+Warning (PR1014) : Generic routing resource will be used to clock signal 'cam_pclk_c' by the specified constraint. And then it may lead to the excessive delay or skew.
+Info    (PR0002) : Placement and routing completed.
+Info    (TA0001) : Timing analysis completed.
+Info    (FS0001) : Bitstream generation in progress......
+Info    (FS0002) : Bitstream generation completed.
+Info    (PW0001) : Power analysis completed.
+Info    (CM0008) : Generate 'E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\pnr\04_ov5640_vga.power.html' file completed.
+Info    (CM0008) : Generate 'E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\pnr\04_ov5640_vga.pin.html' file completed.
+Info    (CM0008) : Generate 'E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\pnr\04_ov5640_vga.rpt.html' file completed.
+Info    (CM0008) : Generate 'E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\pnr\04_ov5640_vga.rpt.txt' file completed.
+Info    (CM0008) : Generate 'E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\impl\pnr\04_ov5640_vga.tr.html' file completed.
+Info    (CM0001) : Sun Nov 24 14:46:05 2019
+

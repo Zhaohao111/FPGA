@@ -1,0 +1,2138 @@
+//Copyright (C)2014-2019 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Post-PnR Simulation Model file
+//GOWIN Version: V1.9.2Beta
+//Created Time: Thu Nov 21 22:11:21 2019
+
+module Divider_Top(
+	dividend,
+	divisor,
+	start,
+	clk,
+	quotient_out,
+	complete
+);
+input [16:0] dividend;
+input [16:0] divisor;
+input start;
+input clk;
+output [16:0] quotient_out;
+output complete;
+wire GND;
+wire VCC;
+wire clk;
+wire complete;
+wire [16:0] dividend;
+wire [16:0] divisor;
+wire [16:0] quotient_out;
+wire start;
+wire [30:0] \u_fra_div/divider_copy ;
+wire [5:0] \u_fra_div/bi ;
+wire [30:0] \u_fra_div/divider_copy_6 ;
+wire [16:0] \u_fra_div/dividend_copy ;
+wire [12:0] \u_fra_div/quotient_r_0 ;
+wire [14:7] \u_fra_div/quotient_r_0_mb ;
+wire [16:16] \u_fra_div/quotient_s_0 ;
+wire [16:16] \u_fra_div/quotient_s_0_a2_0 ;
+wire [16:0] \u_fra_div/dividend_copy_5 ;
+wire [0:0] \u_fra_div/quotient_r_0_a2_1_0 ;
+wire [0:0] \u_fra_div/quotient_r_0_a2_0_0 ;
+wire [14:0] \u_fra_div/quotient_r_0_a2_0 ;
+wire [14:7] \u_fra_div/quotient_r_0_mb_1 ;
+wire [12:1] \u_fra_div/quotient_r_0_0 ;
+wire [12:1] \u_fra_div/quotient_r_0_1 ;
+wire [16:16] \u_fra_div/quotient_s_0_0 ;
+wire [16:16] \u_fra_div/quotient_s_0_1 ;
+wire \u_fra_div/N_6_0 ;
+wire \u_fra_div/N_8_0 ;
+wire \u_fra_div/N_10_0 ;
+wire \u_fra_div/N_12_0 ;
+wire \u_fra_div/un1_bi_cry_4_0_SUM ;
+wire \u_fra_div/N_16_0 ;
+wire \u_fra_div/done_0_sqmuxa ;
+wire \u_fra_div/quotient_0_sqmuxa ;
+wire \u_fra_div/done_r ;
+wire \u_fra_div/un1_dividend_copy_cry_0 ;
+wire \u_fra_div/un1_dividend_copy_cry_1 ;
+wire \u_fra_div/un1_dividend_copy_cry_2 ;
+wire \u_fra_div/un1_dividend_copy_cry_3 ;
+wire \u_fra_div/un1_dividend_copy_cry_4 ;
+wire \u_fra_div/un1_dividend_copy_cry_5 ;
+wire \u_fra_div/un1_dividend_copy_cry_6 ;
+wire \u_fra_div/un1_dividend_copy_cry_7 ;
+wire \u_fra_div/un1_dividend_copy_cry_8 ;
+wire \u_fra_div/un1_dividend_copy_cry_9 ;
+wire \u_fra_div/un1_dividend_copy_cry_10 ;
+wire \u_fra_div/un1_dividend_copy_cry_11 ;
+wire \u_fra_div/un1_dividend_copy_cry_12 ;
+wire \u_fra_div/un1_dividend_copy_cry_13 ;
+wire \u_fra_div/un1_dividend_copy_cry_14 ;
+wire \u_fra_div/un1_dividend_copy_cry_15 ;
+wire \u_fra_div/un1_dividend_copy_cry_16 ;
+wire \u_fra_div/un1_dividend_copy_cry_17 ;
+wire \u_fra_div/un1_dividend_copy_cry_18 ;
+wire \u_fra_div/un1_dividend_copy_cry_19 ;
+wire \u_fra_div/un1_dividend_copy_cry_20 ;
+wire \u_fra_div/un1_dividend_copy_cry_21 ;
+wire \u_fra_div/un1_dividend_copy_cry_22 ;
+wire \u_fra_div/un1_dividend_copy_cry_23 ;
+wire \u_fra_div/un1_dividend_copy_cry_24 ;
+wire \u_fra_div/un1_dividend_copy_cry_25 ;
+wire \u_fra_div/un1_dividend_copy_cry_26 ;
+wire \u_fra_div/un1_dividend_copy_cry_27 ;
+wire \u_fra_div/un1_dividend_copy_cry_28 ;
+wire \u_fra_div/un1_dividend_copy_cry_29 ;
+wire \u_fra_div/N_37_i_0 ;
+wire \u_fra_div/N_34_0_i_0 ;
+wire \u_fra_div/N_32_0_i_0 ;
+wire \u_fra_div/N_149_i_0 ;
+wire \u_fra_div/N_148_i_0 ;
+wire \u_fra_div/N_147_i_0 ;
+wire \u_fra_div/N_146_i_0 ;
+wire \u_fra_div/un1_done9_i_0 ;
+wire \u_fra_div/N_129 ;
+wire \u_fra_div/N_135 ;
+wire \u_fra_div/N_139 ;
+wire \u_fra_div/N_141 ;
+wire \u_fra_div/N_142 ;
+wire \u_fra_div/N_143 ;
+wire \u_fra_div/N_145 ;
+wire \u_fra_div/N_150 ;
+wire \u_fra_div/N_152 ;
+wire \u_fra_div/N_14_0 ;
+wire \u_fra_div/un3_dividend_copy_cry_0_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_1_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_2_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_3_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_4_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_5_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_6_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_7_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_8_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_9_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_10_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_11_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_12_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_13_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_14_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_15_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_s_16_0_SUM ;
+wire \u_fra_div/un3_dividend_copy_cry_0 ;
+wire \u_fra_div/un3_dividend_copy_cry_1 ;
+wire \u_fra_div/un3_dividend_copy_cry_2 ;
+wire \u_fra_div/un3_dividend_copy_cry_3 ;
+wire \u_fra_div/un3_dividend_copy_cry_4 ;
+wire \u_fra_div/un3_dividend_copy_cry_5 ;
+wire \u_fra_div/un3_dividend_copy_cry_6 ;
+wire \u_fra_div/un3_dividend_copy_cry_7 ;
+wire \u_fra_div/un3_dividend_copy_cry_8 ;
+wire \u_fra_div/un3_dividend_copy_cry_9 ;
+wire \u_fra_div/un3_dividend_copy_cry_10 ;
+wire \u_fra_div/un3_dividend_copy_cry_11 ;
+wire \u_fra_div/un3_dividend_copy_cry_12 ;
+wire \u_fra_div/un3_dividend_copy_cry_13 ;
+wire \u_fra_div/un3_dividend_copy_cry_14 ;
+wire \u_fra_div/un3_dividend_copy_cry_15 ;
+wire \u_fra_div/un1_bi_cry_0 ;
+wire \u_fra_div/un1_bi_cry_1 ;
+wire \u_fra_div/un1_bi_cry_2 ;
+wire \u_fra_div/un1_bi_cry_3 ;
+wire \u_fra_div/un1_bi_cry_4 ;
+wire \u_fra_div/quotient_r_0_a2_2_out ;
+wire \u_fra_div/N_184_i ;
+wire \u_fra_div/m17_i_a2_0_0 ;
+wire \u_fra_div/m27_i_a2_0_0 ;
+wire \u_fra_div/m19_i_a2_0 ;
+wire \u_fra_div/m31_i_a2_0 ;
+wire \u_fra_div/m22_i_a2_0 ;
+wire \u_fra_div/m36_i_a2_0 ;
+wire \u_fra_div/m33_i_a2_0 ;
+wire \u_fra_div/quotient_r_0_N_2L1_3 ;
+wire \u_fra_div/done_fast ;
+wire \u_fra_div/N_92_fast ;
+wire \u_fra_div/done_rep1 ;
+wire \u_fra_div/N_92_rep1 ;
+wire \u_fra_div/done_rep2 ;
+wire \u_fra_div/N_92_rep2 ;
+wire \u_fra_div/m17_i_mb_1_0 ;
+wire \u_fra_div/m27_i_mb_1_0 ;
+wire \u_fra_div/quotient_r_0_N_2L1_4 ;
+wire \u_fra_div/quotient_r_0_N_2L1 ;
+wire \u_fra_div/quotient_r_0_N_2L1_0 ;
+wire \u_fra_div/quotient_r_0_N_2L1_1 ;
+wire \u_fra_div/un1_bi_s_5_0_COUT ;
+wire \u_fra_div/un3_dividend_copy_s_16_0_COUT ;
+wire \u_fra_div/un1_dividend_copy_cry_0_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_1_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_2_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_3_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_4_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_5_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_6_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_7_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_8_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_9_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_10_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_11_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_12_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_13_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_14_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_15_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_16_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_17_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_18_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_19_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_20_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_21_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_22_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_23_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_24_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_25_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_26_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_27_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_28_0_SUM ;
+wire \u_fra_div/un1_dividend_copy_cry_29_0_SUM ;
+wire \u_fra_div/m27_i_mb_0 ;
+wire \u_fra_div/m27_i_mb_1 ;
+wire \u_fra_div/m17_i_mb_0 ;
+wire \u_fra_div/m17_i_mb_1 ;
+wire \u_fra_div/m36_i_0 ;
+wire \u_fra_div/m36_i_1 ;
+wire \u_fra_div/m33_i_0 ;
+wire \u_fra_div/m33_i_1 ;
+wire \u_fra_div/m31_i_0 ;
+wire \u_fra_div/m31_i_1 ;
+wire \u_fra_div/m22_i_0 ;
+wire \u_fra_div/m22_i_1 ;
+wire \u_fra_div/m19_i_0 ;
+wire \u_fra_div/m19_i_1 ;
+VCC VCC_cZ (
+  .V(VCC)
+);
+GND GND_cZ (
+  .G(GND)
+);
+GSR GSR_INST (
+	.GSRI(VCC)
+);
+LUT3 \u_fra_div/done_r_cZ  (
+	.I0(\u_fra_div/N_14_0 ),
+	.I1(complete),
+	.I2(\u_fra_div/done_0_sqmuxa ),
+	.F(\u_fra_div/done_r )
+);
+defparam \u_fra_div/done_r_cZ .INIT=8'h54;
+LUT4 \u_fra_div/quotient_r_0_cZ[0]  (
+	.I0(complete),
+	.I1(\u_fra_div/quotient_r_0_a2_0 [0]),
+	.I2(\u_fra_div/quotient_r_0_a2_0_0 [0]),
+	.I3(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/quotient_r_0 [0])
+);
+defparam \u_fra_div/quotient_r_0_cZ[0] .INIT=16'hF4CC;
+LUT3 \u_fra_div/quotient_r_0_a2_1[12]  (
+	.I0(\u_fra_div/bi [1]),
+	.I1(\u_fra_div/quotient_r_0_a2_2_out ),
+	.I2(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/N_145 )
+);
+defparam \u_fra_div/quotient_r_0_a2_1[12] .INIT=8'h40;
+LUT4 \u_fra_div/quotient_r_0_a2_2[1]  (
+	.I0(\u_fra_div/bi [1]),
+	.I1(\u_fra_div/bi [2]),
+	.I2(\u_fra_div/quotient_r_0_a2_1_0 [0]),
+	.I3(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/N_152 )
+);
+defparam \u_fra_div/quotient_r_0_a2_2[1] .INIT=16'h1000;
+LUT4 \u_fra_div/quotient_r_0_a2_2[2]  (
+	.I0(\u_fra_div/bi [1]),
+	.I1(\u_fra_div/bi [2]),
+	.I2(\u_fra_div/quotient_r_0_a2_1_0 [0]),
+	.I3(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/N_150 )
+);
+defparam \u_fra_div/quotient_r_0_a2_2[2] .INIT=16'h2000;
+LUT4 \u_fra_div/quotient_s_0_a2_0_cZ[16]  (
+	.I0(\u_fra_div/N_129 ),
+	.I1(\u_fra_div/N_139 ),
+	.I2(\u_fra_div/bi [4]),
+	.I3(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/quotient_s_0_a2_0 [16])
+);
+defparam \u_fra_div/quotient_s_0_a2_0_cZ[16] .INIT=16'h8000;
+LUT4 \u_fra_div/quotient_r_0_a2_0_0_cZ[0]  (
+	.I0(\u_fra_div/N_129 ),
+	.I1(\u_fra_div/N_139 ),
+	.I2(\u_fra_div/bi [4]),
+	.I3(\u_fra_div/quotient_0_sqmuxa ),
+	.F(\u_fra_div/quotient_r_0_a2_0_0 [0])
+);
+defparam \u_fra_div/quotient_r_0_a2_0_0_cZ[0] .INIT=16'h0008;
+LUT3 \u_fra_div/done_0_sqmuxa_0_a2  (
+	.I0(\u_fra_div/N_129 ),
+	.I1(\u_fra_div/N_139 ),
+	.I2(\u_fra_div/bi [4]),
+	.F(\u_fra_div/done_0_sqmuxa )
+);
+defparam \u_fra_div/done_0_sqmuxa_0_a2 .INIT=8'h08;
+LUT4 \u_fra_div/quotient_r_0_a2_1_0_cZ[0]  (
+	.I0(\u_fra_div/bi [4]),
+	.I1(\u_fra_div/bi [5]),
+	.I2(\u_fra_div/done_rep1 ),
+	.I3(\u_fra_div/quotient_0_sqmuxa ),
+	.F(\u_fra_div/quotient_r_0_a2_1_0 [0])
+);
+defparam \u_fra_div/quotient_r_0_a2_1_0_cZ[0] .INIT=16'h0001;
+LUT4 \u_fra_div/quotient_0_sqmuxa_0_a2  (
+	.I0(dividend[16]),
+	.I1(divisor[16]),
+	.I2(\u_fra_div/done_fast ),
+	.I3(start),
+	.F(\u_fra_div/quotient_0_sqmuxa )
+);
+defparam \u_fra_div/quotient_0_sqmuxa_0_a2 .INIT=16'h6000;
+LUT4 \u_fra_div/quotient_r_0_a2_2_s[12]  (
+	.I0(\u_fra_div/N_129 ),
+	.I1(\u_fra_div/bi [2]),
+	.I2(\u_fra_div/bi [4]),
+	.I3(\u_fra_div/quotient_0_sqmuxa ),
+	.F(\u_fra_div/quotient_r_0_a2_2_out )
+);
+defparam \u_fra_div/quotient_r_0_a2_2_s[12] .INIT=16'h0008;
+LUT2 \u_fra_div/start_RNIBBDG  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(start),
+	.F(\u_fra_div/N_184_i )
+);
+defparam \u_fra_div/start_RNIBBDG .INIT=4'hD;
+LUT4 \u_fra_div/quotient_s_0_a2_2[16]  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [1]),
+	.I2(\u_fra_div/bi [2]),
+	.I3(\u_fra_div/bi [3]),
+	.F(\u_fra_div/N_139 )
+);
+defparam \u_fra_div/quotient_s_0_a2_2[16] .INIT=16'h0001;
+LUT3 \u_fra_div/m17_i_a2_0_0_cZ  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [1]),
+	.I2(\u_fra_div/bi [3]),
+	.F(\u_fra_div/m17_i_a2_0_0 )
+);
+defparam \u_fra_div/m17_i_a2_0_0_cZ .INIT=8'h80;
+LUT3 \u_fra_div/m27_i_a2_0_0_cZ  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [1]),
+	.I2(\u_fra_div/bi [3]),
+	.F(\u_fra_div/m27_i_a2_0_0 )
+);
+defparam \u_fra_div/m27_i_a2_0_0_cZ .INIT=8'h04;
+LUT3 \u_fra_div/divider_copy_6_cZ[15]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [16]),
+	.I2(divisor[0]),
+	.F(\u_fra_div/divider_copy_6 [15])
+);
+defparam \u_fra_div/divider_copy_6_cZ[15] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[16]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [17]),
+	.I2(divisor[1]),
+	.F(\u_fra_div/divider_copy_6 [16])
+);
+defparam \u_fra_div/divider_copy_6_cZ[16] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[17]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [18]),
+	.I2(divisor[2]),
+	.F(\u_fra_div/divider_copy_6 [17])
+);
+defparam \u_fra_div/divider_copy_6_cZ[17] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[18]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [19]),
+	.I2(divisor[3]),
+	.F(\u_fra_div/divider_copy_6 [18])
+);
+defparam \u_fra_div/divider_copy_6_cZ[18] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[19]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [20]),
+	.I2(divisor[4]),
+	.F(\u_fra_div/divider_copy_6 [19])
+);
+defparam \u_fra_div/divider_copy_6_cZ[19] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[20]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [21]),
+	.I2(divisor[5]),
+	.F(\u_fra_div/divider_copy_6 [20])
+);
+defparam \u_fra_div/divider_copy_6_cZ[20] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[21]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [22]),
+	.I2(divisor[6]),
+	.F(\u_fra_div/divider_copy_6 [21])
+);
+defparam \u_fra_div/divider_copy_6_cZ[21] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[22]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [23]),
+	.I2(divisor[7]),
+	.F(\u_fra_div/divider_copy_6 [22])
+);
+defparam \u_fra_div/divider_copy_6_cZ[22] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[23]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [24]),
+	.I2(divisor[8]),
+	.F(\u_fra_div/divider_copy_6 [23])
+);
+defparam \u_fra_div/divider_copy_6_cZ[23] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[24]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [25]),
+	.I2(divisor[9]),
+	.F(\u_fra_div/divider_copy_6 [24])
+);
+defparam \u_fra_div/divider_copy_6_cZ[24] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[25]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [26]),
+	.I2(divisor[10]),
+	.F(\u_fra_div/divider_copy_6 [25])
+);
+defparam \u_fra_div/divider_copy_6_cZ[25] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[26]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [27]),
+	.I2(divisor[11]),
+	.F(\u_fra_div/divider_copy_6 [26])
+);
+defparam \u_fra_div/divider_copy_6_cZ[26] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[27]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [28]),
+	.I2(divisor[12]),
+	.F(\u_fra_div/divider_copy_6 [27])
+);
+defparam \u_fra_div/divider_copy_6_cZ[27] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[28]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [29]),
+	.I2(divisor[13]),
+	.F(\u_fra_div/divider_copy_6 [28])
+);
+defparam \u_fra_div/divider_copy_6_cZ[28] .INIT=8'hE4;
+LUT3 \u_fra_div/divider_copy_6_cZ[29]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [30]),
+	.I2(divisor[14]),
+	.F(\u_fra_div/divider_copy_6 [29])
+);
+defparam \u_fra_div/divider_copy_6_cZ[29] .INIT=8'hE4;
+LUT3 \u_fra_div/dividend_copy_5_cZ[15]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_15_0_SUM ),
+	.I1(dividend[15]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [15])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[15] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[14]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_14_0_SUM ),
+	.I1(dividend[14]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [14])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[14] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[13]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_13_0_SUM ),
+	.I1(dividend[13]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [13])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[13] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[12]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_12_0_SUM ),
+	.I1(dividend[12]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [12])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[12] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[11]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_11_0_SUM ),
+	.I1(dividend[11]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [11])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[11] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[10]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_10_0_SUM ),
+	.I1(dividend[10]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [10])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[10] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[9]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_9_0_SUM ),
+	.I1(dividend[9]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [9])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[9] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[8]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_8_0_SUM ),
+	.I1(dividend[8]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [8])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[8] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[7]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_7_0_SUM ),
+	.I1(dividend[7]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [7])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[7] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[6]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_6_0_SUM ),
+	.I1(dividend[6]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [6])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[6] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[5]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_5_0_SUM ),
+	.I1(dividend[5]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [5])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[5] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[4]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_4_0_SUM ),
+	.I1(dividend[4]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [4])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[4] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[3]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_3_0_SUM ),
+	.I1(dividend[3]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [3])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[3] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[2]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_2_0_SUM ),
+	.I1(dividend[2]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [2])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[2] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[1]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_1_0_SUM ),
+	.I1(dividend[1]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [1])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[1] .INIT=8'hCA;
+LUT3 \u_fra_div/dividend_copy_5_cZ[0]  (
+	.I0(\u_fra_div/un3_dividend_copy_cry_0_0_SUM ),
+	.I1(dividend[0]),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [0])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[0] .INIT=8'hCA;
+LUT2 \u_fra_div/divider_copy_6_cZ[0]  (
+	.I0(\u_fra_div/divider_copy [1]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [0])
+);
+defparam \u_fra_div/divider_copy_6_cZ[0] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[1]  (
+	.I0(\u_fra_div/divider_copy [2]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [1])
+);
+defparam \u_fra_div/divider_copy_6_cZ[1] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[2]  (
+	.I0(\u_fra_div/divider_copy [3]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [2])
+);
+defparam \u_fra_div/divider_copy_6_cZ[2] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[3]  (
+	.I0(\u_fra_div/divider_copy [4]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [3])
+);
+defparam \u_fra_div/divider_copy_6_cZ[3] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[4]  (
+	.I0(\u_fra_div/divider_copy [5]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [4])
+);
+defparam \u_fra_div/divider_copy_6_cZ[4] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[5]  (
+	.I0(\u_fra_div/divider_copy [6]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [5])
+);
+defparam \u_fra_div/divider_copy_6_cZ[5] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[6]  (
+	.I0(\u_fra_div/divider_copy [7]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [6])
+);
+defparam \u_fra_div/divider_copy_6_cZ[6] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[7]  (
+	.I0(\u_fra_div/divider_copy [8]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [7])
+);
+defparam \u_fra_div/divider_copy_6_cZ[7] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[8]  (
+	.I0(\u_fra_div/divider_copy [9]),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/divider_copy_6 [8])
+);
+defparam \u_fra_div/divider_copy_6_cZ[8] .INIT=4'h2;
+LUT2 \u_fra_div/divider_copy_6_cZ[9]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [10]),
+	.F(\u_fra_div/divider_copy_6 [9])
+);
+defparam \u_fra_div/divider_copy_6_cZ[9] .INIT=4'h4;
+LUT2 \u_fra_div/divider_copy_6_cZ[10]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [11]),
+	.F(\u_fra_div/divider_copy_6 [10])
+);
+defparam \u_fra_div/divider_copy_6_cZ[10] .INIT=4'h4;
+LUT2 \u_fra_div/divider_copy_6_cZ[11]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [12]),
+	.F(\u_fra_div/divider_copy_6 [11])
+);
+defparam \u_fra_div/divider_copy_6_cZ[11] .INIT=4'h4;
+LUT2 \u_fra_div/divider_copy_6_cZ[12]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [13]),
+	.F(\u_fra_div/divider_copy_6 [12])
+);
+defparam \u_fra_div/divider_copy_6_cZ[12] .INIT=4'h4;
+LUT2 \u_fra_div/divider_copy_6_cZ[13]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [14]),
+	.F(\u_fra_div/divider_copy_6 [13])
+);
+defparam \u_fra_div/divider_copy_6_cZ[13] .INIT=4'h4;
+LUT2 \u_fra_div/divider_copy_6_cZ[14]  (
+	.I0(complete),
+	.I1(\u_fra_div/divider_copy [15]),
+	.F(\u_fra_div/divider_copy_6 [14])
+);
+defparam \u_fra_div/divider_copy_6_cZ[14] .INIT=4'h4;
+LUT2 \u_fra_div/divider_copy_6_cZ[30]  (
+	.I0(complete),
+	.I1(divisor[15]),
+	.F(\u_fra_div/divider_copy_6 [30])
+);
+defparam \u_fra_div/divider_copy_6_cZ[30] .INIT=4'h8;
+LUT2 \u_fra_div/quotient_s_0_a2_1[16]  (
+	.I0(\u_fra_div/bi [5]),
+	.I1(\u_fra_div/done_fast ),
+	.F(\u_fra_div/N_129 )
+);
+defparam \u_fra_div/quotient_s_0_a2_1[16] .INIT=4'h1;
+LUT2 \u_fra_div/quotient_r_0_a2_1[2]  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [3]),
+	.F(\u_fra_div/N_135 )
+);
+defparam \u_fra_div/quotient_r_0_a2_1[2] .INIT=4'h1;
+LUT2 \u_fra_div/quotient_r_0_a2_1[8]  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [3]),
+	.F(\u_fra_div/N_141 )
+);
+defparam \u_fra_div/quotient_r_0_a2_1[8] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_a2_1[1]  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [3]),
+	.F(\u_fra_div/N_142 )
+);
+defparam \u_fra_div/quotient_r_0_a2_1[1] .INIT=4'h2;
+LUT2 \u_fra_div/quotient_r_0_a2_1[9]  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [3]),
+	.F(\u_fra_div/N_143 )
+);
+defparam \u_fra_div/quotient_r_0_a2_1[9] .INIT=4'h8;
+LUT2 \u_fra_div/quotient_0_sqmuxa_0_a2_0  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(start),
+	.F(\u_fra_div/N_14_0 )
+);
+defparam \u_fra_div/quotient_0_sqmuxa_0_a2_0 .INIT=4'h8;
+LUT2 \u_fra_div/dividend_copy_5_cZ[16]  (
+	.I0(\u_fra_div/un3_dividend_copy_s_16_0_SUM ),
+	.I1(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/dividend_copy_5 [16])
+);
+defparam \u_fra_div/dividend_copy_5_cZ[16] .INIT=4'h2;
+LUT2 \u_fra_div/quotient_RNISGS8[13]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[13]),
+	.F(\u_fra_div/m19_i_a2_0 )
+);
+defparam \u_fra_div/quotient_RNISGS8[13] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_RNIDR5E[5]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[5]),
+	.F(\u_fra_div/m31_i_a2_0 )
+);
+defparam \u_fra_div/quotient_RNIDR5E[5] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_RNIQES8[11]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[11]),
+	.F(\u_fra_div/m22_i_a2_0 )
+);
+defparam \u_fra_div/quotient_RNIQES8[11] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_RNIBP5E[3]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[3]),
+	.F(\u_fra_div/m36_i_a2_0 )
+);
+defparam \u_fra_div/quotient_RNIBP5E[3] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_a2_0_1[14]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[14]),
+	.F(\u_fra_div/quotient_r_0_a2_0 [14])
+);
+defparam \u_fra_div/quotient_r_0_a2_0_1[14] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_RNICQ5E[4]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[4]),
+	.F(\u_fra_div/m33_i_a2_0 )
+);
+defparam \u_fra_div/quotient_RNICQ5E[4] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_a2_0_0[12]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[12]),
+	.F(\u_fra_div/quotient_r_0_a2_0 [12])
+);
+defparam \u_fra_div/quotient_r_0_a2_0_0[12] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_a2_0_1[7]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[7]),
+	.F(\u_fra_div/quotient_r_0_a2_0 [7])
+);
+defparam \u_fra_div/quotient_r_0_a2_0_1[7] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_a2_0_1[0]  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[0]),
+	.F(\u_fra_div/quotient_r_0_a2_0 [0])
+);
+defparam \u_fra_div/quotient_r_0_a2_0_1[0] .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_N_2L1_3_cZ  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[10]),
+	.F(\u_fra_div/quotient_r_0_N_2L1_3 )
+);
+defparam \u_fra_div/quotient_r_0_N_2L1_3_cZ .INIT=4'h4;
+LUT4 \u_fra_div/g0  (
+	.I0(\u_fra_div/divider_copy [30]),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(start),
+	.I3(\u_fra_div/un1_dividend_copy_cry_29 ),
+	.F(\u_fra_div/un1_done9_i_0 )
+);
+defparam \u_fra_div/g0 .INIT=16'hC0D1;
+LUT3 \u_fra_div/done_r_fast  (
+	.I0(\u_fra_div/N_14_0 ),
+	.I1(\u_fra_div/done_0_sqmuxa ),
+	.I2(\u_fra_div/done_fast ),
+	.F(\u_fra_div/N_92_fast )
+);
+defparam \u_fra_div/done_r_fast .INIT=8'h54;
+LUT3 \u_fra_div/done_r_rep1  (
+	.I0(\u_fra_div/N_14_0 ),
+	.I1(\u_fra_div/done_0_sqmuxa ),
+	.I2(\u_fra_div/done_rep1 ),
+	.F(\u_fra_div/N_92_rep1 )
+);
+defparam \u_fra_div/done_r_rep1 .INIT=8'h54;
+LUT3 \u_fra_div/done_r_rep2  (
+	.I0(\u_fra_div/N_14_0 ),
+	.I1(\u_fra_div/done_0_sqmuxa ),
+	.I2(\u_fra_div/done_rep2 ),
+	.F(\u_fra_div/N_92_rep2 )
+);
+defparam \u_fra_div/done_r_rep2 .INIT=8'h54;
+LUT4 \u_fra_div/quotient_r_0_mb_cZ[7]  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_r_0_a2_0 [7]),
+	.I2(\u_fra_div/quotient_r_0_mb_1 [7]),
+	.I3(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/quotient_r_0_mb [7])
+);
+defparam \u_fra_div/quotient_r_0_mb_cZ[7] .INIT=16'h4FCC;
+LUT4 \u_fra_div/quotient_r_0_mb_cZ[14]  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_r_0_a2_0 [14]),
+	.I2(\u_fra_div/quotient_r_0_mb_1 [14]),
+	.I3(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/quotient_r_0_mb [14])
+);
+defparam \u_fra_div/quotient_r_0_mb_cZ[14] .INIT=16'h4FCC;
+LUT3 \u_fra_div/m17_i_mb_1_0_cZ  (
+	.I0(\u_fra_div/m17_i_a2_0_0 ),
+	.I1(\u_fra_div/quotient_r_0_a2_2_out ),
+	.I2(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/m17_i_mb_1_0 )
+);
+defparam \u_fra_div/m17_i_mb_1_0_cZ .INIT=8'h7F;
+LUT3 \u_fra_div/m27_i_mb_1_0_cZ  (
+	.I0(\u_fra_div/m27_i_a2_0_0 ),
+	.I1(\u_fra_div/quotient_r_0_a2_2_out ),
+	.I2(\u_fra_div/un1_done9_i_0 ),
+	.F(\u_fra_div/m27_i_mb_1_0 )
+);
+defparam \u_fra_div/m27_i_mb_1_0_cZ .INIT=8'h7F;
+LUT2 \u_fra_div/quotient_r_0_N_2L1_4_cZ  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[1]),
+	.F(\u_fra_div/quotient_r_0_N_2L1_4 )
+);
+defparam \u_fra_div/quotient_r_0_N_2L1_4_cZ .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_N_2L1_cZ  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[2]),
+	.F(\u_fra_div/quotient_r_0_N_2L1 )
+);
+defparam \u_fra_div/quotient_r_0_N_2L1_cZ .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_N_2L1_0_cZ  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[8]),
+	.F(\u_fra_div/quotient_r_0_N_2L1_0 )
+);
+defparam \u_fra_div/quotient_r_0_N_2L1_0_cZ .INIT=4'h4;
+LUT2 \u_fra_div/quotient_r_0_N_2L1_1_cZ  (
+	.I0(\u_fra_div/quotient_0_sqmuxa ),
+	.I1(quotient_out[9]),
+	.F(\u_fra_div/quotient_r_0_N_2L1_1 )
+);
+defparam \u_fra_div/quotient_r_0_N_2L1_1_cZ .INIT=4'h4;
+LUT4 \u_fra_div/quotient_r_0_mb_1_cZ[14]  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [1]),
+	.I2(\u_fra_div/bi [3]),
+	.I3(\u_fra_div/quotient_r_0_a2_2_out ),
+	.F(\u_fra_div/quotient_r_0_mb_1 [14])
+);
+defparam \u_fra_div/quotient_r_0_mb_1_cZ[14] .INIT=16'hBFFF;
+LUT4 \u_fra_div/quotient_r_0_mb_1_cZ[7]  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/bi [1]),
+	.I2(\u_fra_div/bi [3]),
+	.I3(\u_fra_div/quotient_r_0_a2_2_out ),
+	.F(\u_fra_div/quotient_r_0_mb_1 [7])
+);
+defparam \u_fra_div/quotient_r_0_mb_1_cZ[7] .INIT=16'hF7FF;
+LUT4 \u_fra_div/quotient_r_0_0_cZ[9]  (
+	.I0(\u_fra_div/N_143 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_1 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_0 [9])
+);
+defparam \u_fra_div/quotient_r_0_0_cZ[9] .INIT=16'h30F0;
+LUT4 \u_fra_div/quotient_r_0_1_cZ[9]  (
+	.I0(\u_fra_div/N_143 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_1 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_1 [9])
+);
+defparam \u_fra_div/quotient_r_0_1_cZ[9] .INIT=16'hBAFA;
+LUT4 \u_fra_div/quotient_r_0_0_cZ[8]  (
+	.I0(\u_fra_div/N_141 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_0 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_0 [8])
+);
+defparam \u_fra_div/quotient_r_0_0_cZ[8] .INIT=16'h30F0;
+LUT4 \u_fra_div/quotient_r_0_1_cZ[8]  (
+	.I0(\u_fra_div/N_141 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_0 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_1 [8])
+);
+defparam \u_fra_div/quotient_r_0_1_cZ[8] .INIT=16'hBAFA;
+LUT4 \u_fra_div/quotient_r_0_0_cZ[2]  (
+	.I0(\u_fra_div/N_135 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_0 [2])
+);
+defparam \u_fra_div/quotient_r_0_0_cZ[2] .INIT=16'h30F0;
+LUT4 \u_fra_div/quotient_r_0_1_cZ[2]  (
+	.I0(\u_fra_div/N_135 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_1 [2])
+);
+defparam \u_fra_div/quotient_r_0_1_cZ[2] .INIT=16'hBAFA;
+LUT4 \u_fra_div/quotient_r_0_0_cZ[1]  (
+	.I0(\u_fra_div/N_142 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_4 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_0 [1])
+);
+defparam \u_fra_div/quotient_r_0_0_cZ[1] .INIT=16'h30F0;
+LUT4 \u_fra_div/quotient_r_0_1_cZ[1]  (
+	.I0(\u_fra_div/N_142 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_4 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_1 [1])
+);
+defparam \u_fra_div/quotient_r_0_1_cZ[1] .INIT=16'hBAFA;
+LUT4 \u_fra_div/quotient_s_0_0_cZ[16]  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_0_sqmuxa ),
+	.I2(quotient_out[16]),
+	.I3(start),
+	.F(\u_fra_div/quotient_s_0_0 [16])
+);
+defparam \u_fra_div/quotient_s_0_0_cZ[16] .INIT=16'hDCFC;
+LUT4 \u_fra_div/quotient_s_0_1_cZ[16]  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_0_sqmuxa ),
+	.I2(quotient_out[16]),
+	.I3(start),
+	.F(\u_fra_div/quotient_s_0_1 [16])
+);
+defparam \u_fra_div/quotient_s_0_1_cZ[16] .INIT=16'hFFFF;
+LUT4 \u_fra_div/m27_i_mb_0_cZ  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_0_sqmuxa ),
+	.I2(quotient_out[6]),
+	.I3(start),
+	.F(\u_fra_div/m27_i_mb_0 )
+);
+defparam \u_fra_div/m27_i_mb_0_cZ .INIT=16'hFFFF;
+LUT4 \u_fra_div/m27_i_mb_1_cZ  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_0_sqmuxa ),
+	.I2(quotient_out[6]),
+	.I3(start),
+	.F(\u_fra_div/m27_i_mb_1 )
+);
+defparam \u_fra_div/m27_i_mb_1_cZ .INIT=16'h1030;
+LUT4 \u_fra_div/quotient_r_0_0_cZ[12]  (
+	.I0(\u_fra_div/N_141 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_a2_0 [12]),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_0 [12])
+);
+defparam \u_fra_div/quotient_r_0_0_cZ[12] .INIT=16'h30F0;
+LUT4 \u_fra_div/quotient_r_0_1_cZ[12]  (
+	.I0(\u_fra_div/N_141 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_a2_0 [12]),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_1 [12])
+);
+defparam \u_fra_div/quotient_r_0_1_cZ[12] .INIT=16'hBAFA;
+LUT4 \u_fra_div/quotient_r_0_0_cZ[10]  (
+	.I0(\u_fra_div/N_141 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_3 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_0 [10])
+);
+defparam \u_fra_div/quotient_r_0_0_cZ[10] .INIT=16'h30F0;
+LUT4 \u_fra_div/quotient_r_0_1_cZ[10]  (
+	.I0(\u_fra_div/N_141 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/quotient_r_0_N_2L1_3 ),
+	.I3(start),
+	.F(\u_fra_div/quotient_r_0_1 [10])
+);
+defparam \u_fra_div/quotient_r_0_1_cZ[10] .INIT=16'hBAFA;
+LUT4 \u_fra_div/m17_i_mb_0_cZ  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_0_sqmuxa ),
+	.I2(quotient_out[15]),
+	.I3(start),
+	.F(\u_fra_div/m17_i_mb_0 )
+);
+defparam \u_fra_div/m17_i_mb_0_cZ .INIT=16'hFFFF;
+LUT4 \u_fra_div/m17_i_mb_1_cZ  (
+	.I0(\u_fra_div/done_rep1 ),
+	.I1(\u_fra_div/quotient_0_sqmuxa ),
+	.I2(quotient_out[15]),
+	.I3(start),
+	.F(\u_fra_div/m17_i_mb_1 )
+);
+defparam \u_fra_div/m17_i_mb_1_cZ .INIT=16'h1030;
+LUT4 \u_fra_div/m36_i_0_cZ  (
+	.I0(\u_fra_div/N_142 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m36_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m36_i_0 )
+);
+defparam \u_fra_div/m36_i_0_cZ .INIT=16'h30F0;
+LUT4 \u_fra_div/m36_i_1_cZ  (
+	.I0(\u_fra_div/N_142 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m36_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m36_i_1 )
+);
+defparam \u_fra_div/m36_i_1_cZ .INIT=16'hBAFA;
+LUT4 \u_fra_div/m33_i_0_cZ  (
+	.I0(\u_fra_div/N_135 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m33_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m33_i_0 )
+);
+defparam \u_fra_div/m33_i_0_cZ .INIT=16'h30F0;
+LUT4 \u_fra_div/m33_i_1_cZ  (
+	.I0(\u_fra_div/N_135 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m33_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m33_i_1 )
+);
+defparam \u_fra_div/m33_i_1_cZ .INIT=16'hBAFA;
+LUT4 \u_fra_div/m31_i_0_cZ  (
+	.I0(\u_fra_div/N_142 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m31_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m31_i_0 )
+);
+defparam \u_fra_div/m31_i_0_cZ .INIT=16'h30F0;
+LUT4 \u_fra_div/m31_i_1_cZ  (
+	.I0(\u_fra_div/N_142 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m31_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m31_i_1 )
+);
+defparam \u_fra_div/m31_i_1_cZ .INIT=16'hBAFA;
+LUT4 \u_fra_div/m22_i_0_cZ  (
+	.I0(\u_fra_div/N_143 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m22_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m22_i_0 )
+);
+defparam \u_fra_div/m22_i_0_cZ .INIT=16'h30F0;
+LUT4 \u_fra_div/m22_i_1_cZ  (
+	.I0(\u_fra_div/N_143 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m22_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m22_i_1 )
+);
+defparam \u_fra_div/m22_i_1_cZ .INIT=16'hBAFA;
+LUT4 \u_fra_div/m19_i_0_cZ  (
+	.I0(\u_fra_div/N_143 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m19_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m19_i_0 )
+);
+defparam \u_fra_div/m19_i_0_cZ .INIT=16'h30F0;
+LUT4 \u_fra_div/m19_i_1_cZ  (
+	.I0(\u_fra_div/N_143 ),
+	.I1(\u_fra_div/done_rep1 ),
+	.I2(\u_fra_div/m19_i_a2_0 ),
+	.I3(start),
+	.F(\u_fra_div/m19_i_1 )
+);
+defparam \u_fra_div/m19_i_1_cZ .INIT=16'hBAFA;
+MUX2_LUT5 \u_fra_div/m19_i  (
+	.I0(\u_fra_div/m19_i_0 ),
+	.I1(\u_fra_div/m19_i_1 ),
+	.S0(\u_fra_div/N_145 ),
+	.O(\u_fra_div/N_147_i_0 )
+);
+MUX2_LUT5 \u_fra_div/m22_i  (
+	.I0(\u_fra_div/m22_i_0 ),
+	.I1(\u_fra_div/m22_i_1 ),
+	.S0(\u_fra_div/N_150 ),
+	.O(\u_fra_div/N_148_i_0 )
+);
+MUX2_LUT5 \u_fra_div/m31_i  (
+	.I0(\u_fra_div/m31_i_0 ),
+	.I1(\u_fra_div/m31_i_1 ),
+	.S0(\u_fra_div/N_145 ),
+	.O(\u_fra_div/N_32_0_i_0 )
+);
+MUX2_LUT5 \u_fra_div/m33_i  (
+	.I0(\u_fra_div/m33_i_0 ),
+	.I1(\u_fra_div/m33_i_1 ),
+	.S0(\u_fra_div/N_145 ),
+	.O(\u_fra_div/N_34_0_i_0 )
+);
+MUX2_LUT5 \u_fra_div/m36_i  (
+	.I0(\u_fra_div/m36_i_0 ),
+	.I1(\u_fra_div/m36_i_1 ),
+	.S0(\u_fra_div/N_150 ),
+	.O(\u_fra_div/N_37_i_0 )
+);
+MUX2_LUT5 \u_fra_div/m17_i_mb  (
+	.I0(\u_fra_div/m17_i_mb_0 ),
+	.I1(\u_fra_div/m17_i_mb_1 ),
+	.S0(\u_fra_div/m17_i_mb_1_0 ),
+	.O(\u_fra_div/N_146_i_0 )
+);
+MUX2_LUT5 \u_fra_div/quotient_r_0_cZ[10]  (
+	.I0(\u_fra_div/quotient_r_0_0 [10]),
+	.I1(\u_fra_div/quotient_r_0_1 [10]),
+	.S0(\u_fra_div/N_150 ),
+	.O(\u_fra_div/quotient_r_0 [10])
+);
+MUX2_LUT5 \u_fra_div/quotient_r_0_cZ[12]  (
+	.I0(\u_fra_div/quotient_r_0_0 [12]),
+	.I1(\u_fra_div/quotient_r_0_1 [12]),
+	.S0(\u_fra_div/N_145 ),
+	.O(\u_fra_div/quotient_r_0 [12])
+);
+MUX2_LUT5 \u_fra_div/m27_i_mb  (
+	.I0(\u_fra_div/m27_i_mb_0 ),
+	.I1(\u_fra_div/m27_i_mb_1 ),
+	.S0(\u_fra_div/m27_i_mb_1_0 ),
+	.O(\u_fra_div/N_149_i_0 )
+);
+MUX2_LUT5 \u_fra_div/quotient_s_0_cZ[16]  (
+	.I0(\u_fra_div/quotient_s_0_0 [16]),
+	.I1(\u_fra_div/quotient_s_0_1 [16]),
+	.S0(\u_fra_div/quotient_s_0_a2_0 [16]),
+	.O(\u_fra_div/quotient_s_0 [16])
+);
+MUX2_LUT5 \u_fra_div/quotient_r_0_cZ[1]  (
+	.I0(\u_fra_div/quotient_r_0_0 [1]),
+	.I1(\u_fra_div/quotient_r_0_1 [1]),
+	.S0(\u_fra_div/N_152 ),
+	.O(\u_fra_div/quotient_r_0 [1])
+);
+MUX2_LUT5 \u_fra_div/quotient_r_0_cZ[2]  (
+	.I0(\u_fra_div/quotient_r_0_0 [2]),
+	.I1(\u_fra_div/quotient_r_0_1 [2]),
+	.S0(\u_fra_div/N_150 ),
+	.O(\u_fra_div/quotient_r_0 [2])
+);
+MUX2_LUT5 \u_fra_div/quotient_r_0_cZ[8]  (
+	.I0(\u_fra_div/quotient_r_0_0 [8]),
+	.I1(\u_fra_div/quotient_r_0_1 [8]),
+	.S0(\u_fra_div/N_152 ),
+	.O(\u_fra_div/quotient_r_0 [8])
+);
+MUX2_LUT5 \u_fra_div/quotient_r_0_cZ[9]  (
+	.I0(\u_fra_div/quotient_r_0_0 [9]),
+	.I1(\u_fra_div/quotient_r_0_1 [9]),
+	.S0(\u_fra_div/N_152 ),
+	.O(\u_fra_div/quotient_r_0 [9])
+);
+DFFS \u_fra_div/done_rep2_Z  (
+	.D(\u_fra_div/N_92_rep2 ),
+	.CLK(clk),
+	.SET(GND),
+	.Q(\u_fra_div/done_rep2 )
+);
+defparam \u_fra_div/done_rep2_Z .INIT=1'b1;
+DFFS \u_fra_div/done_rep1_Z  (
+	.D(\u_fra_div/N_92_rep1 ),
+	.CLK(clk),
+	.SET(GND),
+	.Q(\u_fra_div/done_rep1 )
+);
+defparam \u_fra_div/done_rep1_Z .INIT=1'b1;
+DFFS \u_fra_div/done_fast_Z  (
+	.D(\u_fra_div/N_92_fast ),
+	.CLK(clk),
+	.SET(GND),
+	.Q(\u_fra_div/done_fast )
+);
+defparam \u_fra_div/done_fast_Z .INIT=1'b1;
+DFF \u_fra_div/quotient[2]  (
+	.D(\u_fra_div/quotient_r_0 [2]),
+	.CLK(clk),
+	.Q(quotient_out[2])
+);
+defparam \u_fra_div/quotient[2] .INIT=1'b0;
+DFF \u_fra_div/quotient[1]  (
+	.D(\u_fra_div/quotient_r_0 [1]),
+	.CLK(clk),
+	.Q(quotient_out[1])
+);
+defparam \u_fra_div/quotient[1] .INIT=1'b0;
+DFF \u_fra_div/quotient[0]  (
+	.D(\u_fra_div/quotient_r_0 [0]),
+	.CLK(clk),
+	.Q(quotient_out[0])
+);
+defparam \u_fra_div/quotient[0] .INIT=1'b0;
+DFF \u_fra_div/quotient[16]  (
+	.D(\u_fra_div/quotient_s_0 [16]),
+	.CLK(clk),
+	.Q(quotient_out[16])
+);
+defparam \u_fra_div/quotient[16] .INIT=1'b0;
+DFF \u_fra_div/quotient[15]  (
+	.D(\u_fra_div/N_146_i_0 ),
+	.CLK(clk),
+	.Q(quotient_out[15])
+);
+defparam \u_fra_div/quotient[15] .INIT=1'b0;
+DFF \u_fra_div/quotient[14]  (
+	.D(\u_fra_div/quotient_r_0_mb [14]),
+	.CLK(clk),
+	.Q(quotient_out[14])
+);
+defparam \u_fra_div/quotient[14] .INIT=1'b0;
+DFF \u_fra_div/quotient[13]  (
+	.D(\u_fra_div/N_147_i_0 ),
+	.CLK(clk),
+	.Q(quotient_out[13])
+);
+defparam \u_fra_div/quotient[13] .INIT=1'b0;
+DFF \u_fra_div/quotient[12]  (
+	.D(\u_fra_div/quotient_r_0 [12]),
+	.CLK(clk),
+	.Q(quotient_out[12])
+);
+defparam \u_fra_div/quotient[12] .INIT=1'b0;
+DFF \u_fra_div/quotient[11]  (
+	.D(\u_fra_div/N_148_i_0 ),
+	.CLK(clk),
+	.Q(quotient_out[11])
+);
+defparam \u_fra_div/quotient[11] .INIT=1'b0;
+DFF \u_fra_div/quotient[10]  (
+	.D(\u_fra_div/quotient_r_0 [10]),
+	.CLK(clk),
+	.Q(quotient_out[10])
+);
+defparam \u_fra_div/quotient[10] .INIT=1'b0;
+DFF \u_fra_div/quotient[9]  (
+	.D(\u_fra_div/quotient_r_0 [9]),
+	.CLK(clk),
+	.Q(quotient_out[9])
+);
+defparam \u_fra_div/quotient[9] .INIT=1'b0;
+DFF \u_fra_div/quotient[8]  (
+	.D(\u_fra_div/quotient_r_0 [8]),
+	.CLK(clk),
+	.Q(quotient_out[8])
+);
+defparam \u_fra_div/quotient[8] .INIT=1'b0;
+DFF \u_fra_div/quotient[7]  (
+	.D(\u_fra_div/quotient_r_0_mb [7]),
+	.CLK(clk),
+	.Q(quotient_out[7])
+);
+defparam \u_fra_div/quotient[7] .INIT=1'b0;
+DFF \u_fra_div/quotient[6]  (
+	.D(\u_fra_div/N_149_i_0 ),
+	.CLK(clk),
+	.Q(quotient_out[6])
+);
+defparam \u_fra_div/quotient[6] .INIT=1'b0;
+DFF \u_fra_div/quotient[5]  (
+	.D(\u_fra_div/N_32_0_i_0 ),
+	.CLK(clk),
+	.Q(quotient_out[5])
+);
+defparam \u_fra_div/quotient[5] .INIT=1'b0;
+DFF \u_fra_div/quotient[4]  (
+	.D(\u_fra_div/N_34_0_i_0 ),
+	.CLK(clk),
+	.Q(quotient_out[4])
+);
+defparam \u_fra_div/quotient[4] .INIT=1'b0;
+DFF \u_fra_div/quotient[3]  (
+	.D(\u_fra_div/N_37_i_0 ),
+	.CLK(clk),
+	.Q(quotient_out[3])
+);
+defparam \u_fra_div/quotient[3] .INIT=1'b0;
+DFFS \u_fra_div/done  (
+	.D(\u_fra_div/done_r ),
+	.CLK(clk),
+	.SET(GND),
+	.Q(complete)
+);
+defparam \u_fra_div/done .INIT=1'b1;
+DFFE \u_fra_div/dividend_copy_Z[12]  (
+	.D(\u_fra_div/dividend_copy_5 [12]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [12])
+);
+defparam \u_fra_div/dividend_copy_Z[12] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[13]  (
+	.D(\u_fra_div/dividend_copy_5 [13]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [13])
+);
+defparam \u_fra_div/dividend_copy_Z[13] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[14]  (
+	.D(\u_fra_div/dividend_copy_5 [14]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [14])
+);
+defparam \u_fra_div/dividend_copy_Z[14] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[15]  (
+	.D(\u_fra_div/dividend_copy_5 [15]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [15])
+);
+defparam \u_fra_div/dividend_copy_Z[15] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[16]  (
+	.D(\u_fra_div/dividend_copy_5 [16]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [16])
+);
+defparam \u_fra_div/dividend_copy_Z[16] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[0]  (
+	.D(\u_fra_div/dividend_copy_5 [0]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [0])
+);
+defparam \u_fra_div/dividend_copy_Z[0] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[1]  (
+	.D(\u_fra_div/dividend_copy_5 [1]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [1])
+);
+defparam \u_fra_div/dividend_copy_Z[1] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[2]  (
+	.D(\u_fra_div/dividend_copy_5 [2]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [2])
+);
+defparam \u_fra_div/dividend_copy_Z[2] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[3]  (
+	.D(\u_fra_div/dividend_copy_5 [3]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [3])
+);
+defparam \u_fra_div/dividend_copy_Z[3] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[4]  (
+	.D(\u_fra_div/dividend_copy_5 [4]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [4])
+);
+defparam \u_fra_div/dividend_copy_Z[4] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[5]  (
+	.D(\u_fra_div/dividend_copy_5 [5]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [5])
+);
+defparam \u_fra_div/dividend_copy_Z[5] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[6]  (
+	.D(\u_fra_div/dividend_copy_5 [6]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [6])
+);
+defparam \u_fra_div/dividend_copy_Z[6] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[7]  (
+	.D(\u_fra_div/dividend_copy_5 [7]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [7])
+);
+defparam \u_fra_div/dividend_copy_Z[7] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[8]  (
+	.D(\u_fra_div/dividend_copy_5 [8]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [8])
+);
+defparam \u_fra_div/dividend_copy_Z[8] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[9]  (
+	.D(\u_fra_div/dividend_copy_5 [9]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [9])
+);
+defparam \u_fra_div/dividend_copy_Z[9] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[10]  (
+	.D(\u_fra_div/dividend_copy_5 [10]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [10])
+);
+defparam \u_fra_div/dividend_copy_Z[10] .INIT=1'b0;
+DFFE \u_fra_div/dividend_copy_Z[11]  (
+	.D(\u_fra_div/dividend_copy_5 [11]),
+	.CLK(clk),
+	.CE(\u_fra_div/un1_done9_i_0 ),
+	.Q(\u_fra_div/dividend_copy [11])
+);
+defparam \u_fra_div/dividend_copy_Z[11] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[0]  (
+	.D(\u_fra_div/divider_copy_6 [0]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [0])
+);
+defparam \u_fra_div/divider_copy_Z[0] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[1]  (
+	.D(\u_fra_div/divider_copy_6 [1]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [1])
+);
+defparam \u_fra_div/divider_copy_Z[1] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[2]  (
+	.D(\u_fra_div/divider_copy_6 [2]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [2])
+);
+defparam \u_fra_div/divider_copy_Z[2] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[3]  (
+	.D(\u_fra_div/divider_copy_6 [3]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [3])
+);
+defparam \u_fra_div/divider_copy_Z[3] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[4]  (
+	.D(\u_fra_div/divider_copy_6 [4]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [4])
+);
+defparam \u_fra_div/divider_copy_Z[4] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[5]  (
+	.D(\u_fra_div/divider_copy_6 [5]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [5])
+);
+defparam \u_fra_div/divider_copy_Z[5] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[6]  (
+	.D(\u_fra_div/divider_copy_6 [6]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [6])
+);
+defparam \u_fra_div/divider_copy_Z[6] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[7]  (
+	.D(\u_fra_div/divider_copy_6 [7]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [7])
+);
+defparam \u_fra_div/divider_copy_Z[7] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[8]  (
+	.D(\u_fra_div/divider_copy_6 [8]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [8])
+);
+defparam \u_fra_div/divider_copy_Z[8] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[9]  (
+	.D(\u_fra_div/divider_copy_6 [9]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [9])
+);
+defparam \u_fra_div/divider_copy_Z[9] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[10]  (
+	.D(\u_fra_div/divider_copy_6 [10]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [10])
+);
+defparam \u_fra_div/divider_copy_Z[10] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[11]  (
+	.D(\u_fra_div/divider_copy_6 [11]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [11])
+);
+defparam \u_fra_div/divider_copy_Z[11] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[12]  (
+	.D(\u_fra_div/divider_copy_6 [12]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [12])
+);
+defparam \u_fra_div/divider_copy_Z[12] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[13]  (
+	.D(\u_fra_div/divider_copy_6 [13]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [13])
+);
+defparam \u_fra_div/divider_copy_Z[13] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[14]  (
+	.D(\u_fra_div/divider_copy_6 [14]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [14])
+);
+defparam \u_fra_div/divider_copy_Z[14] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[15]  (
+	.D(\u_fra_div/divider_copy_6 [15]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [15])
+);
+defparam \u_fra_div/divider_copy_Z[15] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[16]  (
+	.D(\u_fra_div/divider_copy_6 [16]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [16])
+);
+defparam \u_fra_div/divider_copy_Z[16] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[17]  (
+	.D(\u_fra_div/divider_copy_6 [17]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [17])
+);
+defparam \u_fra_div/divider_copy_Z[17] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[18]  (
+	.D(\u_fra_div/divider_copy_6 [18]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [18])
+);
+defparam \u_fra_div/divider_copy_Z[18] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[19]  (
+	.D(\u_fra_div/divider_copy_6 [19]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [19])
+);
+defparam \u_fra_div/divider_copy_Z[19] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[20]  (
+	.D(\u_fra_div/divider_copy_6 [20]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [20])
+);
+defparam \u_fra_div/divider_copy_Z[20] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[21]  (
+	.D(\u_fra_div/divider_copy_6 [21]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [21])
+);
+defparam \u_fra_div/divider_copy_Z[21] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[22]  (
+	.D(\u_fra_div/divider_copy_6 [22]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [22])
+);
+defparam \u_fra_div/divider_copy_Z[22] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[23]  (
+	.D(\u_fra_div/divider_copy_6 [23]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [23])
+);
+defparam \u_fra_div/divider_copy_Z[23] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[24]  (
+	.D(\u_fra_div/divider_copy_6 [24]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [24])
+);
+defparam \u_fra_div/divider_copy_Z[24] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[25]  (
+	.D(\u_fra_div/divider_copy_6 [25]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [25])
+);
+defparam \u_fra_div/divider_copy_Z[25] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[26]  (
+	.D(\u_fra_div/divider_copy_6 [26]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [26])
+);
+defparam \u_fra_div/divider_copy_Z[26] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[27]  (
+	.D(\u_fra_div/divider_copy_6 [27]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [27])
+);
+defparam \u_fra_div/divider_copy_Z[27] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[28]  (
+	.D(\u_fra_div/divider_copy_6 [28]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [28])
+);
+defparam \u_fra_div/divider_copy_Z[28] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[29]  (
+	.D(\u_fra_div/divider_copy_6 [29]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [29])
+);
+defparam \u_fra_div/divider_copy_Z[29] .INIT=1'b0;
+DFFE \u_fra_div/divider_copy_Z[30]  (
+	.D(\u_fra_div/divider_copy_6 [30]),
+	.CLK(clk),
+	.CE(\u_fra_div/N_184_i ),
+	.Q(\u_fra_div/divider_copy [30])
+);
+defparam \u_fra_div/divider_copy_Z[30] .INIT=1'b0;
+DFFR \u_fra_div/bi_Z[0]  (
+	.D(\u_fra_div/N_6_0 ),
+	.CLK(clk),
+	.RESET(\u_fra_div/N_14_0 ),
+	.Q(\u_fra_div/bi [0])
+);
+defparam \u_fra_div/bi_Z[0] .INIT=1'b0;
+DFFR \u_fra_div/bi_Z[1]  (
+	.D(\u_fra_div/N_8_0 ),
+	.CLK(clk),
+	.RESET(\u_fra_div/N_14_0 ),
+	.Q(\u_fra_div/bi [1])
+);
+defparam \u_fra_div/bi_Z[1] .INIT=1'b0;
+DFFR \u_fra_div/bi_Z[2]  (
+	.D(\u_fra_div/N_10_0 ),
+	.CLK(clk),
+	.RESET(\u_fra_div/N_14_0 ),
+	.Q(\u_fra_div/bi [2])
+);
+defparam \u_fra_div/bi_Z[2] .INIT=1'b0;
+DFFR \u_fra_div/bi_Z[3]  (
+	.D(\u_fra_div/N_12_0 ),
+	.CLK(clk),
+	.RESET(\u_fra_div/N_14_0 ),
+	.Q(\u_fra_div/bi [3])
+);
+defparam \u_fra_div/bi_Z[3] .INIT=1'b0;
+DFFR \u_fra_div/bi_Z[5]  (
+	.D(\u_fra_div/N_16_0 ),
+	.CLK(clk),
+	.RESET(\u_fra_div/N_14_0 ),
+	.Q(\u_fra_div/bi [5])
+);
+defparam \u_fra_div/bi_Z[5] .INIT=1'b0;
+DFFS \u_fra_div/bi_Z[4]  (
+	.D(\u_fra_div/N_14_0 ),
+	.CLK(clk),
+	.SET(\u_fra_div/un1_bi_cry_4_0_SUM ),
+	.Q(\u_fra_div/bi [4])
+);
+defparam \u_fra_div/bi_Z[4] .INIT=1'b1;
+ALU \u_fra_div/un1_dividend_copy_cry_29_0  (
+	.I0(\u_fra_div/divider_copy [29]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_28 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_29 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_29_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_29_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_28_0  (
+	.I0(\u_fra_div/divider_copy [28]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_27 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_28 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_28_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_28_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_27_0  (
+	.I0(\u_fra_div/divider_copy [27]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_26 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_27 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_27_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_27_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_26_0  (
+	.I0(\u_fra_div/divider_copy [26]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_25 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_26 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_26_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_26_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_25_0  (
+	.I0(\u_fra_div/divider_copy [25]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_24 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_25 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_25_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_25_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_24_0  (
+	.I0(\u_fra_div/divider_copy [24]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_23 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_24 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_24_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_24_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_23_0  (
+	.I0(\u_fra_div/divider_copy [23]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_22 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_23 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_23_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_23_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_22_0  (
+	.I0(\u_fra_div/divider_copy [22]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_21 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_22 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_22_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_22_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_21_0  (
+	.I0(\u_fra_div/divider_copy [21]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_20 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_21 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_21_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_21_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_20_0  (
+	.I0(\u_fra_div/divider_copy [20]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_19 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_20 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_20_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_20_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_19_0  (
+	.I0(\u_fra_div/divider_copy [19]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_18 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_19 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_19_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_19_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_18_0  (
+	.I0(\u_fra_div/divider_copy [18]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_17 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_18 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_18_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_18_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_17_0  (
+	.I0(\u_fra_div/divider_copy [17]),
+	.I1(VCC),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_16 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_17 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_17_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_17_0 .ALU_MODE=0;
+ALU \u_fra_div/un1_dividend_copy_cry_16_0  (
+	.I0(\u_fra_div/divider_copy [16]),
+	.I1(\u_fra_div/dividend_copy [16]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_15 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_16 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_16_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_16_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_15_0  (
+	.I0(\u_fra_div/divider_copy [15]),
+	.I1(\u_fra_div/dividend_copy [15]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_14 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_15 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_15_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_15_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_14_0  (
+	.I0(\u_fra_div/divider_copy [14]),
+	.I1(\u_fra_div/dividend_copy [14]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_13 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_14 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_14_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_14_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_13_0  (
+	.I0(\u_fra_div/divider_copy [13]),
+	.I1(\u_fra_div/dividend_copy [13]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_12 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_13 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_13_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_13_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_12_0  (
+	.I0(\u_fra_div/divider_copy [12]),
+	.I1(\u_fra_div/dividend_copy [12]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_11 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_12 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_12_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_12_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_11_0  (
+	.I0(\u_fra_div/divider_copy [11]),
+	.I1(\u_fra_div/dividend_copy [11]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_10 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_11 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_11_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_11_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_10_0  (
+	.I0(\u_fra_div/divider_copy [10]),
+	.I1(\u_fra_div/dividend_copy [10]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_9 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_10 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_10_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_10_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_9_0  (
+	.I0(\u_fra_div/divider_copy [9]),
+	.I1(\u_fra_div/dividend_copy [9]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_8 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_9 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_9_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_9_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_8_0  (
+	.I0(\u_fra_div/divider_copy [8]),
+	.I1(\u_fra_div/dividend_copy [8]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_7 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_8 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_8_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_8_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_7_0  (
+	.I0(\u_fra_div/divider_copy [7]),
+	.I1(\u_fra_div/dividend_copy [7]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_6 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_7 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_7_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_7_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_6_0  (
+	.I0(\u_fra_div/divider_copy [6]),
+	.I1(\u_fra_div/dividend_copy [6]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_5 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_6 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_6_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_6_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_5_0  (
+	.I0(\u_fra_div/divider_copy [5]),
+	.I1(\u_fra_div/dividend_copy [5]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_4 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_5 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_5_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_5_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_4_0  (
+	.I0(\u_fra_div/divider_copy [4]),
+	.I1(\u_fra_div/dividend_copy [4]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_3 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_4 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_4_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_4_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_3_0  (
+	.I0(\u_fra_div/divider_copy [3]),
+	.I1(\u_fra_div/dividend_copy [3]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_2 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_3 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_3_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_3_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_2_0  (
+	.I0(\u_fra_div/divider_copy [2]),
+	.I1(\u_fra_div/dividend_copy [2]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_1 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_2 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_2_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_2_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_1_0  (
+	.I0(\u_fra_div/divider_copy [1]),
+	.I1(\u_fra_div/dividend_copy [1]),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_dividend_copy_cry_0 ),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_1 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_1_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_1_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_dividend_copy_cry_0_0  (
+	.I0(\u_fra_div/divider_copy [0]),
+	.I1(\u_fra_div/dividend_copy [0]),
+	.I3(GND),
+	.CIN(GND),
+	.COUT(\u_fra_div/un1_dividend_copy_cry_0 ),
+	.SUM(\u_fra_div/un1_dividend_copy_cry_0_0_SUM )
+);
+defparam \u_fra_div/un1_dividend_copy_cry_0_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_s_16_0  (
+	.I0(\u_fra_div/dividend_copy [16]),
+	.I1(\u_fra_div/divider_copy [16]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_15 ),
+	.COUT(\u_fra_div/un3_dividend_copy_s_16_0_COUT ),
+	.SUM(\u_fra_div/un3_dividend_copy_s_16_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_s_16_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_15_0  (
+	.I0(\u_fra_div/dividend_copy [15]),
+	.I1(\u_fra_div/divider_copy [15]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_14 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_15 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_15_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_15_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_14_0  (
+	.I0(\u_fra_div/dividend_copy [14]),
+	.I1(\u_fra_div/divider_copy [14]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_13 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_14 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_14_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_14_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_13_0  (
+	.I0(\u_fra_div/dividend_copy [13]),
+	.I1(\u_fra_div/divider_copy [13]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_12 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_13 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_13_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_13_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_12_0  (
+	.I0(\u_fra_div/dividend_copy [12]),
+	.I1(\u_fra_div/divider_copy [12]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_11 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_12 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_12_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_12_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_11_0  (
+	.I0(\u_fra_div/dividend_copy [11]),
+	.I1(\u_fra_div/divider_copy [11]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_10 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_11 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_11_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_11_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_10_0  (
+	.I0(\u_fra_div/dividend_copy [10]),
+	.I1(\u_fra_div/divider_copy [10]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_9 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_10 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_10_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_10_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_9_0  (
+	.I0(\u_fra_div/dividend_copy [9]),
+	.I1(\u_fra_div/divider_copy [9]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_8 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_9 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_9_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_9_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_8_0  (
+	.I0(\u_fra_div/dividend_copy [8]),
+	.I1(\u_fra_div/divider_copy [8]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_7 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_8 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_8_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_8_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_7_0  (
+	.I0(\u_fra_div/dividend_copy [7]),
+	.I1(\u_fra_div/divider_copy [7]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_6 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_7 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_7_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_7_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_6_0  (
+	.I0(\u_fra_div/dividend_copy [6]),
+	.I1(\u_fra_div/divider_copy [6]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_5 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_6 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_6_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_6_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_5_0  (
+	.I0(\u_fra_div/dividend_copy [5]),
+	.I1(\u_fra_div/divider_copy [5]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_4 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_5 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_5_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_5_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_4_0  (
+	.I0(\u_fra_div/dividend_copy [4]),
+	.I1(\u_fra_div/divider_copy [4]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_3 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_4 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_4_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_4_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_3_0  (
+	.I0(\u_fra_div/dividend_copy [3]),
+	.I1(\u_fra_div/divider_copy [3]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_2 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_3 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_3_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_3_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_2_0  (
+	.I0(\u_fra_div/dividend_copy [2]),
+	.I1(\u_fra_div/divider_copy [2]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_1 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_2 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_2_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_2_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_1_0  (
+	.I0(\u_fra_div/dividend_copy [1]),
+	.I1(\u_fra_div/divider_copy [1]),
+	.I3(GND),
+	.CIN(\u_fra_div/un3_dividend_copy_cry_0 ),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_1 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_1_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_1_0 .ALU_MODE=1;
+ALU \u_fra_div/un3_dividend_copy_cry_0_0  (
+	.I0(\u_fra_div/dividend_copy [0]),
+	.I1(\u_fra_div/divider_copy [0]),
+	.I3(GND),
+	.CIN(VCC),
+	.COUT(\u_fra_div/un3_dividend_copy_cry_0 ),
+	.SUM(\u_fra_div/un3_dividend_copy_cry_0_0_SUM )
+);
+defparam \u_fra_div/un3_dividend_copy_cry_0_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_bi_s_5_0  (
+	.I0(\u_fra_div/bi [5]),
+	.I1(\u_fra_div/done_rep1 ),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_bi_cry_4 ),
+	.COUT(\u_fra_div/un1_bi_s_5_0_COUT ),
+	.SUM(\u_fra_div/N_16_0 )
+);
+defparam \u_fra_div/un1_bi_s_5_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_bi_cry_4_0  (
+	.I0(\u_fra_div/bi [4]),
+	.I1(\u_fra_div/done_rep1 ),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_bi_cry_3 ),
+	.COUT(\u_fra_div/un1_bi_cry_4 ),
+	.SUM(\u_fra_div/un1_bi_cry_4_0_SUM )
+);
+defparam \u_fra_div/un1_bi_cry_4_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_bi_cry_3_0  (
+	.I0(\u_fra_div/bi [3]),
+	.I1(\u_fra_div/done_rep1 ),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_bi_cry_2 ),
+	.COUT(\u_fra_div/un1_bi_cry_3 ),
+	.SUM(\u_fra_div/N_12_0 )
+);
+defparam \u_fra_div/un1_bi_cry_3_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_bi_cry_2_0  (
+	.I0(\u_fra_div/bi [2]),
+	.I1(\u_fra_div/done_rep1 ),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_bi_cry_1 ),
+	.COUT(\u_fra_div/un1_bi_cry_2 ),
+	.SUM(\u_fra_div/N_10_0 )
+);
+defparam \u_fra_div/un1_bi_cry_2_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_bi_cry_1_0  (
+	.I0(\u_fra_div/bi [1]),
+	.I1(\u_fra_div/done_rep1 ),
+	.I3(GND),
+	.CIN(\u_fra_div/un1_bi_cry_0 ),
+	.COUT(\u_fra_div/un1_bi_cry_1 ),
+	.SUM(\u_fra_div/N_8_0 )
+);
+defparam \u_fra_div/un1_bi_cry_1_0 .ALU_MODE=1;
+ALU \u_fra_div/un1_bi_cry_0_0  (
+	.I0(\u_fra_div/bi [0]),
+	.I1(\u_fra_div/done_fast ),
+	.I3(GND),
+	.CIN(GND),
+	.COUT(\u_fra_div/un1_bi_cry_0 ),
+	.SUM(\u_fra_div/N_6_0 )
+);
+defparam \u_fra_div/un1_bi_cry_0_0 .ALU_MODE=1;
+endmodule

@@ -1,0 +1,4 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, gw_con_top, 0h:00m:00s,     89 MB
+work, MUX16, 0h:00m:00s,     89 MB
+work, work_C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\temp\gao\ao_control\gw_con_parameter.v_unit, 0h:00m:00s,      0 MB

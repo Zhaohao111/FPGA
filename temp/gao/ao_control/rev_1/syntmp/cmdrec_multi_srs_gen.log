@@ -1,0 +1,7 @@
+d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\bin64\syn_nfilter.exe  -link  -multisrs  C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\temp\gao\ao_control\rev_1\synwork\ao_control_comp.srs  -osyn  C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\temp\gao\ao_control\rev_1\synwork\ao_control_mult.srs  -log  C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\temp\gao\ao_control\rev_1\synlog\ao_control_multi_srs_gen.srr 
+relcom:d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\bin64\syn_nfilter.exe -link -multisrs ..\synwork\ao_control_comp.srs -osyn ..\synwork\ao_control_mult.srs -log ..\synlog\ao_control_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\ao_control_comp.srs|io:i|time:1574398722|size:10237|exec:0|csum:591FB8A4E2A8157ECC1EFD5FC768A5CB
+file:..\synwork\ao_control_mult.srs|io:o|time:1574398723|size:9900|exec:0|csum:
+file:..\synlog\ao_control_multi_srs_gen.srr|io:o|time:1574398723|size:1045|exec:0|csum:
+file:d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1564765422|size:8840192|exec:1|csum:3679135E094FDC1A8D56C913E5E7F562

@@ -1,0 +1,29 @@
+---------------------------------------
+Resource Usage Report for wrfifo 
+
+Mapping to part: gw2ar_18elqfp144-8
+Cell usage:
+ALU             46 uses
+DFFC            83 uses
+DFFCE           7 uses
+DFFNP           4 uses
+DFFP            1 use
+GSR             1 use
+INV             9 uses
+MUX2_LUT5       6 uses
+MUX2_LUT6       2 uses
+SDP             4 uses
+LUT2            36 uses
+LUT3            30 uses
+LUT4            48 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   95 of 15552 (0%)
+
+RAM/ROM usage summary
+Block Rams : 4 of 46 (8%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 114 (0%)
+

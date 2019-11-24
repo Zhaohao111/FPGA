@@ -1,0 +1,9 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\div_wrap.v":3:19:3:19|Synthesizing module Divider_Top in library work.
+@N|Running in 64-bit mode
+@N: NF107 :"d:\gowin\gowin_v1.9.2beta\ide\ipcore\divider\data\div_wrap.v":3:19:3:19|Selected library: work cell: Divider_Top view verilog as top level
+@N: NF107 :"d:\gowin\gowin_v1.9.2beta\ide\ipcore\divider\data\div_wrap.v":3:19:3:19|Selected library: work cell: Divider_Top view verilog as top level
+

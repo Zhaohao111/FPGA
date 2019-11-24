@@ -1,0 +1,2 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT529 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\cmos_capture_data.v":70:0:70:5|Found inferred clock ov5640_rgb565_1024x768_vga_top|cam_pclk which controls 83 sequential elements including u_cmos_capture_data.cmos_ps_cnt[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

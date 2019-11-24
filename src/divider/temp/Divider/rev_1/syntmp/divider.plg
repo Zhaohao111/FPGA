@@ -1,0 +1,11 @@
+@P:  Worst Slack : -0.932
+@P:  Divider_Top|clk - Estimated Frequency : 160.9 MHz
+@P:  Divider_Top|clk - Requested Frequency : 189.3 MHz
+@P:  Divider_Top|clk - Estimated Period : 6.214
+@P:  Divider_Top|clk - Requested Period : 5.282
+@P:  Divider_Top|clk - Slack : -0.932
+@P: Divider_Top Part : gw2ar_18elqfp144-8
+@P: Divider_Top I/O Register bits : 0
+@P: Divider_Top Register bits (Non I/O) : 75 (0%)
+@P: Divider_Top Total Luts : 121 of 800 (0%)
+@P:  CPU Time : 0h:00m:08s

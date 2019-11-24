@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Power Analysis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper { width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.thermal_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.Configure_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table th.label {  min-width: 8%; width: 8%; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#Message" style=" font-size: 16px;">Power Messages</a>
+</li>
+<li><a href="#Summary" style=" font-size: 16px;">Power Summary</a>
+<ul>
+<li><a href="#Power_Info" style=" font-size: 14px;">Power Information</a></li>
+<li><a href="#Thermal_Info" style=" font-size: 14px;">Thermal Information</a></li>
+<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
+<li><a href="#Supply_Summary" style=" font-size: 14px;">Supply Information</a></li>
+</ul>
+</li>
+<li><a href="#Detail" style=" font-size: 16px;">Power Details</a>
+<ul>
+<li><a href="#By_Block_Type" style=" font-size: 14px;">Power By Block Type</a></li>
+<li><a href="#By_Hierarchy" style=" font-size: 14px;">Power By Hierarchy</a></li>
+<li><a href="#By_Clock_Domain" style=" font-size: 14px;">Power By Clock Domain</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="Message">Power Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>Gowin Power Analysis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>E:/FPGAbisai/04_ov5640_vga/04_ov5640_vga/impl/synthesize/rev_1/04_ov5640_vga.vm</td>
+</tr>
+<tr>
+<td class="label">Physical Constraints File</td>
+<td>E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\04_ov5640_vga.cst</td>
+</tr>
+<tr>
+<td class="label">Timing Constraints File</td>
+<td>E:\FPGAbisai\04_ov5640_vga\04_ov5640_vga\src\04_ov5640_vga.sdc</td>
+</tr>
+<tr>
+<td class="label">GOWIN Version</td>
+<td>V1.9.2Beta</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2AR-LV18EQ144PC8/I7</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sun Nov 24 14:46:04 2019
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2019 Gowin Semiconductor Corporation.                      All rights reserved.</td>
+</tr>
+</table>
+<h1><a name="Summary">Power Summary</a></h1>
+<h2><a name="Power_Info">Power Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Total Power (mW)</td>
+<td>260.798</td>
+</tr>
+<tr>
+<td class="label">Quiescent Power (mW)</td>
+<td>22.108</td>
+</tr>
+<tr>
+<td class="label">Dynamic Power (mW)</td>
+<td>238.689</td>
+</tr>
+</table>
+<h2><a name="Thermal_Info">Thermal Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Junction Temperature</td>
+<td>28.489</td>
+</tr>
+<tr>
+<td class="label">Theta JA</td>
+<td>13.500</td>
+</tr>
+<tr>
+<td class="label">Max Allowed Ambient Temperature</td>
+<td>81.479</td>
+</tr>
+</table>
+<h2><a name="Configure_Info">Configure Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Default IO Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<td class="label">Default Remain Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td class="label">Use Vectorless Estimation</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Filter Glitches</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Related Vcd File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Related Saif File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Air Flow</td>
+<td>LFM_0</td>
+</tr>
+<tr>
+<td class="label">Heat Sink</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta SA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Board Thermal Model</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JB</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Ambient Temperature</td>
+<td>25.000
+</tr>
+</table>
+<h2><a name="Supply_Summary">Supply Information:</a></h2>
+<table class="summary_table">
+<tr>
+<th class="label">Voltage Source</th>
+<th class="label">Voltage</th>
+<th class="label">Dynamic Current(mA)</th>
+<th class="label">Quiescent Current(mA)</th>
+<th class="label">Power(mW)</th>
+</tr>
+<tr>
+<td>VCC</td>
+<td>1.000</td>
+<td>221.050</td>
+<td>10.135</td>
+<td>231.185</td>
+</tr>
+<tr>
+<td>VCCX</td>
+<td>2.500</td>
+<td>3.410</td>
+<td>2.297</td>
+<td>14.268</td>
+</tr>
+<tr>
+<td>VCCO18</td>
+<td>1.800</td>
+<td>1.411</td>
+<td>0.879</td>
+<td>4.122</td>
+</tr>
+<tr>
+<td>VCCO33</td>
+<td>3.300</td>
+<td>1.992</td>
+<td>1.409</td>
+<td>11.222</td>
+</tr>
+</table>
+<h1><a name="Detail">Power Details</a></h1>
+<h2><a name="By_Block_Type">Power By Block Type:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Block Type</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Static Power(mW)</th>
+<th class="label">Average Toggle Rate(millions of transitions/sec)</th>
+</tr>
+<tr>
+<td>Logic</td>
+<td>35.566</td>
+<td>NA</td>
+<td>6.901</td>
+</tr>
+<tr>
+<td>IO</td>
+<td>35.516
+<td>14.317
+<td>11.265
+</tr>
+<tr>
+<td>BSRAM</td>
+<td>36.658
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DLL</td>
+<td>23.040
+<td>NA</td>
+<td>NA</td>
+</tr>
+</table>
+<h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Hierarchy Entity</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Block Dynamic Power(mW)</th>
+<th class="label">Routing Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top</td>
+<td>207.906</td>
+<td>85.839(85.778)</td>
+<td>122.068(120.634)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/B_v/</td>
+<td>0.922</td>
+<td>0.106(0.000)</td>
+<td>0.815(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/Gowin_PLL_65M/</td>
+<td>0.500</td>
+<td>0.010(0.000)</td>
+<td>0.490(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/RAM_based_shift_reg_top_sync_hs16/</td>
+<td>1.194</td>
+<td>0.759(0.759)</td>
+<td>0.435(0.435)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/RAM_based_shift_reg_top_sync_hs16/u_RAM_based_shift_reg/</td>
+<td>1.194</td>
+<td>0.759(0.000)</td>
+<td>0.435(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/RAM_based_shift_reg_top_sync_vs16/</td>
+<td>1.179</td>
+<td>0.759(0.759)</td>
+<td>0.419(0.419)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/RAM_based_shift_reg_top_sync_vs16/u_RAM_based_shift_reg/</td>
+<td>1.179</td>
+<td>0.759(0.000)</td>
+<td>0.419(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/</td>
+<td>133.607</td>
+<td>64.705(62.628)</td>
+<td>68.902(63.296)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/Gowin_PLL_160M/</td>
+<td>0.307</td>
+<td>0.000(0.000)</td>
+<td>0.307(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/PSRAM_Memory_Interface_Top/</td>
+<td>93.814</td>
+<td>49.555(49.550)</td>
+<td>44.259(44.242)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/</td>
+<td>93.792</td>
+<td>49.550(25.566)</td>
+<td>44.242(37.339)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_init/</td>
+<td>18.106</td>
+<td>4.724(0.000)</td>
+<td>13.382(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_sync/</td>
+<td>2.915</td>
+<td>0.825(0.000)</td>
+<td>2.089(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_wd/</td>
+<td>41.885</td>
+<td>20.017(19.333)</td>
+<td>21.868(21.153)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_wd/data_lane_gen[0].u_psram_lane/</td>
+<td>24.552</td>
+<td>10.019(0.000)</td>
+<td>14.533(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/u_psram_wd/data_lane_gen[1].u_psram_lane/</td>
+<td>15.934</td>
+<td>9.314(0.000)</td>
+<td>6.620(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/u_rdfifo/</td>
+<td>22.043</td>
+<td>11.437(11.437)</td>
+<td>10.606(10.606)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/u_rdfifo/fifo_inst/</td>
+<td>22.043</td>
+<td>11.437(0.000)</td>
+<td>10.606(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/u_wrfifo/</td>
+<td>9.761</td>
+<td>1.637(1.637)</td>
+<td>8.124(8.124)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/psram_fifo/u_wrfifo/fifo_inst/</td>
+<td>9.761</td>
+<td>1.637(0.000)</td>
+<td>8.124(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/rgb2hsv_top1/</td>
+<td>38.681</td>
+<td>12.844(5.791)</td>
+<td>25.836(12.098)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/rgb2hsv_top1/Divider_Top_h/</td>
+<td>8.748</td>
+<td>2.870(2.870)</td>
+<td>5.879(5.879)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/rgb2hsv_top1/Divider_Top_h/u_fra_div/</td>
+<td>8.748</td>
+<td>2.870(0.000)</td>
+<td>5.879(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/rgb2hsv_top1/Divider_Top_s/</td>
+<td>9.140</td>
+<td>2.921(2.921)</td>
+<td>6.219(6.219)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/rgb2hsv_top1/Divider_Top_s/u_fra_div/</td>
+<td>9.140</td>
+<td>2.921(0.000)</td>
+<td>6.219(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/u_cmos_capture_data/</td>
+<td>1.566</td>
+<td>0.185(0.000)</td>
+<td>1.381(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/u_i2c_cfg/</td>
+<td>14.777</td>
+<td>2.887(0.000)</td>
+<td>11.890(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/u_i2c_dri/</td>
+<td>7.525</td>
+<td>1.769(0.000)</td>
+<td>5.755(0.000)</td>
+<tr>
+<td>ov5640_rgb565_1024x768_vga_top/u_vga_driver/</td>
+<td>6.462</td>
+<td>1.753(0.000)</td>
+<td>4.709(0.000)</td>
+</table>
+<h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Clock Domain</th>
+<th class="label">Clock Frequency(Mhz)</th>
+<th class="label">Total Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>psram_fifo/PSRAM_Memory_Interface_Top/u_psram_top/clkdiv/CLKOUT.default_gen_clk</td>
+<td>50.000</td>
+<td>115.666</td>
+</tr>
+<tr>
+<td>Gowin_PLL_65M/pll_inst/CLKOUT.default_gen_clk</td>
+<td>65.000</td>
+<td>64.290</td>
+</tr>
+<tr>
+<td>sys_clk</td>
+<td>50.000</td>
+<td>3.794</td>
+</tr>
+<tr>
+<td>NO CLOCK DOMAIN</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>psram_fifo/Gowin_PLL_160M/pll_inst/CLKOUT.default_gen_clk</td>
+<td>100.000</td>
+<td>24.315</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

@@ -1,0 +1,2 @@
+@W: MO171 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\psram_fifo.v":83:0:83:5|Sequential instance psram_fifo.wr_load_r1 is reduced to a combinational gate by constant propagation. 
+@W: MO171 :"e:\fpgabisai\04_ov5640_vga\04_ov5640_vga\src\psram_fifo.v":95:0:95:5|Sequential instance psram_fifo.rd_load_r1 is reduced to a combinational gate by constant propagation. 

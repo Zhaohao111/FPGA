@@ -1,0 +1,159 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" device="" sample_clock="GM7123_sync_clk" trig_type="0" storage_depth="4096" window_num="1" capture_amount="4096" trigger_pos="0">
+        <SignalList>
+            <Bus name="vga_driver_output[15:0]">
+                <Signal>vga_driver_output[15]</Signal>
+                <Signal>vga_driver_output[14]</Signal>
+                <Signal>vga_driver_output[13]</Signal>
+                <Signal>vga_driver_output[12]</Signal>
+                <Signal>vga_driver_output[11]</Signal>
+                <Signal>vga_driver_output[10]</Signal>
+                <Signal>vga_driver_output[9]</Signal>
+                <Signal>vga_driver_output[8]</Signal>
+                <Signal>vga_driver_output[7]</Signal>
+                <Signal>vga_driver_output[6]</Signal>
+                <Signal>vga_driver_output[5]</Signal>
+                <Signal>vga_driver_output[4]</Signal>
+                <Signal>vga_driver_output[3]</Signal>
+                <Signal>vga_driver_output[2]</Signal>
+                <Signal>vga_driver_output[1]</Signal>
+                <Signal>vga_driver_output[0]</Signal>
+            </Bus>
+            <Signal>u_vga_driver/vga_en_1</Signal>
+            <Bus name="H[7:0]">
+                <Signal>H[7]</Signal>
+                <Signal>H[6]</Signal>
+                <Signal>H[5]</Signal>
+                <Signal>H[4]</Signal>
+                <Signal>H[3]</Signal>
+                <Signal>H[2]</Signal>
+                <Signal>H[1]</Signal>
+                <Signal>H[0]</Signal>
+            </Bus>
+            <Bus name="S[7:0]">
+                <Signal>S[7]</Signal>
+                <Signal>S[6]</Signal>
+                <Signal>S[5]</Signal>
+                <Signal>S[4]</Signal>
+                <Signal>S[3]</Signal>
+                <Signal>S[2]</Signal>
+                <Signal>S[1]</Signal>
+                <Signal>S[0]</Signal>
+            </Bus>
+            <Bus name="V[7:1]">
+                <Signal>V[7]</Signal>
+                <Signal>V[6]</Signal>
+                <Signal>V[5]</Signal>
+                <Signal>V[4]</Signal>
+                <Signal>V[3]</Signal>
+                <Signal>V[2]</Signal>
+                <Signal>V[1]</Signal>
+            </Bus>
+            <Signal>rgb2hsv_top1/complete_s</Signal>
+            <Signal>rgb2hsv_top1/complete_h</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>rgb2hsv_top1/complete_s</Signal>
+                    <Signal>rgb2hsv_top1/complete_h</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1">
+                <SignalList>
+                    <Bus name="vga_driver_output[15:0]">
+                        <Signal>vga_driver_output[15]</Signal>
+                        <Signal>vga_driver_output[14]</Signal>
+                        <Signal>vga_driver_output[13]</Signal>
+                        <Signal>vga_driver_output[12]</Signal>
+                        <Signal>vga_driver_output[11]</Signal>
+                        <Signal>vga_driver_output[10]</Signal>
+                        <Signal>vga_driver_output[9]</Signal>
+                        <Signal>vga_driver_output[8]</Signal>
+                        <Signal>vga_driver_output[7]</Signal>
+                        <Signal>vga_driver_output[6]</Signal>
+                        <Signal>vga_driver_output[5]</Signal>
+                        <Signal>vga_driver_output[4]</Signal>
+                        <Signal>vga_driver_output[3]</Signal>
+                        <Signal>vga_driver_output[2]</Signal>
+                        <Signal>vga_driver_output[1]</Signal>
+                        <Signal>vga_driver_output[0]</Signal>
+                    </Bus>
+                    <Signal>u_vga_driver/vga_en_1</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="2">
+                <SignalList>
+                    <Bus name="H[7:0]">
+                        <Signal>H[7]</Signal>
+                        <Signal>H[6]</Signal>
+                        <Signal>H[5]</Signal>
+                        <Signal>H[4]</Signal>
+                        <Signal>H[3]</Signal>
+                        <Signal>H[2]</Signal>
+                        <Signal>H[1]</Signal>
+                        <Signal>H[0]</Signal>
+                    </Bus>
+                    <Bus name="S[7:0]">
+                        <Signal>S[7]</Signal>
+                        <Signal>S[6]</Signal>
+                        <Signal>S[5]</Signal>
+                        <Signal>S[4]</Signal>
+                        <Signal>S[3]</Signal>
+                        <Signal>S[2]</Signal>
+                        <Signal>S[1]</Signal>
+                        <Signal>S[0]</Signal>
+                    </Bus>
+                    <Bus name="V[7:1]">
+                        <Signal>V[7]</Signal>
+                        <Signal>V[6]</Signal>
+                        <Signal>V[5]</Signal>
+                        <Signal>V[4]</Signal>
+                        <Signal>V[3]</Signal>
+                        <Signal>V[2]</Signal>
+                        <Signal>V[1]</Signal>
+                    </Bus>
+                </SignalList>
+            </Trigger>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="00" value1="00" trigger="0"/>
+            <MatchUnit index="1" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="1" value0="00000000000000000" value1="00000000000000000" trigger="1"/>
+            <MatchUnit index="2" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="00000000000000000000000" value1="00000000000000000000000" trigger="2"/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions>
+            <Expression>M0</Expression>
+            <Expression>M1</Expression>
+            <Expression>M2</Expression>
+        </Expressions>
+    </AoCore>
+</GAO_CONFIG>

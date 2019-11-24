@@ -1,0 +1,7 @@
+d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\bin64\syn_nfilter.exe  -link  -multisrs  C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\synwork\divider_comp.srs  -osyn  C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\synwork\divider_mult.srs  -log  C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\synlog\divider_multi_srs_gen.srr 
+relcom:d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\bin64\syn_nfilter.exe -link -multisrs ..\synwork\divider_comp.srs -osyn ..\synwork\divider_mult.srs -log ..\synlog\divider_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\divider_comp.srs|io:i|time:1574345464|size:15757|exec:0|csum:157FD4320097C95B3983800D39A29821
+file:..\synwork\divider_mult.srs|io:o|time:1574345465|size:2117|exec:0|csum:
+file:..\synlog\divider_multi_srs_gen.srr|io:o|time:1574345465|size:1349|exec:0|csum:
+file:d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1564765422|size:8840192|exec:1|csum:3679135E094FDC1A8D56C913E5E7F562

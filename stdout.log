@@ -1,0 +1,216 @@
+
+Starting:    d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\bin64\mbin\synplify.exe
+Install:     d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+Hostname:    DESKTOP-KENK8J7
+Date:        Fri Nov  8 17:09:53 2019
+Version:     P-2019.03G-Beta4
+
+Arguments:   -product synplify_pro C:/Users/22144/Desktop/Gowin_FPGA/Project/04_ov5640_vga/impl/synthesize/04_ov5640_vga.prj
+ProductType: synplify_pro
+
+License checkout: synplifypro_gowin
+License: synplifypro_gowin node-locked 
+Licensed Vendor: gowin
+
+
+
+NOTE:  This version of the software is not a production release. No warranty is made as to the general availability of features and functionality included in this version or described in the accompanying documentation. The final contents of a production release and its timing remain at the sole discretion of Synopsys.
+log file: "C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga.srr"
+Running: rev_1 in foreground
+
+Running 04_ov5640_vga|rev_1
+
+Running Flow: compile (Compile) on 04_ov5640_vga|rev_1
+# Fri Nov  8 17:10:25 2019
+
+Running Flow: compile_flow (Compile Process) on 04_ov5640_vga|rev_1
+# Fri Nov  8 17:10:25 2019
+
+Running: compiler (Compile Input) on 04_ov5640_vga|rev_1
+# Fri Nov  8 17:10:25 2019
+Copied C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\rev_1\synwork\04_ov5640_vga_comp.srs to C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga.srs
+
+compiler completed
+# Fri Nov  8 17:10:36 2019
+
+Return Code: 0
+Run Time:00h:00m:11s
+
+Running: multi_srs_gen (Multi-srs Generator) on 04_ov5640_vga|rev_1
+# Fri Nov  8 17:10:36 2019
+
+multi_srs_gen completed
+# Fri Nov  8 17:10:37 2019
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\rev_1\synwork\04_ov5640_vga_mult.srs to C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga.srs
+Complete: Compile Process on 04_ov5640_vga|rev_1
+
+Running: premap (Premap) on 04_ov5640_vga|rev_1
+# Fri Nov  8 17:10:37 2019
+
+premap completed with warnings
+# Fri Nov  8 17:10:41 2019
+
+Return Code: 1
+Run Time:00h:00m:04s
+Complete: Compile on 04_ov5640_vga|rev_1
+
+Running Flow: map (Map) on 04_ov5640_vga|rev_1
+# Fri Nov  8 17:10:41 2019
+
+Running: fpga_mapper (Map & Optimize) on 04_ov5640_vga|rev_1
+# Fri Nov  8 17:10:41 2019
+Copied C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\rev_1\synwork\04_ov5640_vga_m.srm to C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\rev_1\04_ov5640_vga.srm
+
+fpga_mapper completed with warnings
+# Fri Nov  8 17:10:53 2019
+
+Return Code: 1
+Run Time:00h:00m:11s
+Complete: Map on 04_ov5640_vga|rev_1
+Complete: Logic Synthesis on 04_ov5640_vga|rev_1
+0Loaded XDM (Hierarchy) data base - elapsed time 0:0 Blocks=47
+@N Implementation 'C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\impl\synthesize\04_ov5640_vga.prj|rev_1' design hierarchy loaded from database
+While running 64-bit - Windows build
+
+@E::Signal 000 error in synplify.exe
+Stack trace
+ID:ui2019q1p1/231/synplify.exe
+===========
+0x14096A444
+0x140968258
+0x1403EDB99
+0x5A92FC043
+0x1413ACE91
+0x5A417C190
+0x5ABB411FF
+0x5ABB0A289
+0x5ABB3FE6E
+0x14077ACDF
+0x1408CC058
+0x1408C2623
+0x1408BB216
+0x1408C1435
+0x1408C1C70
+0xFFFF8009D1433BB7
+0xFFFF8009D13F3AA6
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D141BA28
+0xFFFF8009D141051C
+0xFFFF8009D14117DA
+0xFFFF8009D13FDCEA
+0xFFFF8009D1417D40
+0xFFFF8009D13F3A83
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D141BA28
+0xFFFF8009D13FDCEA
+0xFFFF8009D1417D40
+0xFFFF8009D1416DAE
+0xFFFF8009D14194A2
+0xFFFF8009D13F3A83
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D141BA28
+0xFFFF8009D141051C
+0xFFFF8009D14117DA
+0xFFFF8009D1417D40
+0xFFFF8009D1416DAE
+0xFFFF8009D14194A2
+0xFFFF8009D13F3A83
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D1417D40
+0xFFFF8009D1416DAE
+0xFFFF8009D14194A2
+0xFFFF8009D13F3A83
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D17B3C65
+0xFFFF8009D1433BB7
+0xFFFF8009D13F3AA6
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D17A6988
+0xFFFF8009D17A453D
+0xFFFF8009D1433BB7
+0xFFFF8009D13F3AA6
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D17A6988
+0xFFFF8009D17A453D
+0xFFFF8009D1433BB7
+0xFFFF8009D13F3AA6
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D141BA28
+0xFFFF8009D13FDCEA
+0xFFFF8009D13FDCEA
+0xFFFF8009D1417D40
+0xFFFF8009D13F3A83
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D146C263
+0xFFFF8009D143F261
+0xFFFF8009D14398DF
+0x140696AF2
+0x1407D5E01
+0xFFFF8009D1E70678
+0xFFFF8009D1E6E825
+0xFFFF8009D1E6E32A
+0xFFFF8009D1E70B05
+0xFFFF8009D1E69346
+0xFFFF8009D17DA282
+0xFFFF8009D1748F2A
+0xFFFF8009D1770963
+0xFFFF8009D1773DAB
+0xFFFF8009D1417D40
+0xFFFF8009D1416DAE
+0xFFFF8009D1442282
+0xFFFF8009D142DBE5
+0xFFFF8009D1F8A828
+0xFFFF8009D143439C
+0xFFFF8009D17BD2A4
+0xFFFF8009D13F3AA6
+0xFFFF8009D13F3743
+0xFFFF8009D1F77B9C
+0xFFFF8009D1F79801
+0xFFFF8009D1F9E86F
+0x5AB3763ED
+0x5AB375DE2
+0xFFFF8009D1F9E063
+0xFFFF8009D14544A5
+0xFFFF8009D1F74807
+0xFFFF8009D1F77080
+0x1402EE725
+0x140960390
+0x140957ECE
+0x5AB9B7BD4
+0x5ABB0CED1
+Please open a web case about this problem. A Synopsys CAE will then contact you.
+
+Instructions to open a web-case:
+1.  Go to the Synopsys support web site, https://solvnet.synopsys.com. 
+2.  Login with your user name and password. If you do not have an account, please register and set one up.
+3.  Click the `Enter A Call' link.
+4.  Provide a detailed description of the problem, and fill in all required fields.
+5.  Attach any test cases or archived project files required to reproduce the problem. 

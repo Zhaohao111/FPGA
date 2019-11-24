@@ -1,0 +1,38 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device>gw2ar18-022</Device>
+    <FileList>
+        <File path="src/i2c_ov5640_rgb565_cfg.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_rgb565_1024x768_vga_top.v" type="file.verilog" enable="1"/>
+        <File path="src/cmos_capture_data.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_dri.v" type="file.verilog" enable="1"/>
+        <File path="src/vga_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/psram_memory_interface/psram_memory_interface.v" type="file.verilog" enable="1"/>
+        <File path="src/psram_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pll2/gowin_pll/gowin_pll_160M.v" type="file.verilog" enable="1"/>
+        <File path="src/wrfifo/fifo_top/wrfifo.v" type="file.verilog" enable="1"/>
+        <File path="src/rdfifo/fifo_top/rdfifo.v" type="file.verilog" enable="1"/>
+        <File path="src/04_ov5640_vga.sdc" type="file.sdc" enable="1"/>
+        <File path="src/04_ov5640_vga.cst" type="file.cst" enable="1"/>
+        <File path="src/04_ov5640_vga.gao" type="file.gao" enable="0"/>
+        <File path="src/B_v.v" type="file.verilog" enable="1"/>
+        <File path="src/div_rill.v" type="file.verilog" enable="1"/>
+        <File path="src/rgb2hsv_top.v" type="file.verilog" enable="1"/>
+        <File path="src/divider/divider.v" type="file.verilog" enable="1"/>
+        <File path="src/color_selection.v" type="file.verilog" enable="0"/>
+        <File path="src/key_filter.v" type="file.verilog" enable="1"/>
+        <File path="src/ErosionDilationBin.v" type="file.verilog" enable="1"/>
+        <File path="src/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v" type="file.verilog" enable="1"/>
+        <File path="src/RAM_shift_top.v" type="file.verilog" enable="1"/>
+        <File path="src/VIP_Matrix_Generate_3X3_1Bit.v" type="file.verilog" enable="1"/>
+        <File path="src/VIP_Bit_Dilation_Detector.v" type="file.verilog" enable="0"/>
+        <File path="src/VIP_Bit_Erosion_Detector.v" type="file.verilog" enable="1"/>
+        <File path="src/shibie.v" type="file.verilog" enable="1"/>
+        <File path="src/VGA_OUT.v" type="file.verilog" enable="1"/>
+        <File path="src/sync_delay/RAM_based_shift_reg_top/RAM_based_shift_reg_top_sync.v" type="file.verilog" enable="1"/>
+    </FileList>
+</Project>

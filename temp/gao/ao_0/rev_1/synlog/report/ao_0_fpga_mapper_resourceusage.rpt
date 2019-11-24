@@ -1,0 +1,36 @@
+---------------------------------------
+Resource Usage Report for ao_top_0 
+
+Mapping to part: gw2ar_18elqfp144-8
+Cell usage:
+ALU             78 uses
+DFF             42 uses
+DFFC            48 uses
+DFFCE           340 uses
+DFFNP           2 uses
+DFFP            5 uses
+DFFPE           32 uses
+GSR             1 use
+INV             2 uses
+MUX2_LUT5       9 uses
+MUX2_LUT6       2 uses
+SDP             11 uses
+LUT2            76 uses
+LUT3            204 uses
+LUT4            322 uses
+
+I/O ports: 95
+I/O primitives: 95
+IBUF           93 uses
+OBUF           2 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   469 of 15552 (3%)
+
+RAM/ROM usage summary
+Block Rams : 11 of 46 (23%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 602 (2%)
+

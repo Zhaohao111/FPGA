@@ -1,0 +1,1185 @@
+#Build: Synplify Pro (R) P-2019.03G-Beta4, Build 231R, Aug  2 2019
+#install: d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-KENK8J7
+
+# Thu Nov 21 22:11:02 2019
+
+#Implementation: rev_1
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-KENK8J7
+
+Implementation : rev_1
+Synopsys HDL Compiler, Version comp2019q1p1, Build 231R, Built Aug  2 2019 09:58:27
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-KENK8J7
+
+Implementation : rev_1
+Synopsys Verilog Compiler, Version comp2019q1p1, Build 231R, Built Aug  2 2019 09:58:27
+
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+
+@I::"d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\generic\gw2a.v" (library work)
+@I::"d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\div_wrap.v" (library work)
+@I:"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\div_wrap.v":"C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\define.v" (library work)
+@I:"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\div_wrap.v":"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\static_macro_define.v" (library work)
+@I:"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\div_wrap.v":"C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\parameter.v" (library work)
+@I::"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\qdiv.v" (library work)
+Verilog syntax check successful!
+Selecting top level module Divider_Top
+Running optimization stage 1 on \(qdiv)/(Divider_Top)_17s_1s .......
+@N: CG364 :"D:\Gowin\Gowin_V1.9.2Beta\IDE\ipcore\DIVIDER\data\div_wrap.v":3:19:3:19|Synthesizing module Divider_Top in library work.
+Running optimization stage 1 on Divider_Top .......
+Running optimization stage 2 on Divider_Top .......
+Running optimization stage 2 on \(qdiv)/(Divider_Top)_17s_1s .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 21 22:11:03 2019
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-KENK8J7
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 231R, Built Aug  2 2019 09:58:27
+
+@N|Running in 64-bit mode
+@N: NF107 :"d:\gowin\gowin_v1.9.2beta\ide\ipcore\divider\data\div_wrap.v":3:19:3:19|Selected library: work cell: Divider_Top view verilog as top level
+@N: NF107 :"d:\gowin\gowin_v1.9.2beta\ide\ipcore\divider\data\div_wrap.v":3:19:3:19|Selected library: work cell: Divider_Top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 87MB peak: 88MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 21 22:11:04 2019
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\synwork\divider_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 18MB peak: 19MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 21 22:11:04 2019
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-KENK8J7
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 231R, Built Aug  2 2019 09:58:27
+
+@N|Running in 64-bit mode
+@N: NF107 :"d:\gowin\gowin_v1.9.2beta\ide\ipcore\divider\data\div_wrap.v":3:19:3:19|Selected library: work cell: Divider_Top view verilog as top level
+@N: NF107 :"d:\gowin\gowin_v1.9.2beta\ide\ipcore\divider\data\div_wrap.v":3:19:3:19|Selected library: work cell: Divider_Top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 87MB peak: 88MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 21 22:11:05 2019
+
+###########################################################]
+Premap Report
+
+# Thu Nov 21 22:11:06 2019
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-KENK8J7
+
+Implementation : rev_1
+Synopsys Generic Technology Pre-mapping, Version mapgw, Build 1429R, Built Aug 27 2019 09:36:45
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\divider_scck.rpt 
+Printing clock  summary report in "C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\divider_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 126MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 127MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 127MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+@N: FX493 |Applying initial value "0000000000000000000000000000000" on instance divider_copy[30:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "010000" on instance bi[5:0].
+@N: FX493 |Applying initial value "00000000000000000" on instance quotient[16:0].
+@N: FX493 |Applying initial value "00000000000000000" on instance dividend_copy[16:0].
+@N: FX493 |Applying initial value "1" on instance done.
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 218MB peak: 218MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 218MB peak: 219MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 218MB peak: 219MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 218MB peak: 219MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 219MB peak: 219MB)
+
+
+
+Clock Summary
+******************
+
+          Start               Requested     Requested     Clock        Clock                     Clock
+Level     Clock               Frequency     Period        Type         Group                     Load 
+------------------------------------------------------------------------------------------------------
+0 -       Divider_Top|clk     299.5 MHz     3.339         inferred     Autoconstr_clkgroup_0     72   
+======================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                    Clock     Source        Clock Pin                       Non-clock Pin     Non-clock Pin
+Clock               Load      Pin           Seq Example                     Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------------
+Divider_Top|clk     72        clk(port)     u_fra_div.divider_copy[0].C     -                 -            
+===========================================================================================================
+
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 72 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_0       clk                 port                   72         ENCRYPTED      
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\divider.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 219MB peak: 219MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 219MB peak: 220MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 220MB peak: 220MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 141MB peak: 221MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Thu Nov 21 22:11:10 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Nov 21 22:11:11 2019
+
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G-Beta4
+Install: d:\Gowin\Gowin_V1.9.2Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-KENK8J7
+
+Implementation : rev_1
+Synopsys Generic Technology Mapper, Version mapgw, Build 1429R, Built Aug 27 2019 09:36:45
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 119MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 119MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 216MB peak: 216MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 219MB peak: 219MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 220MB peak: 220MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 220MB peak: 221MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 221MB peak: 221MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 221MB peak: 222MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 222MB peak: 222MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 222MB peak: 222MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 222MB peak: 222MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 222MB peak: 222MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:03s		    -2.04ns		 166 /        72
+   2		0h:00m:03s		    -2.04ns		 166 /        72
+   3		0h:00m:03s		    -2.00ns		 166 /        72
+   4		0h:00m:03s		    -2.00ns		 166 /        72
+   5		0h:00m:03s		    -2.00ns		 166 /        72
+   6		0h:00m:03s		    -2.00ns		 166 /        72
+   7		0h:00m:03s		    -2.00ns		 166 /        72
+Timing driven replication report
+Added 3 Registers via timing driven replication
+Added 3 LUTs via timing driven replication
+
+   8		0h:00m:04s		    -2.00ns		 168 /        75
+   9		0h:00m:04s		    -2.00ns		 172 /        75
+  10		0h:00m:04s		    -2.00ns		 174 /        75
+  11		0h:00m:04s		    -2.00ns		 175 /        75
+  12		0h:00m:04s		    -2.00ns		 175 /        75
+
+
+  13		0h:00m:04s		    -2.00ns		 169 /        75
+  14		0h:00m:04s		    -2.07ns		 169 /        75
+  15		0h:00m:04s		    -2.00ns		 169 /        75
+  16		0h:00m:04s		    -2.07ns		 169 /        75
+  17		0h:00m:04s		    -2.00ns		 169 /        75
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 224MB peak: 224MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 224MB peak: 224MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 152MB peak: 225MB)
+
+Writing Analyst data base C:\Users\22144\Desktop\Gowin_FPGA\Project\04_ov5640_vga\src\divider\temp\Divider\rev_1\synwork\divider_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 225MB peak: 225MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 225MB peak: 226MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 226MB peak: 226MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 224MB peak: 226MB)
+
+@W: MT420 |Found inferred clock Divider_Top|clk with period 5.28ns. Please declare a user-defined clock on port clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Thu Nov 21 22:11:19 2019
+#
+
+
+Top view:               Divider_Top
+Requested Frequency:    189.3 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.932
+
+                    Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock      Frequency     Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------
+Divider_Top|clk     189.3 MHz     160.9 MHz     5.282         6.214         -0.932     inferred     Autoconstr_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------
+Divider_Top|clk  Divider_Top|clk  |  5.282       -0.932  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Divider_Top|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                  Arrival           
+Instance                       Reference           Type     Pin     Net                  Time        Slack 
+                               Clock                                                                       
+-----------------------------------------------------------------------------------------------------------
+u_fra_div.dividend_copy[0]     Divider_Top|clk     DFFE     Q       dividend_copy[0]     0.243       -0.932
+u_fra_div.divider_copy[0]      Divider_Top|clk     DFFE     Q       divider_copy[0]      0.243       -0.911
+u_fra_div.dividend_copy[1]     Divider_Top|clk     DFFE     Q       dividend_copy[1]     0.243       -0.897
+u_fra_div.divider_copy[1]      Divider_Top|clk     DFFE     Q       divider_copy[1]      0.243       -0.876
+u_fra_div.dividend_copy[2]     Divider_Top|clk     DFFE     Q       dividend_copy[2]     0.243       -0.862
+u_fra_div.divider_copy[2]      Divider_Top|clk     DFFE     Q       divider_copy[2]      0.243       -0.841
+u_fra_div.dividend_copy[3]     Divider_Top|clk     DFFE     Q       dividend_copy[3]     0.243       -0.827
+u_fra_div.divider_copy[3]      Divider_Top|clk     DFFE     Q       divider_copy[3]      0.243       -0.806
+u_fra_div.dividend_copy[4]     Divider_Top|clk     DFFE     Q       dividend_copy[4]     0.243       -0.792
+u_fra_div.divider_copy[4]      Divider_Top|clk     DFFE     Q       divider_copy[4]      0.243       -0.771
+===========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                           Starting                                                  Required           
+Instance                   Reference           Type     Pin     Net                  Time         Slack 
+                           Clock                                                                        
+--------------------------------------------------------------------------------------------------------
+u_fra_div.quotient[4]      Divider_Top|clk     DFF      D       N_34_0_i_0           5.221        -0.932
+u_fra_div.quotient[5]      Divider_Top|clk     DFF      D       N_32_0_i_0           5.221        -0.932
+u_fra_div.quotient[6]      Divider_Top|clk     DFF      D       N_149_i_0            5.221        -0.932
+u_fra_div.quotient[12]     Divider_Top|clk     DFF      D       quotient_r_0[12]     5.221        -0.932
+u_fra_div.quotient[13]     Divider_Top|clk     DFF      D       N_147_i_0            5.221        -0.932
+u_fra_div.quotient[15]     Divider_Top|clk     DFF      D       N_146_i_0            5.221        -0.932
+u_fra_div.quotient[1]      Divider_Top|clk     DFF      D       quotient_r_0[1]      5.221        -0.841
+u_fra_div.quotient[2]      Divider_Top|clk     DFF      D       quotient_r_0[2]      5.221        -0.841
+u_fra_div.quotient[3]      Divider_Top|clk     DFF      D       N_37_i_0             5.221        -0.841
+u_fra_div.quotient[8]      Divider_Top|clk     DFF      D       quotient_r_0[8]      5.221        -0.841
+========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.282
+    - Setup time:                            0.061
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.221
+
+    - Propagation time:                      6.153
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.932
+
+    Number of logic level(s):                33
+    Starting point:                          u_fra_div.dividend_copy[0] / Q
+    Ending point:                            u_fra_div.quotient[15] / D
+    The start point is clocked by            Divider_Top|clk [rising] on pin CLK
+    The end   point is clocked by            Divider_Top|clk [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u_fra_div.dividend_copy[0]               DFFE          Q        Out     0.243     0.243       -         
+dividend_copy[0]                         Net           -        -       0.535     -           2         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           I1       In      -         0.778       -         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           COUT     Out     0.570     1.348       -         
+un1_dividend_copy_cry_0                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           CIN      In      -         1.348       -         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           COUT     Out     0.035     1.383       -         
+un1_dividend_copy_cry_1                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           CIN      In      -         1.383       -         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           COUT     Out     0.035     1.418       -         
+un1_dividend_copy_cry_2                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           CIN      In      -         1.418       -         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           COUT     Out     0.035     1.453       -         
+un1_dividend_copy_cry_3                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           CIN      In      -         1.453       -         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           COUT     Out     0.035     1.488       -         
+un1_dividend_copy_cry_4                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           CIN      In      -         1.488       -         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           COUT     Out     0.035     1.523       -         
+un1_dividend_copy_cry_5                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           CIN      In      -         1.523       -         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           COUT     Out     0.035     1.558       -         
+un1_dividend_copy_cry_6                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           CIN      In      -         1.558       -         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           COUT     Out     0.035     1.593       -         
+un1_dividend_copy_cry_7                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           CIN      In      -         1.593       -         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           COUT     Out     0.035     1.628       -         
+un1_dividend_copy_cry_8                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           CIN      In      -         1.628       -         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           COUT     Out     0.035     1.663       -         
+un1_dividend_copy_cry_9                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           CIN      In      -         1.663       -         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           COUT     Out     0.035     1.698       -         
+un1_dividend_copy_cry_10                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           CIN      In      -         1.698       -         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           COUT     Out     0.035     1.733       -         
+un1_dividend_copy_cry_11                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           CIN      In      -         1.733       -         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           COUT     Out     0.035     1.768       -         
+un1_dividend_copy_cry_12                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           CIN      In      -         1.768       -         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           COUT     Out     0.035     1.803       -         
+un1_dividend_copy_cry_13                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           CIN      In      -         1.803       -         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           COUT     Out     0.035     1.838       -         
+un1_dividend_copy_cry_14                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           CIN      In      -         1.838       -         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           COUT     Out     0.035     1.873       -         
+un1_dividend_copy_cry_15                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           CIN      In      -         1.873       -         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           COUT     Out     0.035     1.908       -         
+un1_dividend_copy_cry_16                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           CIN      In      -         1.908       -         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           COUT     Out     0.035     1.943       -         
+un1_dividend_copy_cry_17                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           CIN      In      -         1.943       -         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           COUT     Out     0.035     1.978       -         
+un1_dividend_copy_cry_18                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           CIN      In      -         1.978       -         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           COUT     Out     0.035     2.013       -         
+un1_dividend_copy_cry_19                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           CIN      In      -         2.013       -         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           COUT     Out     0.035     2.048       -         
+un1_dividend_copy_cry_20                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           CIN      In      -         2.048       -         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           COUT     Out     0.035     2.083       -         
+un1_dividend_copy_cry_21                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           CIN      In      -         2.083       -         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           COUT     Out     0.035     2.118       -         
+un1_dividend_copy_cry_22                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           CIN      In      -         2.118       -         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           COUT     Out     0.035     2.153       -         
+un1_dividend_copy_cry_23                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           CIN      In      -         2.153       -         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           COUT     Out     0.035     2.188       -         
+un1_dividend_copy_cry_24                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           CIN      In      -         2.188       -         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           COUT     Out     0.035     2.223       -         
+un1_dividend_copy_cry_25                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           CIN      In      -         2.223       -         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           COUT     Out     0.035     2.258       -         
+un1_dividend_copy_cry_26                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           CIN      In      -         2.258       -         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           COUT     Out     0.035     2.293       -         
+un1_dividend_copy_cry_27                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           CIN      In      -         2.293       -         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           COUT     Out     0.035     2.328       -         
+un1_dividend_copy_cry_28                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           CIN      In      -         2.328       -         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           COUT     Out     0.035     2.363       -         
+un1_dividend_copy_cry_29                 Net           -        -       0.961     -           1         
+u_fra_div.g0                             LUT4          I3       In      -         3.324       -         
+u_fra_div.g0                             LUT4          F        Out     0.371     3.695       -         
+un1_done9_i_0                            Net           -        -       0.657     -           26        
+u_fra_div.m17_i_mb_1_0                   LUT3          I2       In      -         4.352       -         
+u_fra_div.m17_i_mb_1_0                   LUT3          F        Out     0.462     4.814       -         
+m17_i_mb_1_0                             Net           -        -       0.535     -           1         
+u_fra_div.m17_i_mb                       MUX2_LUT5     S0       In      -         5.349       -         
+u_fra_div.m17_i_mb                       MUX2_LUT5     O        Out     0.269     5.618       -         
+N_146_i_0                                Net           -        -       0.535     -           1         
+u_fra_div.quotient[15]                   DFF           D        In      -         6.153       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.214 is 2.991(48.1%) logic and 3.223(51.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.282
+    - Setup time:                            0.061
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.221
+
+    - Propagation time:                      6.153
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.932
+
+    Number of logic level(s):                33
+    Starting point:                          u_fra_div.dividend_copy[0] / Q
+    Ending point:                            u_fra_div.quotient[6] / D
+    The start point is clocked by            Divider_Top|clk [rising] on pin CLK
+    The end   point is clocked by            Divider_Top|clk [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u_fra_div.dividend_copy[0]               DFFE          Q        Out     0.243     0.243       -         
+dividend_copy[0]                         Net           -        -       0.535     -           2         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           I1       In      -         0.778       -         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           COUT     Out     0.570     1.348       -         
+un1_dividend_copy_cry_0                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           CIN      In      -         1.348       -         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           COUT     Out     0.035     1.383       -         
+un1_dividend_copy_cry_1                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           CIN      In      -         1.383       -         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           COUT     Out     0.035     1.418       -         
+un1_dividend_copy_cry_2                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           CIN      In      -         1.418       -         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           COUT     Out     0.035     1.453       -         
+un1_dividend_copy_cry_3                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           CIN      In      -         1.453       -         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           COUT     Out     0.035     1.488       -         
+un1_dividend_copy_cry_4                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           CIN      In      -         1.488       -         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           COUT     Out     0.035     1.523       -         
+un1_dividend_copy_cry_5                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           CIN      In      -         1.523       -         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           COUT     Out     0.035     1.558       -         
+un1_dividend_copy_cry_6                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           CIN      In      -         1.558       -         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           COUT     Out     0.035     1.593       -         
+un1_dividend_copy_cry_7                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           CIN      In      -         1.593       -         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           COUT     Out     0.035     1.628       -         
+un1_dividend_copy_cry_8                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           CIN      In      -         1.628       -         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           COUT     Out     0.035     1.663       -         
+un1_dividend_copy_cry_9                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           CIN      In      -         1.663       -         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           COUT     Out     0.035     1.698       -         
+un1_dividend_copy_cry_10                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           CIN      In      -         1.698       -         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           COUT     Out     0.035     1.733       -         
+un1_dividend_copy_cry_11                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           CIN      In      -         1.733       -         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           COUT     Out     0.035     1.768       -         
+un1_dividend_copy_cry_12                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           CIN      In      -         1.768       -         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           COUT     Out     0.035     1.803       -         
+un1_dividend_copy_cry_13                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           CIN      In      -         1.803       -         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           COUT     Out     0.035     1.838       -         
+un1_dividend_copy_cry_14                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           CIN      In      -         1.838       -         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           COUT     Out     0.035     1.873       -         
+un1_dividend_copy_cry_15                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           CIN      In      -         1.873       -         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           COUT     Out     0.035     1.908       -         
+un1_dividend_copy_cry_16                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           CIN      In      -         1.908       -         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           COUT     Out     0.035     1.943       -         
+un1_dividend_copy_cry_17                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           CIN      In      -         1.943       -         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           COUT     Out     0.035     1.978       -         
+un1_dividend_copy_cry_18                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           CIN      In      -         1.978       -         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           COUT     Out     0.035     2.013       -         
+un1_dividend_copy_cry_19                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           CIN      In      -         2.013       -         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           COUT     Out     0.035     2.048       -         
+un1_dividend_copy_cry_20                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           CIN      In      -         2.048       -         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           COUT     Out     0.035     2.083       -         
+un1_dividend_copy_cry_21                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           CIN      In      -         2.083       -         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           COUT     Out     0.035     2.118       -         
+un1_dividend_copy_cry_22                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           CIN      In      -         2.118       -         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           COUT     Out     0.035     2.153       -         
+un1_dividend_copy_cry_23                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           CIN      In      -         2.153       -         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           COUT     Out     0.035     2.188       -         
+un1_dividend_copy_cry_24                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           CIN      In      -         2.188       -         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           COUT     Out     0.035     2.223       -         
+un1_dividend_copy_cry_25                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           CIN      In      -         2.223       -         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           COUT     Out     0.035     2.258       -         
+un1_dividend_copy_cry_26                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           CIN      In      -         2.258       -         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           COUT     Out     0.035     2.293       -         
+un1_dividend_copy_cry_27                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           CIN      In      -         2.293       -         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           COUT     Out     0.035     2.328       -         
+un1_dividend_copy_cry_28                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           CIN      In      -         2.328       -         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           COUT     Out     0.035     2.363       -         
+un1_dividend_copy_cry_29                 Net           -        -       0.961     -           1         
+u_fra_div.g0                             LUT4          I3       In      -         3.324       -         
+u_fra_div.g0                             LUT4          F        Out     0.371     3.695       -         
+un1_done9_i_0                            Net           -        -       0.657     -           26        
+u_fra_div.m27_i_mb_1_0                   LUT3          I2       In      -         4.352       -         
+u_fra_div.m27_i_mb_1_0                   LUT3          F        Out     0.462     4.814       -         
+m27_i_mb_1_0                             Net           -        -       0.535     -           1         
+u_fra_div.m27_i_mb                       MUX2_LUT5     S0       In      -         5.349       -         
+u_fra_div.m27_i_mb                       MUX2_LUT5     O        Out     0.269     5.618       -         
+N_149_i_0                                Net           -        -       0.535     -           1         
+u_fra_div.quotient[6]                    DFF           D        In      -         6.153       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.214 is 2.991(48.1%) logic and 3.223(51.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.282
+    - Setup time:                            0.061
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.221
+
+    - Propagation time:                      6.153
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.932
+
+    Number of logic level(s):                33
+    Starting point:                          u_fra_div.dividend_copy[0] / Q
+    Ending point:                            u_fra_div.quotient[13] / D
+    The start point is clocked by            Divider_Top|clk [rising] on pin CLK
+    The end   point is clocked by            Divider_Top|clk [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u_fra_div.dividend_copy[0]               DFFE          Q        Out     0.243     0.243       -         
+dividend_copy[0]                         Net           -        -       0.535     -           2         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           I1       In      -         0.778       -         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           COUT     Out     0.570     1.348       -         
+un1_dividend_copy_cry_0                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           CIN      In      -         1.348       -         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           COUT     Out     0.035     1.383       -         
+un1_dividend_copy_cry_1                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           CIN      In      -         1.383       -         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           COUT     Out     0.035     1.418       -         
+un1_dividend_copy_cry_2                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           CIN      In      -         1.418       -         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           COUT     Out     0.035     1.453       -         
+un1_dividend_copy_cry_3                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           CIN      In      -         1.453       -         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           COUT     Out     0.035     1.488       -         
+un1_dividend_copy_cry_4                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           CIN      In      -         1.488       -         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           COUT     Out     0.035     1.523       -         
+un1_dividend_copy_cry_5                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           CIN      In      -         1.523       -         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           COUT     Out     0.035     1.558       -         
+un1_dividend_copy_cry_6                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           CIN      In      -         1.558       -         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           COUT     Out     0.035     1.593       -         
+un1_dividend_copy_cry_7                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           CIN      In      -         1.593       -         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           COUT     Out     0.035     1.628       -         
+un1_dividend_copy_cry_8                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           CIN      In      -         1.628       -         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           COUT     Out     0.035     1.663       -         
+un1_dividend_copy_cry_9                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           CIN      In      -         1.663       -         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           COUT     Out     0.035     1.698       -         
+un1_dividend_copy_cry_10                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           CIN      In      -         1.698       -         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           COUT     Out     0.035     1.733       -         
+un1_dividend_copy_cry_11                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           CIN      In      -         1.733       -         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           COUT     Out     0.035     1.768       -         
+un1_dividend_copy_cry_12                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           CIN      In      -         1.768       -         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           COUT     Out     0.035     1.803       -         
+un1_dividend_copy_cry_13                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           CIN      In      -         1.803       -         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           COUT     Out     0.035     1.838       -         
+un1_dividend_copy_cry_14                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           CIN      In      -         1.838       -         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           COUT     Out     0.035     1.873       -         
+un1_dividend_copy_cry_15                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           CIN      In      -         1.873       -         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           COUT     Out     0.035     1.908       -         
+un1_dividend_copy_cry_16                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           CIN      In      -         1.908       -         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           COUT     Out     0.035     1.943       -         
+un1_dividend_copy_cry_17                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           CIN      In      -         1.943       -         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           COUT     Out     0.035     1.978       -         
+un1_dividend_copy_cry_18                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           CIN      In      -         1.978       -         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           COUT     Out     0.035     2.013       -         
+un1_dividend_copy_cry_19                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           CIN      In      -         2.013       -         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           COUT     Out     0.035     2.048       -         
+un1_dividend_copy_cry_20                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           CIN      In      -         2.048       -         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           COUT     Out     0.035     2.083       -         
+un1_dividend_copy_cry_21                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           CIN      In      -         2.083       -         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           COUT     Out     0.035     2.118       -         
+un1_dividend_copy_cry_22                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           CIN      In      -         2.118       -         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           COUT     Out     0.035     2.153       -         
+un1_dividend_copy_cry_23                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           CIN      In      -         2.153       -         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           COUT     Out     0.035     2.188       -         
+un1_dividend_copy_cry_24                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           CIN      In      -         2.188       -         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           COUT     Out     0.035     2.223       -         
+un1_dividend_copy_cry_25                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           CIN      In      -         2.223       -         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           COUT     Out     0.035     2.258       -         
+un1_dividend_copy_cry_26                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           CIN      In      -         2.258       -         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           COUT     Out     0.035     2.293       -         
+un1_dividend_copy_cry_27                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           CIN      In      -         2.293       -         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           COUT     Out     0.035     2.328       -         
+un1_dividend_copy_cry_28                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           CIN      In      -         2.328       -         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           COUT     Out     0.035     2.363       -         
+un1_dividend_copy_cry_29                 Net           -        -       0.961     -           1         
+u_fra_div.g0                             LUT4          I3       In      -         3.324       -         
+u_fra_div.g0                             LUT4          F        Out     0.371     3.695       -         
+un1_done9_i_0                            Net           -        -       0.657     -           26        
+u_fra_div.quotient_r_0_a2_1[12]          LUT3          I2       In      -         4.352       -         
+u_fra_div.quotient_r_0_a2_1[12]          LUT3          F        Out     0.462     4.814       -         
+N_145                                    Net           -        -       0.535     -           4         
+u_fra_div.m19_i                          MUX2_LUT5     S0       In      -         5.349       -         
+u_fra_div.m19_i                          MUX2_LUT5     O        Out     0.269     5.618       -         
+N_147_i_0                                Net           -        -       0.535     -           1         
+u_fra_div.quotient[13]                   DFF           D        In      -         6.153       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.214 is 2.991(48.1%) logic and 3.223(51.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.282
+    - Setup time:                            0.061
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.221
+
+    - Propagation time:                      6.153
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.932
+
+    Number of logic level(s):                33
+    Starting point:                          u_fra_div.dividend_copy[0] / Q
+    Ending point:                            u_fra_div.quotient[12] / D
+    The start point is clocked by            Divider_Top|clk [rising] on pin CLK
+    The end   point is clocked by            Divider_Top|clk [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u_fra_div.dividend_copy[0]               DFFE          Q        Out     0.243     0.243       -         
+dividend_copy[0]                         Net           -        -       0.535     -           2         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           I1       In      -         0.778       -         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           COUT     Out     0.570     1.348       -         
+un1_dividend_copy_cry_0                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           CIN      In      -         1.348       -         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           COUT     Out     0.035     1.383       -         
+un1_dividend_copy_cry_1                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           CIN      In      -         1.383       -         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           COUT     Out     0.035     1.418       -         
+un1_dividend_copy_cry_2                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           CIN      In      -         1.418       -         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           COUT     Out     0.035     1.453       -         
+un1_dividend_copy_cry_3                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           CIN      In      -         1.453       -         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           COUT     Out     0.035     1.488       -         
+un1_dividend_copy_cry_4                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           CIN      In      -         1.488       -         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           COUT     Out     0.035     1.523       -         
+un1_dividend_copy_cry_5                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           CIN      In      -         1.523       -         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           COUT     Out     0.035     1.558       -         
+un1_dividend_copy_cry_6                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           CIN      In      -         1.558       -         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           COUT     Out     0.035     1.593       -         
+un1_dividend_copy_cry_7                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           CIN      In      -         1.593       -         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           COUT     Out     0.035     1.628       -         
+un1_dividend_copy_cry_8                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           CIN      In      -         1.628       -         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           COUT     Out     0.035     1.663       -         
+un1_dividend_copy_cry_9                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           CIN      In      -         1.663       -         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           COUT     Out     0.035     1.698       -         
+un1_dividend_copy_cry_10                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           CIN      In      -         1.698       -         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           COUT     Out     0.035     1.733       -         
+un1_dividend_copy_cry_11                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           CIN      In      -         1.733       -         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           COUT     Out     0.035     1.768       -         
+un1_dividend_copy_cry_12                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           CIN      In      -         1.768       -         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           COUT     Out     0.035     1.803       -         
+un1_dividend_copy_cry_13                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           CIN      In      -         1.803       -         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           COUT     Out     0.035     1.838       -         
+un1_dividend_copy_cry_14                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           CIN      In      -         1.838       -         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           COUT     Out     0.035     1.873       -         
+un1_dividend_copy_cry_15                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           CIN      In      -         1.873       -         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           COUT     Out     0.035     1.908       -         
+un1_dividend_copy_cry_16                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           CIN      In      -         1.908       -         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           COUT     Out     0.035     1.943       -         
+un1_dividend_copy_cry_17                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           CIN      In      -         1.943       -         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           COUT     Out     0.035     1.978       -         
+un1_dividend_copy_cry_18                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           CIN      In      -         1.978       -         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           COUT     Out     0.035     2.013       -         
+un1_dividend_copy_cry_19                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           CIN      In      -         2.013       -         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           COUT     Out     0.035     2.048       -         
+un1_dividend_copy_cry_20                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           CIN      In      -         2.048       -         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           COUT     Out     0.035     2.083       -         
+un1_dividend_copy_cry_21                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           CIN      In      -         2.083       -         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           COUT     Out     0.035     2.118       -         
+un1_dividend_copy_cry_22                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           CIN      In      -         2.118       -         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           COUT     Out     0.035     2.153       -         
+un1_dividend_copy_cry_23                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           CIN      In      -         2.153       -         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           COUT     Out     0.035     2.188       -         
+un1_dividend_copy_cry_24                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           CIN      In      -         2.188       -         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           COUT     Out     0.035     2.223       -         
+un1_dividend_copy_cry_25                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           CIN      In      -         2.223       -         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           COUT     Out     0.035     2.258       -         
+un1_dividend_copy_cry_26                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           CIN      In      -         2.258       -         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           COUT     Out     0.035     2.293       -         
+un1_dividend_copy_cry_27                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           CIN      In      -         2.293       -         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           COUT     Out     0.035     2.328       -         
+un1_dividend_copy_cry_28                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           CIN      In      -         2.328       -         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           COUT     Out     0.035     2.363       -         
+un1_dividend_copy_cry_29                 Net           -        -       0.961     -           1         
+u_fra_div.g0                             LUT4          I3       In      -         3.324       -         
+u_fra_div.g0                             LUT4          F        Out     0.371     3.695       -         
+un1_done9_i_0                            Net           -        -       0.657     -           26        
+u_fra_div.quotient_r_0_a2_1[12]          LUT3          I2       In      -         4.352       -         
+u_fra_div.quotient_r_0_a2_1[12]          LUT3          F        Out     0.462     4.814       -         
+N_145                                    Net           -        -       0.535     -           4         
+u_fra_div.quotient_r_0[12]               MUX2_LUT5     S0       In      -         5.349       -         
+u_fra_div.quotient_r_0[12]               MUX2_LUT5     O        Out     0.269     5.618       -         
+quotient_r_0[12]                         Net           -        -       0.535     -           1         
+u_fra_div.quotient[12]                   DFF           D        In      -         6.153       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.214 is 2.991(48.1%) logic and 3.223(51.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.282
+    - Setup time:                            0.061
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.221
+
+    - Propagation time:                      6.153
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.932
+
+    Number of logic level(s):                33
+    Starting point:                          u_fra_div.dividend_copy[0] / Q
+    Ending point:                            u_fra_div.quotient[4] / D
+    The start point is clocked by            Divider_Top|clk [rising] on pin CLK
+    The end   point is clocked by            Divider_Top|clk [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u_fra_div.dividend_copy[0]               DFFE          Q        Out     0.243     0.243       -         
+dividend_copy[0]                         Net           -        -       0.535     -           2         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           I1       In      -         0.778       -         
+u_fra_div.un1_dividend_copy_cry_0_0      ALU           COUT     Out     0.570     1.348       -         
+un1_dividend_copy_cry_0                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           CIN      In      -         1.348       -         
+u_fra_div.un1_dividend_copy_cry_1_0      ALU           COUT     Out     0.035     1.383       -         
+un1_dividend_copy_cry_1                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           CIN      In      -         1.383       -         
+u_fra_div.un1_dividend_copy_cry_2_0      ALU           COUT     Out     0.035     1.418       -         
+un1_dividend_copy_cry_2                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           CIN      In      -         1.418       -         
+u_fra_div.un1_dividend_copy_cry_3_0      ALU           COUT     Out     0.035     1.453       -         
+un1_dividend_copy_cry_3                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           CIN      In      -         1.453       -         
+u_fra_div.un1_dividend_copy_cry_4_0      ALU           COUT     Out     0.035     1.488       -         
+un1_dividend_copy_cry_4                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           CIN      In      -         1.488       -         
+u_fra_div.un1_dividend_copy_cry_5_0      ALU           COUT     Out     0.035     1.523       -         
+un1_dividend_copy_cry_5                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           CIN      In      -         1.523       -         
+u_fra_div.un1_dividend_copy_cry_6_0      ALU           COUT     Out     0.035     1.558       -         
+un1_dividend_copy_cry_6                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           CIN      In      -         1.558       -         
+u_fra_div.un1_dividend_copy_cry_7_0      ALU           COUT     Out     0.035     1.593       -         
+un1_dividend_copy_cry_7                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           CIN      In      -         1.593       -         
+u_fra_div.un1_dividend_copy_cry_8_0      ALU           COUT     Out     0.035     1.628       -         
+un1_dividend_copy_cry_8                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           CIN      In      -         1.628       -         
+u_fra_div.un1_dividend_copy_cry_9_0      ALU           COUT     Out     0.035     1.663       -         
+un1_dividend_copy_cry_9                  Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           CIN      In      -         1.663       -         
+u_fra_div.un1_dividend_copy_cry_10_0     ALU           COUT     Out     0.035     1.698       -         
+un1_dividend_copy_cry_10                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           CIN      In      -         1.698       -         
+u_fra_div.un1_dividend_copy_cry_11_0     ALU           COUT     Out     0.035     1.733       -         
+un1_dividend_copy_cry_11                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           CIN      In      -         1.733       -         
+u_fra_div.un1_dividend_copy_cry_12_0     ALU           COUT     Out     0.035     1.768       -         
+un1_dividend_copy_cry_12                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           CIN      In      -         1.768       -         
+u_fra_div.un1_dividend_copy_cry_13_0     ALU           COUT     Out     0.035     1.803       -         
+un1_dividend_copy_cry_13                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           CIN      In      -         1.803       -         
+u_fra_div.un1_dividend_copy_cry_14_0     ALU           COUT     Out     0.035     1.838       -         
+un1_dividend_copy_cry_14                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           CIN      In      -         1.838       -         
+u_fra_div.un1_dividend_copy_cry_15_0     ALU           COUT     Out     0.035     1.873       -         
+un1_dividend_copy_cry_15                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           CIN      In      -         1.873       -         
+u_fra_div.un1_dividend_copy_cry_16_0     ALU           COUT     Out     0.035     1.908       -         
+un1_dividend_copy_cry_16                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           CIN      In      -         1.908       -         
+u_fra_div.un1_dividend_copy_cry_17_0     ALU           COUT     Out     0.035     1.943       -         
+un1_dividend_copy_cry_17                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           CIN      In      -         1.943       -         
+u_fra_div.un1_dividend_copy_cry_18_0     ALU           COUT     Out     0.035     1.978       -         
+un1_dividend_copy_cry_18                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           CIN      In      -         1.978       -         
+u_fra_div.un1_dividend_copy_cry_19_0     ALU           COUT     Out     0.035     2.013       -         
+un1_dividend_copy_cry_19                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           CIN      In      -         2.013       -         
+u_fra_div.un1_dividend_copy_cry_20_0     ALU           COUT     Out     0.035     2.048       -         
+un1_dividend_copy_cry_20                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           CIN      In      -         2.048       -         
+u_fra_div.un1_dividend_copy_cry_21_0     ALU           COUT     Out     0.035     2.083       -         
+un1_dividend_copy_cry_21                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           CIN      In      -         2.083       -         
+u_fra_div.un1_dividend_copy_cry_22_0     ALU           COUT     Out     0.035     2.118       -         
+un1_dividend_copy_cry_22                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           CIN      In      -         2.118       -         
+u_fra_div.un1_dividend_copy_cry_23_0     ALU           COUT     Out     0.035     2.153       -         
+un1_dividend_copy_cry_23                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           CIN      In      -         2.153       -         
+u_fra_div.un1_dividend_copy_cry_24_0     ALU           COUT     Out     0.035     2.188       -         
+un1_dividend_copy_cry_24                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           CIN      In      -         2.188       -         
+u_fra_div.un1_dividend_copy_cry_25_0     ALU           COUT     Out     0.035     2.223       -         
+un1_dividend_copy_cry_25                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           CIN      In      -         2.223       -         
+u_fra_div.un1_dividend_copy_cry_26_0     ALU           COUT     Out     0.035     2.258       -         
+un1_dividend_copy_cry_26                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           CIN      In      -         2.258       -         
+u_fra_div.un1_dividend_copy_cry_27_0     ALU           COUT     Out     0.035     2.293       -         
+un1_dividend_copy_cry_27                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           CIN      In      -         2.293       -         
+u_fra_div.un1_dividend_copy_cry_28_0     ALU           COUT     Out     0.035     2.328       -         
+un1_dividend_copy_cry_28                 Net           -        -       0.000     -           1         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           CIN      In      -         2.328       -         
+u_fra_div.un1_dividend_copy_cry_29_0     ALU           COUT     Out     0.035     2.363       -         
+un1_dividend_copy_cry_29                 Net           -        -       0.961     -           1         
+u_fra_div.g0                             LUT4          I3       In      -         3.324       -         
+u_fra_div.g0                             LUT4          F        Out     0.371     3.695       -         
+un1_done9_i_0                            Net           -        -       0.657     -           26        
+u_fra_div.quotient_r_0_a2_1[12]          LUT3          I2       In      -         4.352       -         
+u_fra_div.quotient_r_0_a2_1[12]          LUT3          F        Out     0.462     4.814       -         
+N_145                                    Net           -        -       0.535     -           4         
+u_fra_div.m33_i                          MUX2_LUT5     S0       In      -         5.349       -         
+u_fra_div.m33_i                          MUX2_LUT5     O        Out     0.269     5.618       -         
+N_34_0_i_0                               Net           -        -       0.535     -           1         
+u_fra_div.quotient[4]                    DFF           D        In      -         6.153       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.214 is 2.991(48.1%) logic and 3.223(51.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 225MB peak: 226MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 225MB peak: 226MB)
+
+---------------------------------------
+Resource Usage Report for Divider_Top 
+
+Mapping to part: gw2ar_18elqfp144-8
+Cell usage:
+ALU             53 uses
+DFF             17 uses
+DFFE            48 uses
+DFFR            5 uses
+DFFS            5 uses
+GSR             1 use
+MUX2_LUT5       14 uses
+LUT2            38 uses
+LUT3            41 uses
+LUT4            42 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   75 of 15552 (0%)
+Total load per clock:
+   Divider_Top|clk: 75
+
+@S |Mapping Summary:
+Total  LUTs: 121 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 73MB peak: 226MB)
+
+Process took 0h:00m:09s realtime, 0h:00m:09s cputime
+# Thu Nov 21 22:11:20 2019
+
+###########################################################]
